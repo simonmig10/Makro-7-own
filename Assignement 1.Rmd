@@ -9,6 +9,8 @@ output: html_document
 
 ## Explain crucial differences between the Solow model and the Ramsey, Cass and Koopman model. Does it affect the overall conclusions?
 
+Bla bla bla
+
 ## Piketty (2014) argues that a fall in the growth rate of the economy is likely to an increase in the difference between the real interest rate and the growth rate. This problem asks you to investigate this issue in the context of the Ramsey-Cass-Koopmans model. Specially, consider a Ramsey-CassKoopmans economy that is on its balanced growth path, and suppose there is a permanent fall in g
 
 **1. How, if at all, does this affect the k = 0-curve?**
@@ -108,3 +110,27 @@ $$\frac{\delta s}{\delta g}= \alpha \frac {(\rho - n \theta)} {(\rho + \theta g)
 $$
 1+1
 $$
+
+# Opgave 2: Diamond OLG model
+
+Consider the following overlapping generations framework. Welfare is equal to:
+
+$$
+Ut = u(C1t) + βu(C2t+1)
+$$
+
+with $\beta = \frac {1}{1+\rho} \le 1$ the discount factor
+
+We will assume that the government implements a pension scheme, more specifically, a pay-as-you-go social security scheme, where the government taxes each young individual by an amount T , and uses that amount to pay benefits to old individuals. Hence, the budget constraints is given by:
+
+$$
+C_1 + S_t = w - T
+$$
+
+Whereas period 2 consumption is given by:
+
+$$
+C_{2, t+1} = S_t (1+r) + (1+n)T
+$$
+
+whereas period 2 consumption is given by: C2t+1 = St(1 + r) + (1 + n)T . Note that n represents population growth. Take the wage w and interest rate r as exogenous and solve the following:
