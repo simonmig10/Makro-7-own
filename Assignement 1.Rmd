@@ -1,0 +1,110 @@
+---
+title: "Assignment 1"
+author: "Simon"
+date: "6/10/2021"
+output: html_document
+---
+
+# Opgave 1:Ramsey-Cass-Koopman model
+
+## Explain crucial differences between the Solow model and the Ramsey, Cass and Koopman model. Does it affect the overall conclusions?
+
+## Piketty (2014) argues that a fall in the growth rate of the economy is likely to an increase in the difference between the real interest rate and the growth rate. This problem asks you to investigate this issue in the context of the Ramsey-Cass-Koopmans model. Specially, consider a Ramsey-CassKoopmans economy that is on its balanced growth path, and suppose there is a permanent fall in g
+
+**1. How, if at all, does this affect the k = 0-curve?**
+
+We need to look at the function for a change in k
+
+$$\dot k = f(k(t))- c(t)- (n+g)k(t)$$ We can set up the rule for when $\dot k =0$ which is $c(t)= f(k(t))-(n+g)k(t)$ we can see that if there is a fall in g we can see that the right hand site will increase, which also means that c(t) must increase.
+
+Next we can also see that $f'(k)=n+g$ we can see that $f'(k)$ will decrease as g decreases. Because of the falling marginal product of capital this means that K should be increasing. this also means that K will be increasing.
+
+Hvis g falder vil det led der trekker kapital akkumuleringen ned dermed needer du ik investere lige so meget dermed may forbruget stige.
+
+**2. How, if at all, does this affect the c = 0-curve?**
+
+Maybe tell something ffrom page 57
+
+We get the used equation below from the Euler- equation $\frac{\dot c}{c}\frac{r(t)-\rho-\theta g}{\theta}$ where the marginal product of capital $r(t)$ is equal to $f'(k(t))$ so we can do the substitution.
+
+We start by looking at the function $\frac{\dot c}{c}\frac{f'(k(t))-\rho-\theta g}{\theta}$ where we need this expretion to be equal to 0 which also means the nummerator (teller) should be equal to zero so we can set up this $f'(k(t))=\rho+\theta g$ We can see that if g falls $f'(k(t))$ also needs to be falling, this again means K must be increasing. If we again look at the first function for each value of c K must be increased and the line goes to the right.
+
+**3. At the time of the change, does c rise, fall, or stay the same, or is it not possible to tell?**
+
+Assume it is an unepected fall? hvis det er uforventet vil de ik ha haft mulighed for at tilpasse sig deres makimeringsproblem.
+
+Kan vi ik sige noget om
+
+Vi ligger vel ikke on den anden side af det maksimale c pga $\rho$ so hvordan kan c ikke falde?
+
+Jeg kan faktisk ikke se hvordan c ikke kun kan falde ved mindre $\rho$ kan be negativ. - Kan kun se det ske hvis $k^*=0$ kurven rykker sig sygt meget opad
+
+**4. At the time of the change, does r minus g rise, fall, or stay the same, or is it not possible to tell?**
+
+If we assume that the shock is unexpected then the amount of capital is historically build up and will not imidially change when the shock is made to g. Therefor there will be no changes in $r(t)$ because there will be no changes in k therefor no changes in $f(k)$ and last no change in $f'(k)$ and we know $f'(k)= r(t)$. Therfor the distance will be larger.
+
+**5. In the long run, does r minus g rise, fall, or stay the same, or is it not possible to tell?**
+
+Find et ud tryk hvor vi skal finde diff af et udtry.
+
+er theta larger ligmed eller mindre end 1
+
+**6. Find an expression for the impact of a marginal change in g on the fraction of output that is saved on the balanced growth path. Can one tell whether this expression is positive or negative?**
+
+We can start by defining the fraction of output that is saved on the balanced growth path called s $s=\frac {(f(k^*) - c^*)} {f(k^*)}$
+
+since k is constant on the balanced growth path we can write the function $\dot k = f(k(t))- c(t)- (n+g)k(t)$ as $f(k^*) - c^*= (n+g)k^*$
+
+We can now rewrite the fraction of output saved on the balanced growth path. $s= \frac {(n+g)k^*} {f(k^*)}$
+
+We can now differentiate both sides with respect to g. We use the rules for differentiating a fraction. We should also use the chainrule as g is in the function for f(k). (maybe lige skrive hvordan)
+
+$$\frac {\delta s} {\delta g} = \frac {f(k^*)[(n+g)(\frac{\delta k^*}{\delta g})+k^*] - (n+g)k^* f'(k^*)(\frac{\delta k^*}{\delta g})}{[f(k^*)]^2}$$ Vi ganger $f(k^*)$ ind i parentesen og setter derefter $(n+g)(\frac {\delta k^*}{\delta g})$ udenfor parentes (setter den bare on hver side af parentesen)
+
+$$\frac {\delta s} {\delta g} = \frac {(n+g)[f(k^*) -k^* f'(k^*)](\frac{\delta k^*} {\delta g}) + f(k^*)k^*} {[f(k^*)]^2}$$
+
+We know that $k^*$ is defined when $f'(k^*)= \rho + \theta g$ we can now differentiate both sites with respect to g, and we get $f''(k^*)(\frac{\delta k^*}{\delta g})= \theta$ Solving for $\frac{\delta k^*}{\delta g}$ we get.
+
+$$\frac{\delta k^*}{\delta g}= \frac{\theta}{f''(k^*)}$$
+
+We can now substitute this into the above equation:
+
+$$\frac {\delta s} {\delta g} = \frac {(n+g)[f(k^*) -k^* f'(k^*)](\frac{\theta} {f''(k^*)}) + f(k^*)k^*} {[f(k^*)]^2}$$ We then multiply by $f''(k^*)$ above and under the fraction (above: As the term is multiplied on the brackets it just disapears and is multiplied to the second term)
+
+$$\frac{\delta s}{\delta g} = \frac{(n+g)[f(k^*)-k^*f'(k^*)]\theta + f(k^*)k^*f''(k^*)}{[f(k^*)]^2 f''(k^*)}$$
+
+-   First term should be positive?
+
+-   as we know $f''(k^*)$ is negative the last term in the nummerator is negative.
+
+-   the denominator will be negative for the same reason.
+
+The conclution is that we can not say anything about if a change in g has a positve effect on the fraction of output tht is saved on the balanced growthpath
+
+7.  **For the case where the production function is Cobb-Douglas,** $f(x) =k^\alpha$**, rewrite your answer to part (f) in terms of** $\rho, n, g,\theta$ **and** $\alpha$**, (Hint:Use the fact that** $f'(k^*) = \rho + \theta g$**)**
+
+We know when $f(k)= k^\alpha$, then $f'(k)=\alpha k^{\alpha - 1}$ and $f''(k)= \alpha(\alpha-1)k^{a-2}$.
+
+if we substitute this into the answer from the question above:
+
+$$\frac{\delta s}{\delta g}= \frac{(n+g)[k^{*\alpha}-k^* \alpha k^{*\alpha - 1}]\theta + k^{*\alpha} k^* \alpha (\alpha - 1) k^{*\alpha - 2}}{k^{*\alpha} k^{*\alpha} \alpha(\alpha - 1)k^{*\alpha - 2}}$$
+
+We can now do some reduction:
+
+$$\frac{\delta s}{\delta g}= \frac{(n+g)k^{^*\alpha}(1-\alpha)\theta - k^{^*a} \alpha (1-\alpha)k^{^* \alpha -1}} {\frac{-(1-\alpha) k^{* \alpha} \alpha k^{* \alpha -1} \alpha k^{* \alpha -1}} {\alpha}}$$
+
+And when we use $f'(k^*) = \rho + \theta g$) we get that:
+
+$$\frac{\delta s}{\delta g}= - \alpha \frac {[(n+g)\theta - (\rho+ \theta g)]} {(\rho + \theta g)^2}$$
+
+Multipling $\theta$ into the brackets:
+
+$$\frac{\delta s}{\delta g}= - \alpha \frac {n \theta - \rho} {(\rho + \theta g)^2}$$ And we can make the expretion psoitive by:
+
+$$\frac{\delta s}{\delta g}= \alpha \frac {(\rho - n \theta)} {(\rho + \theta g)^2}$$
+
+## Analyze the effect of a public procurement, including a thorough presentation of the dynamics in Figures 2.8 and 2.9
+
+$$
+1+1
+$$
