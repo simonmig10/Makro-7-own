@@ -2,7 +2,8 @@
 title: "Assignment 1"
 author: "Simon"
 date: "6/10/2021"
-output: html_document
+output:
+  bookdown::pdf_document2: default
 ---
 
 # Opgave 1:Ramsey-Cass-Koopman model
@@ -107,37 +108,43 @@ $$\frac{\delta s}{\delta g}= \alpha \frac {(\rho - n \theta)} {(\rho + \theta g)
 
 ## Analyze the effect of a public procurement, including a thorough presentation of the dynamics in Figures 2.8 and 2.9
 
-$$
-1+1
-$$
-
 # Opgave 2: Diamond OLG model
 
 Consider the following overlapping generations framework. Welfare is equal to:
 
-$$
-U_t = u(C_{1,t}) + \beta u(C_{2,t+1})
-$$
-
+```{=tex}
+\begin{equation}
+U_t = u(C_{1,t}) + \beta u(C_{2,t+1}) (\#eq:utily)
+\end{equation}
+```
 with $\beta = \frac {1}{1+\rho} \le 1$ the discount factor.
 
 Assume the utility function is logarithmic:
 
-$$
-u(C_{j,t}) = ln(C_{j,t})
-$$
+```{=tex}
+\begin{equation}
+u(C_{j,t}) = ln(C_{j,t}) (\#eq:utily2)
+\end{equation}
+```
+
 
 We will assume that the government implements a pension scheme, more specifically, a pay-as-you-go social security scheme, where the government taxes each young individual by an amount T , and uses that amount to pay benefits to old individuals. Hence, the budget constraints is given by:
 
-$$
-C_1 + S_t = w - T
-$$
+
+```{=tex}
+\begin{equation}
+C_1 + S_t = w - T (\#eq:Con1)
+\end{equation}
+```
+
 
 Whereas period 2 consumption is given by:
 
-$$
-C_{2, t+1} = S_t (1+r) + (1+n)T
-$$
+```{=tex}
+\begin{equation}
+C_{2, t+1} = S_t (1+r) + (1+n)T (\#eq:Con2)
+\end{equation}
+```
 
 Note that $n$ represents population growth. Take the wage w and interest rate $r$ as exogenous and solve the following:
 
@@ -145,8 +152,76 @@ Note that $n$ represents population growth. Take the wage w and interest rate $r
 
 **Step 1:**
 
-Isolate \$S_t\$
+Isolate $S_t$ in equation \@ref(eq:Con2) and we end up with the following: 
 
-Isolate
+$$S_t= \frac{C_2 - (1+n)T}{(1+r)}$$
+We substitute this expression into \@ref(eq:Con1)
+
+$$C_1 + \frac{C_2 - (1+n)T}{(1+r)} + T= w$$
+We now have the budget constraint and can set up the Langrange equation, using the utility function \@ref(eq:utily) and the fact that the utility function is logarithmic: \@ref(eq:utility2).
+
+$$L= ln(C_1)+ \frac{1}{1+\rho} ln(C_2)+ \lambda[w-(c_1+ \frac{C_2 - (1+n)T}{(1+r)} + T)]$$
+We now find the derivative with respect to $C_1$ and $C_2$ 
+
+- For $C_1$:
+
+$$ \frac{1}{C_1}+ \lambda = 0$$
+- For $C_2$:
+
+$$\frac{1}{1+\rho} * \frac{1}{C_2} - \frac{\lambda}{(1+r)}=0$$
+- We can now calculate the eulerequation: 
+
+First we know $\frac{1}{C_1}= \lambda$ which we can substitute into the other equation
+
+$$\frac{1}{(1+\rho)*C_2}= \frac{\frac{1}{C_1}}{(1+r)}$$
+We multiply by $(1+r)$ and $C_2$ on both sites.
+
+$$\frac{(1+r)}{(1+\rho)}= \frac{C_2}{C_1}$$
+
 
 ### 4. Derive $S_t$ as a function of $r$, $w$ and $T$. How does an increase in $T$ affect savings (show mathematically)? Discuss the result.
+
+
+
+We start with the euler equation from before: 
+
+
+$$\frac{(1+r)}{(1+\rho)}= \frac{C_2}{C_1}$$
+
+We use the fact that $\beta = \frac{1}{1+\rho}$ and get that: 
+
+$$\frac{C_2}{C_1}= \beta (1+r)$$ 
+We can now substitute in \@ref(eq:Con2) and \@ref(eq:Con1) and we get: 
+
+$$\frac{(S_t (1+r) + (1+n)T)}{(-S_t- T + w)}= \beta (1+r)$$
+
+We can multiply $-S_t- T + w$ on both sites: 
+
+$$S_t (1+r) + (1+n)T= \beta (1+r)* (-S_t- T + w)$$
+
+We divide by both sites with $(1+r)$ and multiply $\beta$ onto $-S_t$ on the right site
+
+$$S_t + \frac{(1+n)T}{(1+r)}= \beta (w-T)-\beta*S_t$$
+We can now plus $-\beta*S_t$ on both sites, and substitute it out: 
+
+We also minus $\frac{(1+n)T}{(1+r)}$ on both sites
+
+$$S_t(1+\beta)= \frac{(1+n)T}{(1+r)}$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
