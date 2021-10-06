@@ -13,7 +13,7 @@ Bla bla bla
 
 ## Piketty (2014) argues that a fall in the growth rate of the economy is likely to an increase in the difference between the real interest rate and the growth rate. This problem asks you to investigate this issue in the context of the Ramsey-Cass-Koopmans model. Specially, consider a Ramsey-CassKoopmans economy that is on its balanced growth path, and suppose there is a permanent fall in g
 
-**1. How, if at all, does this affect the k = 0-curve?**
+### **1. How, if at all, does this affect the k = 0-curve?**
 
 We need to look at the function for a change in k
 
@@ -23,7 +23,7 @@ Next we can also see that $f'(k)=n+g$ we can see that $f'(k)$ will decrease as g
 
 Hvis g falder vil det led der trekker kapital akkumuleringen ned dermed needer du ik investere lige so meget dermed may forbruget stige.
 
-**2. How, if at all, does this affect the c = 0-curve?**
+### **2. How, if at all, does this affect the c = 0-curve?**
 
 Maybe tell something ffrom page 57
 
@@ -31,7 +31,7 @@ We get the used equation below from the Euler- equation $\frac{\dot c}{c}\frac{r
 
 We start by looking at the function $\frac{\dot c}{c}\frac{f'(k(t))-\rho-\theta g}{\theta}$ where we need this expretion to be equal to 0 which also means the nummerator (teller) should be equal to zero so we can set up this $f'(k(t))=\rho+\theta g$ We can see that if g falls $f'(k(t))$ also needs to be falling, this again means K must be increasing. If we again look at the first function for each value of c K must be increased and the line goes to the right.
 
-**3. At the time of the change, does c rise, fall, or stay the same, or is it not possible to tell?**
+### **3. At the time of the change, does c rise, fall, or stay the same, or is it not possible to tell?**
 
 Assume it is an unepected fall? hvis det er uforventet vil de ik ha haft mulighed for at tilpasse sig deres makimeringsproblem.
 
@@ -41,17 +41,17 @@ Vi ligger vel ikke on den anden side af det maksimale c pga $\rho$ so hvordan ka
 
 Jeg kan faktisk ikke se hvordan c ikke kun kan falde ved mindre $\rho$ kan be negativ. - Kan kun se det ske hvis $k^*=0$ kurven rykker sig sygt meget opad
 
-**4. At the time of the change, does r minus g rise, fall, or stay the same, or is it not possible to tell?**
+### **4. At the time of the change, does r minus g rise, fall, or stay the same, or is it not possible to tell?**
 
 If we assume that the shock is unexpected then the amount of capital is historically build up and will not imidially change when the shock is made to g. Therefor there will be no changes in $r(t)$ because there will be no changes in k therefor no changes in $f(k)$ and last no change in $f'(k)$ and we know $f'(k)= r(t)$. Therfor the distance will be larger.
 
-**5. In the long run, does r minus g rise, fall, or stay the same, or is it not possible to tell?**
+### **5. In the long run, does r minus g rise, fall, or stay the same, or is it not possible to tell?**
 
 Find et ud tryk hvor vi skal finde diff af et udtry.
 
 er theta larger ligmed eller mindre end 1
 
-**6. Find an expression for the impact of a marginal change in g on the fraction of output that is saved on the balanced growth path. Can one tell whether this expression is positive or negative?**
+### **6. Find an expression for the impact of a marginal change in g on the fraction of output that is saved on the balanced growth path. Can one tell whether this expression is positive or negative?**
 
 We can start by defining the fraction of output that is saved on the balanced growth path called s $s=\frac {(f(k^*) - c^*)} {f(k^*)}$
 
@@ -83,7 +83,7 @@ $$\frac{\delta s}{\delta g} = \frac{(n+g)[f(k^*)-k^*f'(k^*)]\theta + f(k^*)k^*f'
 
 The conclution is that we can not say anything about if a change in g has a positve effect on the fraction of output tht is saved on the balanced growthpath
 
-7.  **For the case where the production function is Cobb-Douglas,** $f(x) =k^\alpha$**, rewrite your answer to part (f) in terms of** $\rho, n, g,\theta$ **and** $\alpha$**, (Hint:Use the fact that** $f'(k^*) = \rho + \theta g$**)**
+### **7. For the case w£here the production function is Cobb-Douglas,** $f(x) =k^\alpha$**, rewrite your answer to part (f) in terms of** $\rho, n, g,\theta$ **and** $\alpha$**, (Hint:Use the fact that** $f'(k^*) = \rho + \theta g$**)**
 
 We know when $f(k)= k^\alpha$, then $f'(k)=\alpha k^{\alpha - 1}$ and $f''(k)= \alpha(\alpha-1)k^{a-2}$.
 
@@ -116,10 +116,16 @@ $$
 Consider the following overlapping generations framework. Welfare is equal to:
 
 $$
-Ut = u(C1t) + βu(C2t+1)
+U_t = u(C_{1,t}) + \beta u(C_{2,t+1})
 $$
 
-with $\beta = \frac {1}{1+\rho} \le 1$ the discount factor
+with $\beta = \frac {1}{1+\rho} \le 1$ the discount factor.
+
+Assume the utility function is logarithmic:
+
+$$
+u(C_{j,t}) = ln(C_{j,t})
+$$
 
 We will assume that the government implements a pension scheme, more specifically, a pay-as-you-go social security scheme, where the government taxes each young individual by an amount T , and uses that amount to pay benefits to old individuals. Hence, the budget constraints is given by:
 
@@ -133,4 +139,14 @@ $$
 C_{2, t+1} = S_t (1+r) + (1+n)T
 $$
 
-whereas period 2 consumption is given by: C2t+1 = St(1 + r) + (1 + n)T . Note that n represents population growth. Take the wage w and interest rate r as exogenous and solve the following:
+Note that $n$ represents population growth. Take the wage w and interest rate $r$ as exogenous and solve the following:
+
+### 3. Set up the intertemporal maximization problem and derive the Euler equation
+
+**Step 1:**
+
+Isolate \$S_t\$
+
+Isolate
+
+### 4. Derive $S_t$ as a function of $r$, $w$ and $T$. How does an increase in $T$ affect savings (show mathematically)? Discuss the result.
