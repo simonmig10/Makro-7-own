@@ -1,0 +1,141 @@
+---
+title: "Assignment 2"
+author: "Simon"
+date: "7/10/2021"
+output: 
+  bookdown::pdf_document2: default
+---
+
+# Endogenous growth theory:
+
+Assume production function of final goods sector is given by:
+
+```{=tex}
+\begin{equation}
+Y(t) = [(1-\alpha_K) K(t)\alpha][A(t)(1-\alpha_L)L(t)]^{1-\alpha} (\#eq:prod_f)
+\end{equation}
+```
+
+where $1- \alpha_L$ and $1- \alpha_K$ is the proportion of labour and capital allocated for final production.
+
+**Capital stock** is given by:
+
+```{=tex}
+\begin{equation}
+\dot K(t) = sY(t) (\#eq:K_f)
+\end{equation}
+```
+
+**Production function** of R&D sector is given by:
+
+```{=tex}
+\begin{equation}
+\dot A(t) = B[\alpha_K K(t)]^\beta [\alpha_L L(t)]^\gamma A(t)^\theta (\#eq:A_f)
+\end{equation}
+```
+
+
+
+**Population growth** is exogenous:
+
+$$\dot L(t) = nL(t)$$
+
+## Derive an expression for the growth rate of capital gK(t) and growth rate of technology gA(t)
+
+**Growth rate of Capital**
+
+We start by substituteing \@ref(eq:prod_f) into equation \@ref(eq:K_f):
+
+$$\dot K(t) = s(1-\alpha)^\alpha (1- \alpha _L )^{1-\alpha} K(t)\alpha A(t)^{1- \alpha} L_(t)^{1-\alpha}$$
+we can write $c_K=  s(1-\alpha)^\alpha (1- \alpha _L )^{1-\alpha}$
+
+So we get: 
+
+$$\dot K(t) = C_K K(t)\alpha A(t)^{1- \alpha} L_(t)^{1-\alpha}$$
+We divide the expresion by $K(t)$
+
+$$\frac {\dot K(t)}{k(t)} = C_K [\frac{A(t) L(t)}{K(t)}]^{1-\alpha}$$
+
+(Vis hvordan det udledes!)
+
+
+**Growth rate of technology**
+
+We divide equation \@ref(eq:A_f) by $A(t)$: 
+
+
+$$\frac{\dot A(t)}{A(t)} = B[\alpha_K K(t)]^\beta [\alpha_L L(t)]^\gamma A(t)^{\theta-1}$$
+For simplicity we can write the constant $B\alpha^\beta _K \alpha^\gamma _L$ as equal to $C_\alpha$.
+
+
+$$\frac{\dot A(t)}{A(t)} = C_\alpha K(t)^\beta L(t)^\gamma A(t)^{\theta-1}$$
+
+## Spg 2
+
+
+We start with the expression from the previous question $g_A(t)= C_\alpha K(t)^\beta L(t)^\gamma A(t)^{\theta-1}$
+
+We now take the log and differentiate by time: 
+
+$$\frac{\dot g_A(t)}{g_A(t)}= \beta g_K(t) + \gamma n + (\theta - 1) g_A(t)$$
+We can set this equation equal to 0 as we know $\frac{\dot g_A(t)}{g_A(t)}=0$ in steady state.
+
+$$\beta g_K^*(t) + \gamma n + (\theta - 1) g_A^*(t)=0$$
+
+As we know both $g_K(t)$ and $g_A(t)$ are equal to 0 in steady state we can look at equation .... And see that: 
+
+$$g^*_A +n -g^*_K=0$$
+This can be re-written: 
+
+
+$$g^*_A +n =g^*_K$$
+We can now substitute this into the equation: 
+
+$$\beta (g^*_A +n)  + \gamma n + (\theta - 1) g^*_A=0$$
+We want to move all terms not including $g_A^*$ to the right site.
+
+$$\beta g^*_A+ (1-\theta)g^*_A= -(\beta + \gamma)n$$
+We move $g_A^*$ out as a common factor.
+
+$$g_A^*(\beta + (\theta - 1))= -(\beta + \gamma)n$$
+we change the sign on both sites. 
+
+$$g_A^*(1 - (\theta + \beta))= (\beta + \gamma)n$$
+And last we divide by $(1 - (\theta + \beta))$
+
+$$g_A^*= \frac{(\beta + \gamma)}{(1 - (\theta + \beta))}n$$
+
+
+Explain:
+
+
+# Real business cycle theory
+
+Assume the following utility function:
+
+
+$$u_t= ln[c_t] + \frac{b(1-l_t)^{1-\gamma}}{1-\gamma}$$
+where, $c_t$ is consumption, $b > 0$, and $\gamma > 0$
+
+Income of the individual is equal to $w_tl_t$
+
+where, $w_t$ is wage, and $l_t$ is the labour supply
+
+## Define the budget constraint and answer the following:
+
+**How, if at all, does labour supply depend on wage?**
+
+## Re-consider the above problem for two periods: 
+
+$$u= ln[C_1] + \frac{b(1-l_1)^{1-\gamma}}{1-\gamma} + e^{- \rho} [ln[C_2] + \frac{b(1-l_2)^{1-\gamma}}{1-\gamma}]$$
+where 
+
+- Periode 1 consumption $C_1 = w_1l_1$
+- Periode 2 consumption $C_2 = w_2l_2 + s_1(1+r)$ where $s= w_1l_1 - C_1$. 
+
+## Define the budget constraint and give intuitive answers to the following questions after solving the problem:
+
+
+
+
+
