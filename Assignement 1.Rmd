@@ -206,14 +206,22 @@ We can now plus $-\beta*S_t$ on both sites, and substitute it out:
 
 We also minus $\frac{(1+n)T}{(1+r)}$ on both sites
 
-$$S_t(1+\beta)= \frac{(1+n)T}{(1+r)}$$
+$$S_t(1+\beta)=\beta (w-T) - \frac{(1+n)T}{(1+r)}$$
+
+We can now divide by $(1+\beta)$
 
 
+$$S_t=\frac{\beta (w-T) - \frac{(1+n)T}{(1+r)}}{(1+\beta)}$$
 
+We can now differentiate this expression with respect to $T$.
 
+$$\frac{\delta S_t}{\delta T}= \frac{- \beta - \frac{(1+n)}{(1+r)}}{(1+\beta}$$
 
+We can move out the monus sign:
 
+$$\frac{\delta S_t}{\delta T}= -(\frac{\beta + \frac{(1+n)}{(1+r)}}{(1+\beta})$$
 
+We can see that a rise in T has a negative effect on the savings rate. Explain why!
 
 
 
