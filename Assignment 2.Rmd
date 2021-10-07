@@ -157,9 +157,34 @@ $$u= ln[C_1] + \frac{b(1-l_1)^{1-\gamma}}{1-\gamma} + e^{- \rho} [ln[C_2] + \fra
 where 
 
 - Periode 1 consumption $C_1 = w_1l_1$
-- Periode 2 consumption $C_2 = w_2l_2 + s_1(1+r)$ where $s= w_1l_1 - C_1$. 
+- Periode 2 consumption $C_2 = w_2l_2 + s_1(1+r)$ where $s_1= w_1l_1 - C_1$. 
 
 ## Define the budget constraint and give intuitive answers to the following questions after solving the problem:
+
+To get the budget constraint we first re-write $C_2$: 
+
+$$C_2 = w_2l_2 +  (w_1l_1 - C_1)(1+r)$$
+We divide by $(1+r)$ and isolate the consumption for periode 1 and 2 on the left site. 
+
+$$C_1+ \frac{C_2}{(1+r)} = w_1 l_1 + w_2 l_2* \frac{1}{(1+r)}$$
+
+We now have the budget constraint, and we can set up the langrange equation. 
+
+$$L= ln[C_1] + \frac{b(1-l_1)^{1-\gamma}}{1-\gamma} + e^{- \rho} [ln[C_2] + \frac{b(1-l_2)^{1-\gamma}}{1-\gamma}] + \lambda [w_1l_1 + w_2l_2 * \frac{1}{(1+r)} - C_1 - \frac{C_2}{(1+r)}]$$
+Now i differentiate with respcect to $l_1$ and $l_2$:
+
+- For $l_1$
+
+$$-b(1-l_1)^{-\gamma} +w_1 \lambda= 0$$
+
+- For $l_2$
+
+$$-e^{- \rho}b(1-l_2)^{- \gamma} + \frac {w_2 \lambda} {(1+r)}=0$$
+We isolate lambda in the equation for $l_1$ and then substitute into the equation for $l_2$
+
+
+$$-e^{- \rho}b(1-l_2)^{- \gamma}+ \frac {w_2 \frac{b(1-l_1)^{- \gamma}}{w_1}}{(1+r)} =0$$
+
 
 
 
