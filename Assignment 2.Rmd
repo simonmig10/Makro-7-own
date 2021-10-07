@@ -123,7 +123,33 @@ where, $w_t$ is wage, and $l_t$ is the labour supply
 
 ## Define the budget constraint and answer the following:
 
+First I define the budget constraint:
+
+$$C=wl$$
+
 **How, if at all, does labour supply depend on wage?**
+
+We can now set up the langrange 
+
+$$L= ln[C_t]+ \frac{b(1-l_t)^{1-\gamma}}{1-\gamma} + \lambda (wl-C_t)$$
+We now differntiate with respect to $C_t$ and $l_t$
+
+$$\frac {\delta L}{\delta C_t}= \frac{1}{C_t} - \lambda =0$$
+$$\frac {\delta L}{\delta l_t}= -b(1-l_t)^{-\gamma}+ w\lambda=0$$
+
+The first equation $\frac{1}{C_t} - \lambda$ we can re-write using the budget constraint $C=wl$ or $\frac{1}{C_t} = \frac{1}{wl}$ we can therfore write:
+
+$$\frac{1}{wl}=\lambda$$
+We can now substitute thes into the second equation $-b(1-l_t)^{-\gamma}+ w\lambda=0$: 
+
+$$-b(1-l_t)^{-\gamma}= \frac{1}{l_t}$$
+Allready now we can see that $w$ is no longer in the equation so it would have no effect on labour supply. 
+
+
+
+Explain why!!!
+
+
 
 ## Re-consider the above problem for two periods: 
 
