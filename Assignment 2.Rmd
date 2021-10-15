@@ -185,6 +185,12 @@ We isolate lambda in the equation for $l_1$ and then substitute into the equatio
 
 $$-e^{- \rho}b(1-l_2)^{- \gamma}+ \frac {w_2 \frac{b(1-l_1)^{- \gamma}}{w_1}}{(1+r)} =0$$
 
+We need to isolate so we get $\frac{(1-l_2)}{(1-l_1)}$ 
+
+- How does the relative demand for leisure $\frac{(1-l_2)}{(1-l_1)}$ depend on the relative wage $\frac{w_1}{w_2}$. 
+
+- How does the relative demand for leisure $\frac{(1-l_2)}{(1-l_1)}$ depend on the interest rate (r)?
+
 
 
 
