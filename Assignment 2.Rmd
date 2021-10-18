@@ -187,6 +187,25 @@ $$-e^{- \rho}b(1-l_2)^{- \gamma}+ \frac {w_2 \frac{b(1-l_1)^{- \gamma}}{w_1}}{(1
 
 We need to isolate so we get $\frac{(1-l_2)}{(1-l_1)}$ 
 
+We can split up the fraction and collect the $w$ expressions in one fraction. 
+
+$$-e^{- \rho}b(1-l_2)^{- \gamma}+ \frac {w_2}{(1+r)}* \frac{b(1-l_1)^{- \gamma}}{w_1} =0$$
+$$-e^{- \rho}b(1-l_2)^{- \gamma}+ \frac {w_2}{w_1}* \frac{b(1-l_1)^{- \gamma}}{(1+r)} =0$$
+We can now divide with $b(1-l_1)^{- \gamma}$ 
+
+$$-e^{- \rho} \frac{b(1-l_2)^{- \gamma}}{b(1-l_1)^{- \gamma}}+ \frac {w_2}{w_1}* \frac{1}{(1+r)} =0$$
+We can now move the second term on the other site of the equal sign
+
+$$-e^{- \rho} \frac{b(1-l_2)^{- \gamma}}{b(1-l_1)^{- \gamma}} =- \frac {w_2}{w_1}* \frac{1}{(1+r)}$$
+We can remove the $- \gamma$ and $b$ so we end up with: 
+
+$$-e^{- \rho} \frac{(1-l_2)}{(1-l_1)} =- \frac {w_2}{w_1}* \frac{1}{(1+r)}$$
+We can now multiply with $\frac{1}{-e^-\rho}$
+
+And we end up with the following equation:
+
+$$\frac{(1-l_2)}{(1-l_1)} =- \frac {w_2}{w_1}* \frac{1}{(1+r)-e^{- \rho}}$$
+
 - How does the relative demand for leisure $\frac{(1-l_2)}{(1-l_1)}$ depend on the relative wage $\frac{w_1}{w_2}$. 
 
 - How does the relative demand for leisure $\frac{(1-l_2)}{(1-l_1)}$ depend on the interest rate (r)?

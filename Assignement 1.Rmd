@@ -148,7 +148,7 @@ C_{2, t+1} = S_t (1+r) + (1+n)T (\#eq:Con2)
 
 Note that $n$ represents population growth. Take the wage w and interest rate $r$ as exogenous and solve the following:
 
-### 3. Set up the intertemporal maximization problem and derive the Euler equation
+## 3. Set up the intertemporal maximization problem and derive the Euler equation
 
 **Step 1:**
 
@@ -179,7 +179,7 @@ We multiply by $(1+r)$ and $C_2$ on both sites.
 $$\frac{(1+r)}{(1+\rho)}= \frac{C_2}{C_1}$$
 
 
-### 4. Derive $S_t$ as a function of $r$, $w$ and $T$. How does an increase in $T$ affect savings (show mathematically)? Discuss the result.
+## 4. Derive $S_t$ as a function of $r$, $w$ and $T$. How does an increase in $T$ affect savings (show mathematically)? Discuss the result.
 
 
 
