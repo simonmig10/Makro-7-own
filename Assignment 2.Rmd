@@ -46,17 +46,19 @@ $$\dot L(t) = nL(t)$$
 
 We start by substituteing \@ref(eq:prod_f) into equation \@ref(eq:K_f):
 
-$$\dot K(t) = s(1-\alpha)^\alpha (1- \alpha _L )^{1-\alpha} K(t)\alpha A(t)^{1- \alpha} L_(t)^{1-\alpha}$$
+$$\dot K(t) = s(1-\alpha)^\alpha (1- \alpha _L )^{1-\alpha} K(t)^\alpha A(t)^{1- \alpha} L_(t)^{1-\alpha}$$
 we can write $c_K=  s(1-\alpha)^\alpha (1- \alpha _L )^{1-\alpha}$
 
 So we get: 
 
-$$\dot K(t) = C_K K(t)\alpha A(t)^{1- \alpha} L_(t)^{1-\alpha}$$
-We divide the expresion by $K(t)$
+$$\dot K(t) = C_K K(t)^\alpha A(t)^{1- \alpha} L(t)^{1-\alpha}$$
+We divide the expresion by $K(t)$ so we can write $\alpha - 1$ in the exponent. 
+
+$$\frac {\dot K(t)}{K(t)} = C_K K(t)^{\alpha- 1} A(t)^{1- \alpha} L(t)^{1-\alpha}$$
+We can now chance $K(t)^{\alpha - 1}$ changing the sign of the exponent so $\frac{1}{K(t)^{1 - \alpha}}$ We can then set $1- \alpha$ out as a common exponent. 
+
 
 $$\frac {\dot K(t)}{k(t)} = C_K [\frac{A(t) L(t)}{K(t)}]^{1-\alpha}$$
-
-(Vis hvordan det udledes!)
 
 
 **Growth rate of technology**
@@ -82,7 +84,7 @@ We can set this equation equal to 0 as we know $\frac{\dot g_A(t)}{g_A(t)}=0$ in
 
 $$\beta g_K^*(t) + \gamma n + (\theta - 1) g_A^*(t)=0$$
 
-As we know both $g_K(t)$ and $g_A(t)$ are equal to 0 in steady state we can look at equation .... And see that: 
+As we know both $g_K(t)$ and $g_A(t)$ are equal to 0 in steady state we can look at equation $\frac{\dot {g_K}}{g_K}= (1- \alpha) [g_A + n - g_K]$ And see that when $\frac{\dot {g_K}}{g_K}$ and we are in steady state this can also be written as: 
 
 $$g^*_A +n -g^*_K=0$$
 This can be re-written: 
@@ -104,9 +106,12 @@ $$g_A^*(1 - (\theta + \beta))= (\beta + \gamma)n$$
 And last we divide by $(1 - (\theta + \beta))$
 
 $$g_A^*= \frac{(\beta + \gamma)}{(1 - (\theta + \beta))}n$$
+- We can see the growth rate of technology in steady state is effected by $\beta$ (elasticity of capital on knowledge??????). 
+- $\gamma$ is the output elasticity of labour allocated in R&D which we can see has a positive effect on the growth rate.
+- $\theta$ is a parameter describing the elasticity of existing knowledge (A), we can see this also has a positive effect on $g^*_A$
 
 
-Explain:
+
 
 
 # Real business cycle theory
@@ -147,7 +152,7 @@ Allready now we can see that $w$ is no longer in the equation so it would have n
 
 
 
-Explain why!!!
+**Explain why!!!**
 
 
 
@@ -204,11 +209,21 @@ We can now multiply with $\frac{1}{-e^-\rho}$
 
 And we end up with the following equation:
 
-$$\frac{(1-l_2)}{(1-l_1)} =- \frac {w_2}{w_1}* \frac{1}{(1+r)-e^{- \rho}}$$
+$$\frac{(1-l_2)}{(1-l_1)} = \frac {w_2}{w_1}* \frac{1}{(1+r)e^{- \rho}}$$
+We can take the inverse on both sites:
 
-- How does the relative demand for leisure $\frac{(1-l_2)}{(1-l_1)}$ depend on the relative wage $\frac{w_1}{w_2}$. 
+$$\frac{(1-l_1)}{(1-l_2)} = \frac {w_1}{w_2}* \frac{1}{(1+r)e^{- \rho}}$$
 
-- How does the relative demand for leisure $\frac{(1-l_2)}{(1-l_1)}$ depend on the interest rate (r)?
+- How does the relative demand for leisure $\frac{(1-l_1)}{(1-l_2)}$ depend on the relative wage $\frac{w_1}{w_2}$. 
+
+We can see that if the relative wage $\frac{w_1}{w_2}$ increases which means the wage in periode 1 is now higher relative to the one in periode 2. $\frac{(1-l_1)}{(1-l_2)}$ would also have to increase meaning $l_1$ needs to fall and/or $l_2$ needs to increase. 
+
+
+- How does the relative demand for leisure $\frac{(1-l_1)}{(1-l_2)}$ depend on the interest rate (r)?
+
+We can see if $r$ increases we get that the right hand site will decrease, this means $\frac{(1-l_1)}{(1-l_2)}$ also should decrease. For this to happen $l_1$ needs to increase, and/or $l_2$ needs to increase. makes since as a higher interres rate means i can work more in periode 1 to have more savings that increases my income. 
+
+
 
 
 
