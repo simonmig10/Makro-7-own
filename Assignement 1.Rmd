@@ -26,7 +26,7 @@ Hvis g falder vil det led der trekker kapital akkumuleringen ned dermed needer d
 
 ### **2. How, if at all, does this affect the c = 0-curve?**
 
-Maybe tell something ffrom page 57
+Maybe tell something from page 57
 
 We get the used equation below from the Euler- equation $\frac{\dot c}{c}\frac{r(t)-\rho-\theta g}{\theta}$ where the marginal product of capital $r(t)$ is equal to $f'(k(t))$ so we can do the substitution.
 
@@ -84,7 +84,7 @@ $$\frac{\delta s}{\delta g} = \frac{(n+g)[f(k^*)-k^*f'(k^*)]\theta + f(k^*)k^*f'
 
 The conclution is that we can not say anything about if a change in g has a positve effect on the fraction of output tht is saved on the balanced growthpath
 
-### **7. For the case w£here the production function is Cobb-Douglas,** $f(x) =k^\alpha$**, rewrite your answer to part (f) in terms of** $\rho, n, g,\theta$ **and** $\alpha$**, (Hint:Use the fact that** $f'(k^*) = \rho + \theta g$**)**
+### **7. For the case where the production function is Cobb-Douglas,** $f(x) =k^\alpha$**, rewrite your answer to part (f) in terms of** $\rho, n, g,\theta$ **and** $\alpha$**, (Hint:Use the fact that** $f'(k^*) = \rho + \theta g$**)**
 
 We know when $f(k)= k^\alpha$, then $f'(k)=\alpha k^{\alpha - 1}$ and $f''(k)= \alpha(\alpha-1)k^{a-2}$.
 
@@ -107,6 +107,23 @@ $$\frac{\delta s}{\delta g}= - \alpha \frac {n \theta - \rho} {(\rho + \theta g)
 $$\frac{\delta s}{\delta g}= \alpha \frac {(\rho - n \theta)} {(\rho + \theta g)^2}$$
 
 ## Analyze the effect of a public procurement, including a thorough presentation of the dynamics in Figures 2.8 and 2.9
+
+### Effect of a permanent increase in government purchases
+
+
+```{r}
+knitr::include_graphics(rep("figure 2.8.png", 1))
+```
+
+
+
+
+### Effect of a temoary increase in government purchases
+
+```{r}
+knitr::include_graphics(rep("figure 2.9.png", 1))
+```
+
 
 # Opgave 2: Diamond OLG model
 
