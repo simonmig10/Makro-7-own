@@ -10,7 +10,32 @@ output:
 
 ## Explain crucial differences between the Solow model and the Ramsey, Cass and Koopman model. Does it affect the overall conclusions?
 
-Bla bla bla
+
+### Solow modellen 
+- Hovedpunktet hvor Solow modellen adskilder sig på er ved at antage at savings raten er eksogent bestemt. Dermed er fordelingen mellem savings og investment taget som givet. 
+
+- eftersom ændringen i kapital per effektiv arbejder er forskellen mellem 2 termer 
+1. $sf(k)$ actual investment per unit of effectie labor. 
+2. Breakeven investment needed to keep $k$ fixed $(n+g+ \delta)$.
+
+Dermed er det afgørende hvad $s$ sættes til. 
+
+Ændring i savings raten når økonomien er i steady state laves for at se hvad betydning savings raten har:
+(Kan også ses på grafer side 20)
+
+- $s$ stiger i periode $t_0$ hvor stødet laves og bliver. 
+- $\dot {k}$ stiger i periode $t_0$ men aftager til 0. 
+- $k$ stiger til $k^*$ rammes. 
+- $\frac {Y}{L}$ (output per arbejder) stiger med $g$ (growth rate of technology) Når $k$ er konstant. Hvis $k$ er stigende stiger $\frac {Y}{L}$ med mere end $g$.
+
+Den langsigtede effekt er regnet til at en ændring i savings-rate fra 20% til 22% vil hæve output per worker på lang sigt med omkring 5%. 
+
+### Ramsey-Cass-Koopman modellen 
+
+- Der er ingen depreciering i modellen $\dot {k}= Y(t) - \zeta (t)$ where $\zeta$ er forbrug. 
+- Nu skal husholdningerne vælge mellem opsparing og forbrug i hver periode. Vælger det der maksimere deres nytte. 
+
+- Fra slides (Endogeniseringen af opsparingsraten medførte ingen ændringer i forhold til konklusionen fra Solow). 
 
 ## Piketty (2014) argues that a fall in the growth rate of the economy is likely to an increase in the difference between the real interest rate and the growth rate. This problem asks you to investigate this issue in the context of the Ramsey-Cass-Koopmans model. Specially, consider a Ramsey-CassKoopmans economy that is on its balanced growth path, and suppose there is a permanent fall in g
 
@@ -108,11 +133,44 @@ $$\frac{\delta s}{\delta g}= \alpha \frac {(\rho - n \theta)} {(\rho + \theta g)
 
 ## Analyze the effect of a public procurement, including a thorough presentation of the dynamics in Figures 2.8 and 2.9
 
+Antag at staten køber output af raten $G(t)$ **per unit of effective labour per unit of time??** Det antages også at disse køb ikke påvirker husholdningernes nytte (Dermed bruges det staten køber ikke til noget der giver husholdningerne nytte) 
+Det antages heller ikke at påvirke fremtidig output --> det er forbrug ik investeringer. 
+Det offentlige forbrug finansieres af en lump-sum skat af samme størrelse som forbruget
+
+Den nye udvikling i kapital per efefktiv arbejder ser nu sådan ud:
+
+$$\dot {k}(t) = f(k(t)) - c(t) - G(t) - (n+g)k(t)$$ 
+
+Vi kan dermed se en højere værdi af $G(t)$ skubber kurven for $\dot{k}(t)=0$ ned. Jo mere der bliver købt af staten jo mindre kan der købes af husholdningerne Hvis $k$ skal holdes konstant --> Vi kan se på grafen af det er $c$ op ad y aksen. 
+
+Lump-sum skatten påvirker husholdningernes budget restriktion som nu bliver ligning 2.42 side 73.
+
+
+**Stød til G(t) figur 2.8**
+
+1. Først vil vi rykke kurven for $\dot {k}(t)=0$ lige så meget som stigningen er i G(t).  
+2. siden ændringen ik vil påvirke husholdningernes nytte og dermed ikke påvirke Euler equation vil kurven for $\dot {c}=0$ ik ændres
+
+3. Hvis ikke C ændres til den nye saddle path wil det ende med at kapital bliver negativ eller at husholdningerne akkumulere uendelig gæld. 
+
+4. Stigningen i $G(t)$ og $Taxes$ kommer dermed til at sænke husholdningernes lifetime wealth, og da det er permanente stigninger vil der ikke være nogen muligheder for husholdningerne til at maksimere deres nytte yderligere ved at ændre forbrug over tid. 
+
+
+Hvis vi kigger på det i Solow modellen vil forbrug jo være $(1-s)*Y$ dermed vil $c$ i dette tilfælde ikke falde med ligså meget som $G(t)$ --> Dermed er der crowding out investment og og kapital beholdningen begynder at falde. og den real interest rate will rise. 
+
+**Uforventet stød til G(t) figur 2.9**
+
+
+
+
+
+
+
 ### Effect of a permanent increase in government purchases
 
 
 ```{r}
-knitr::include_graphics(rep("figure 2.8.png", 1))
+#knitr::include_graphics(rep("figure 2.8.png", 1))
 ```
 
 
@@ -121,7 +179,7 @@ knitr::include_graphics(rep("figure 2.8.png", 1))
 ### Effect of a temoary increase in government purchases
 
 ```{r}
-knitr::include_graphics(rep("figure 2.9.png", 1))
+#knitr::include_graphics(rep("figure 2.9.png", 1))
 ```
 
 
