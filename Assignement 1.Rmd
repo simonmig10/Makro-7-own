@@ -158,12 +158,24 @@ Lump-sum skatten påvirker husholdningernes budget restriktion som nu bliver lig
 
 Hvis vi kigger på det i Solow modellen vil forbrug jo være $(1-s)*Y$ dermed vil $c$ i dette tilfælde ikke falde med ligså meget som $G(t)$ --> Dermed er der crowding out investment og og kapital beholdningen begynder at falde. og den real interest rate will rise. 
 
-**Uforventet stød til G(t) figur 2.9**
+**Uforventet stød til G(t) som er kortvarig figur 2.9**
+
+*Panel(A)*
+1. Først vil det samme fald i kurven for $\dot {k}(t)=0$ ske, vi kan dog se nu at husholdningerne ikke vil sænke $c$ med lig så meget som $G(t)$ stiger. Dette skyldes at de kender dagen hvor $G(t)$ vil gå tilbage til sin gamle værdi og kan dermed maksimere nytten ud fra det og vælge optimalt forbrug. 
+
+2. Da Husholdninerne i den periode også skal betale en højere skat for at finansiere den højere $G(t)$ bliver de nødt til at tage af deres opsparing --> dermed falder $k$.
+
+3. Når $G(t)$ falder til sit gamle niveau vil $c$ stadig ligge lidt under gamle niveau og dermed vil der bygges kapital op igen --> husholdningerne hæver så $C$ ind til vi rammer $k^*$
+
+*Panel(B)*
+1. Vi ved at $r(t)= f'(k)$, og vi ved at $f''(k) <0$ dermed aftagende --> derfor når $k$ falder må $r(t)$ begynde at stige.
+
+2. Dette vender efter $G(t)$ er faldet tilbage til gamle niveau og $k$ brgynder at stige igen. 
 
 
+*Panel (c)*
 
-
-
+1. Her kan vi se at jo kortere tid ændringen i $G(t)$ er, jo mindre vil $c$ falde. 
 
 
 ### Effect of a permanent increase in government purchases
