@@ -77,6 +77,10 @@ Find et ud tryk hvor vi skal finde diff af et udtry.
 
 er theta larger ligmed eller mindre end 1
 
+Efter faldet vil forbrugt vel tilpasse sig 
+
+Vi kan se at $g$ både er med i $\dot{k}$ og $\frac{\dot{c}}{c}$ vi skal finde hvor de to er ligmed 0, kan jeg sætte dem begge ligmed 0 og reducere og derefter differentiere mhs til $g$? Spørg Mikael. 
+
 ### **6. Find an expression for the impact of a marginal change in g on the fraction of output that is saved on the balanced growth path. Can one tell whether this expression is positive or negative?**
 
 We can start by defining the fraction of output that is saved on the balanced growth path called s $s=\frac {(f(k^*) - c^*)} {f(k^*)}$
