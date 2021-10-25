@@ -1,0 +1,27 @@
+---
+title: "Assignment 3"
+output: html_document
+---
+
+# Exercise 1
+
+# Exercise 2
+
+## a 
+
+
+## b
+
+Hvis virksomhederne bare kunne ændre pris som de vil ville de sætte $P^*= \mu + mc_t$
+
+We can start by setting up the aggregate price $P_t$ so we consider the average price in the Calvo price setting model. 
+
+(Det er skrevet med andre parameter navne i bogen)
+
+$$P_t= \theta P_{t-1} + (1- \theta)z_t $$
+Hvor $\theta$ er sandsynligheden for at en virksomhed ikke må skifte pris og $(1-\theta)$ er sandsynligheden for at virksomheden må skifte pris. --> dermed er $z_t$ den pris de vil sætte hvis de fik muligheden for at ændre den. 
+
+Hvis vi isolere $z_t$ i ovenstående ligning får vi 
+
+$$\frac{1}{1-\theta}(P_t - P_{t-1})$$
+
