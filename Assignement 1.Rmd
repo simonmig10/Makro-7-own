@@ -37,6 +37,18 @@ Den langsigtede effekt er regnet til at en ændring i savings-rate fra 20% til 2
 
 - Fra slides (Endogeniseringen af opsparingsraten medførte ingen ændringer i forhold til konklusionen fra Solow). 
 
+### will it affect overall conclusion 
+
+Yes! Det at savings raten er endogen og bestemmes ud fra husholdningernes optimerings problem gøør at vi ikke vil opnå golden rule levelof Capital 
+
+- Dette skyldes at husholdningerne fortrækker forbrug i dag frem for i morgen som bestemmes af $\rho$ Dermed vil de ikke spare lig så meget op som før --> og dermed vil $k^*$ ligge under golden rule level. 
+
+(læs side 66-57)
+
+
+
+
+
 ## Piketty (2014) argues that a fall in the growth rate of the economy is likely to an increase in the difference between the real interest rate and the growth rate. This problem asks you to investigate this issue in the context of the Ramsey-Cass-Koopmans model. Specially, consider a Ramsey-CassKoopmans economy that is on its balanced growth path, and suppose there is a permanent fall in g
 
 ### **1. How, if at all, does this affect the k = 0-curve?**
@@ -47,15 +59,15 @@ $$\dot k = f(k(t))- c(t)- (n+g)k(t)$$ We can set up the rule for when $\dot k =0
 
 Next we can also see that $f'(k)=n+g$ we can see that $f'(k)$ will decrease as g decreases. Because of the falling marginal product of capital this means that K should be increasing. this also means that K will be increasing.
 
-Hvis g falder vil det led der trekker kapital akkumuleringen ned dermed needer du ik investere lige so meget dermed may forbruget stige.
+Hvis g falder vil det led der trækker break-even investeringerne blive lavere $(n+g)k(t)$ Dermed skal der mindre savings til at holde k stabil og forbruget kan derfor stige (for en givent k som er fast på kurven jo). 
 
 ### **2. How, if at all, does this affect the c = 0-curve?**
 
 Maybe tell something from page 57
 
-We get the used equation below from the Euler- equation $\frac{\dot c}{c}\frac{r(t)-\rho-\theta g}{\theta}$ where the marginal product of capital $r(t)$ is equal to $f'(k(t))$ so we can do the substitution.
+We get the used equation below from the Euler- equation $\frac{\dot c}{c}=\frac{r(t)-\rho-\theta g}{\theta}$ where the marginal product of capital $r(t)$ is equal to $f'(k(t))$ so we can do the substitution.
 
-We start by looking at the function $\frac{\dot c}{c}\frac{f'(k(t))-\rho-\theta g}{\theta}$ where we need this expretion to be equal to 0 which also means the nummerator (teller) should be equal to zero so we can set up this $f'(k(t))=\rho+\theta g$ We can see that if g falls $f'(k(t))$ also needs to be falling, this again means K must be increasing. If we again look at the first function for each value of c K must be increased and the line goes to the right.
+We start by looking at the function $\frac{\dot c}{c}=\frac{f'(k(t))-\rho-\theta g}{\theta}$ where we need this expretion to be equal to 0 which also means the nummerator (teller) should be equal to zero so we can set up this $f'(k(t))=\rho+\theta g$ We can see that if g falls $f'(k(t))$ also needs to be falling, this again means K must be increasing. If we again look at the first function for each value of c K must be increased and the line goes to the right.
 
 ### **3. At the time of the change, does c rise, fall, or stay the same, or is it not possible to tell?**
 
