@@ -1,13 +1,68 @@
 ---
 title: "Assignment 3"
-output: html_document
+output:
+  pdf_document: default
+  bookdown::pdf_document2: default
 ---
 
 # Exercise 1
 
+**A Identify and discuss weaknesses related to the RBC-models.**
+
+- Before growth was a smooth procces now we will also explain medium and short term fluctuations in growth 
+- We need a model to explain fluctuations which alsom account for stylized facts --> fxx that consumption is more stable than investment. 
+
+Weaknesses: 
+
+- Antager at der er efterspørgsel til alt udbud. 
+- there are no frictions --> could be sticky wages or sticky prices. 
+- Therefor the only fluctuations comes from real shocks 
+- Monetary policy has no effect. 
+
+Critisism from last slide lection 4:
+
+- No role for involuntary unemployment; labor market is always in equilibrium 
+- No explicit role for the financial market (After what happend in 2008 thsi is important)
+- Monetary policy has no role and is inconsequantial
+- Recessionns are caused by shocks to A
+- Model enerates insufficient fluctuations in hours worked --> but not in this example i think as i talked to Hamid about. 
+
+**B How does the DSGE-model bypass these problems**
+
+Endogenous models:
+
+- First we looked at microfoundation: Micro foundations givet at vi har forkslellige vare og imperfect competition er ikke nok til at fortælle noget om unemployment eller out eller andre reale mål. 
+
+
+DSGE models
+- We need som barrier to price /wage asjustment -->  Vi antager nu at nogle firmaer har fixed prices og andre har flexible priser. --> folk der her flexibile     priser bidrager til inflation. 
+- Her får vi at der er en realøkonomisk effekt. 
+- Det giver dog kun en effekt på kort- medium tid.  
+
+- Under DSGE-modeller vises det at nominelle shocks har en realøkonomisk effekt. 
+- Dermed kan økonomien nu påvirkes af både Demand og supply. 
+
+**C Write out and analyse the three meain equations in the canoniacal new Keynesian model**
+
+The new Kaynsian IS curve:
+
+$$y_t= E_t[y_{t+1}] - \frac{1}{\theta}r_t +u_t^{IS}$$
+
+
+The new Keynesian phillips curve:
+
+$$\pi_t = \beta E_t [\pi_{t+1}] + \kappa y_t + u^{\pi}_t$$
+
+The forward looking interest-rate rule: 
+
+$$r_t= \phi_\pi E_t [\pi_{t+1}] + \phi_y E_t[y_{t+1}] + u^{MP}_t$$
+
+
 # Exercise 2
 
 ## a 
+
+
 
 
 ## b
@@ -24,4 +79,122 @@ Hvor $\theta$ er sandsynligheden for at en virksomhed ikke må skifte pris og $(
 Hvis vi isolere $z_t$ i ovenstående ligning får vi 
 
 $$\frac{1}{1-\theta}(P_t - P_{t-1})$$
+
+# Exercise 3
+
+Consider the empirical DSGE-model for the Danish Economy presented in Pedersen and Ravn 2014.
+
+**A Explain the effect of a shock to government consumption in the model**
+
+```{r}
+knitr::include_graphics(rep("impulse shock g.png", 1), dpi = 150)
+```
+
+Figuren viser Impulse response function af et stød til G på 1% af BNP
+
+1. Stød til G øger Demand, da der er price stickyness kan virksomhederne ikke blot hæve prisen --> men bliver nøødt til at producere mere 
+
+2. Da de skal producere mere med samme kapacitet som før stiger de marginale omkostninger????
+
+3. Dermed ikke optimalt forhold mellem virksomheders priser og marginale omkostninger --> dermed et stigende pris-pres på økonomien fra virksomhederne.
+
+4. Dermed stiger produktionen på kortsigt --> men inflation stiger som virksomhederne for mulighed for at hæve prisen. 
+
+5. Stigende inflation betyder crowding out gennem en lavere eksport og højere import. 
+
+6. Når virksomhederne nu skal optimere pris igen kigger de ik kun på MC men også på forvented fremtidig MC (Som de forventer falder når demand falder?) da de måske i fremtiden ikke er i stand til at ændre priser med det samme. 
+
+7. men som demand falder gennem de højere priser begynder modsatte effekt og virksomhederne sænker igen priser 
+
+8. Konklussion er at inflation møødes med fremtidig deflation **one-to one**
+
+
+**Antagelser der giver dette resultat**
+
+1. Forward looking Agents 
+
+2. Fast valutakurs er 100% troværdig
+
+3. Agenter kan derfor regne hvor meget priser skal falde efter inflation. 
+
+
+**B Discuss the three shocks performed in the paper - What are the main intuitions behind these shocks?**
+
+Er det de her 3 shocks der menes???
+
+1. Supply site shock
+
+2. Demand site shock 
+
+3. Mark-up shock
+
+**Explain the results of the three shocks**
+
+**Discuss the relevance of the results**
+
+
+
+
+# Ecercise 4
+
+
+Loss function: 
+
+$$L= (y_t-y_e)^2 + \beta (\pi_t - \pi^T)^2,   \beta>0$$ 
+
+
+**A** What is the interpretation of the parameter β ? What are the implications of β being bigger, equal or smaller than 1?
+
+
+**B** Plot the loss function in the y − π space (you can put y in the horizontal axis and π in the vertical, such that the graph is the same that we use when plotting the Philips curve) for the cases where β > 1, β = 1 and β < 1.
+
+
+
+Tror dette er forkert....
+```{r}
+# for beta=1
+L=10
+beta=1
+D= seq(from = -2, to = 2, by =0.01)
+X= sqrt(L-beta*D^2)
+pi= 2+D
+y= 2+X
+
+plot(pi,y, type = "l")
+
+# for beta <1
+
+L=10
+beta_1=0.5
+D= seq(from = -2, to = 2, by =0.01)
+X_1= sqrt(L-beta_1*D^2)
+pi_1= 2+D
+y_1= 2+X_1
+
+plot(pi_1,y_1, type = "l")
+
+
+# For beta >1
+
+L=10
+beta_2=2
+D= seq(from = -2, to = 2, by =0.01)
+X_2= sqrt(L-beta_2*D^2)
+pi_2= 2+D
+y_2= 2+X_2
+
+plot(pi_2,y_2, type = "l")
+
+
+```
+
+
+
+
+
+
+
+
+
+
 
