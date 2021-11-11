@@ -1,0 +1,373 @@
+---
+title: "Assignment 1"
+author: "Simon"
+date: "6/10/2021"
+output:
+  bookdown::pdf_document2: default
+---
+
+# Opgave 1:Ramsey-Cass-Koopman model
+
+## Explain crucial differences between the Solow model and the Ramsey, Cass and Koopman model. Does it affect the overall conclusions?
+
+
+### Solow modellen 
+- Hovedpunktet hvor Solow modellen adskilder sig på er ved at antage at savings raten er eksogent bestemt. Dermed er fordelingen mellem savings og investment taget som givet. 
+
+- eftersom ændringen i kapital per effektiv arbejder er forskellen mellem 2 termer 
+1. $sf(k)$ actual investment per unit of effectie labor. 
+2. Breakeven investment needed to keep $k$ fixed $(n+g+ \delta)$.
+
+Dermed er det afgørende hvad $s$ sættes til. 
+
+Ændring i savings raten når økonomien er i steady state laves for at se hvad betydning savings raten har:
+(Kan også ses på grafer side 20)
+
+- $s$ stiger i periode $t_0$ hvor stødet laves og bliver. 
+- $\dot {k}$ stiger i periode $t_0$ men aftager til 0. 
+- $k$ stiger til $k^*$ rammes. 
+- $\frac {Y}{L}$ (output per arbejder) stiger med $g$ (growth rate of technology) Når $k$ er konstant. Hvis $k$ er stigende stiger $\frac {Y}{L}$ med mere end $g$.
+
+Den langsigtede effekt er regnet til at en ændring i savings-rate fra 20% til 22% vil hæve output per worker på lang sigt med omkring 5%. 
+
+No micro foundation 
+
+### Ramsey-Cass-Koopman modellen 
+
+- Der er ingen depreciering i modellen $\dot {k}= Y(t) - \zeta (t)$ where $\zeta$ er forbrug. 
+- Nu skal husholdningerne vælge mellem opsparing og forbrug i hver periode. Vælger det der maksimere deres nytte. 
+
+- Fra slides (Endogeniseringen af opsparingsraten medførte ingen ændringer i forhold til konklusionen fra Solow). 
+
+micro foundation
+
+### Difference in results
+
+I Ramsey-cass-Koopman modellen er det ikke muligt at opnå en balanced growth path med et kapital apperat på over golden-rule level. Da husholdningerne i dette tilfælde vil vælge at forbruge mere i hver periode for at maksimere deres nytte. Grundet husholdningerne fortrækker forbrug i dag frem for i morgen vil $\rho$ værdien gøre at kapital niveau on balanced growth path ligger under golden-rule level. x   
+
+## Piketty (2014) argues that a fall in the growth rate of the economy is likely to an increase in the difference between the real interest rate and the growth rate. This problem asks you to investigate this issue in the context of the Ramsey-Cass-Koopmans model. Specially, consider a Ramsey-CassKoopmans economy that is on its balanced growth path, and suppose there is a permanent fall in g
+
+### **1. How, if at all, does this affect the k = 0-curve?**
+
+```{r}
+knitr::include_graphics(rep("k dot.png", 1), dpi = 250)
+```
+
+
+We need to look at the function for a change in k
+
+$$\dot k = f(k(t))- c(t)- (n+g)k(t)$$ We can set up the rule for when $\dot k =0$ which is $c(t)= f(k(t))-(n+g)k(t)$ we can see that if there is a fall in g we can see that the right hand site will increase, which also means that c(t) must increase.
+
+Next we can also see that $f'(k)=n+g$ we can see that $f'(k)$ will decrease as g decreases. Because of the falling marginal product of capital this means that K should be increasing. this also means that K will be increasing.
+
+Indsæt forklaring fra stationær
+
+Kan bare ikke se på grafen hvordan $k$ stiger for hvert niveau af $c$ 
+
+- Den sidste effekt med at k stiger for hvert niveau af c er kun for store værdier af k --> me for små værdier af k vil det være faldende? måske spørge Mikael. 
+
+### **2. How, if at all, does this affect the c = 0-curve?**
+
+```{r}
+knitr::include_graphics(rep("c dot.png", 1), dpi = 250)
+```
+
+Maybe tell something from page 57
+
+We get the used equation below from the Euler- equation $\frac{\dot c}{c}\frac{r(t)-\rho-\theta g}{\theta}$ where the marginal product of capital $r(t)$ is equal to $f'(k(t))$ so we can do the substitution.
+
+We start by looking at the function $\frac{\dot c}{c}\frac{f'(k(t))-\rho-\theta g}{\theta}$ where we need this expretion to be equal to 0 which also means the nummerator (teller) should be equal to zero so we can set up this $f'(k(t))=\rho+\theta g$ We can see that if g falls $f'(k(t))$ also needs to be falling, this again means K must be increasing. If we again look at the first function for each value of c K must be increased and the line goes to the right.
+
+Her er udviklingen i c fast derfor må den nye forskel fra break even investeringen gå over i mere investering og i kapital apperatet. 
+
+### **3. At the time of the change, does c rise, fall, or stay the same, or is it not possible to tell?**
+
+
+```{r}
+knitr::include_graphics(rep("udvikling i c.png", 1), dpi = 350)
+```
+
+Assume it is an unepected fall? hvis det er uforventet vil de ik ha haft mulighed for at tilpasse sig deres makimeringsproblem.
+
+Kan vi ik sige noget om da faldet i $\rho$ vil medføre $\dot{c} = 0$ kurven rykkes ud ad, og det samme gør $\dot{k}$ kurven. Dog er kapital apperatet historisk og ændres ikke med det samme stødet rammer derfor ryger forbrugt $c$ ned på den nye saddel path ud fra den nye balanced roeth path. ligsom side 68. Kan det ses at forbruget er der hvor denne saddel path krydser det gamle kapital apperat som ikke ændres med det samme. Dog kan det ikke siges om dette punkt ligger over eller under det gamle niveau for $c$
+
+
+### **4. At the time of the change, does r minus g rise, fall, or stay the same, or is it not possible to tell?**
+
+If we assume that the shock is unexpected then the amount of capital is historically build up and will not imidially change when the shock is made to g. Therefor there will be no changes in $r(t)$ because there will be no changes in k therefor no changes in $f(k)$ and last no change in $f'(k)$ and we know $f'(k)= r(t)$. Therfor the distance will be larger.
+
+### **5. In the long run, does r minus g rise, fall, or stay the same, or is it not possible to tell?**
+
+Skrive svar ind fra skrift 
+
+(a high value
+of $\theta$ indicates that the household prefers a relative smooth consumption prole while
+a small value of $\theta$ indicates that the household is not harmed signicantly by a more
+volatile consumption
+
+theta = hvor smooth consumption de gerne vil have 
+
+### **6. Find an expression for the impact of a marginal change in g on the fraction of output that is saved on the balanced growth path. Can one tell whether this expression is positive or negative?**
+
+We can start by defining the fraction of output that is saved on the balanced growth path called s $s=\frac {(f(k^*) - c^*)} {f(k^*)}$
+
+since k is constant on the balanced growth path we can write the function $\dot k = f(k(t))- c(t)- (n+g)k(t)$ as $f(k^*) - c^*= (n+g)k^*$
+
+We can now rewrite the fraction of output saved on the balanced growth path. $s= \frac {(n+g)k^*} {f(k^*)}$
+
+We can now differentiate both sides with respect to g. We use the rules for differentiating a fraction. We should also use the chainrule as g is in the function for f(k). (maybe lige skrive hvordan)
+
+$$\frac {\delta s} {\delta g} = \frac {f(k^*)[(n+g)(\frac{\delta k^*}{\delta g})+k^*] - (n+g)k^* f'(k^*)(\frac{\delta k^*}{\delta g})}{[f(k^*)]^2}$$ Vi ganger $f(k^*)$ ind i parentesen og setter derefter $(n+g)(\frac {\delta k^*}{\delta g})$ udenfor parentes (setter den bare on hver side af parentesen)
+
+$$\frac {\delta s} {\delta g} = \frac {(n+g)[f(k^*) -k^* f'(k^*)](\frac{\delta k^*} {\delta g}) + f(k^*)k^*} {[f(k^*)]^2}$$
+
+We know that $k^*$ is defined when $f'(k^*)= \rho + \theta g$ we can now differentiate both sites with respect to g, and we get $f''(k^*)(\frac{\delta k^*}{\delta g})= \theta$ Solving for $\frac{\delta k^*}{\delta g}$ we get.
+
+$$\frac{\delta k^*}{\delta g}= \frac{\theta}{f''(k^*)}$$
+
+We can now substitute this into the above equation:
+
+$$\frac {\delta s} {\delta g} = \frac {(n+g)[f(k^*) -k^* f'(k^*)](\frac{\theta} {f''(k^*)}) + f(k^*)k^*} {[f(k^*)]^2}$$ We then multiply by $f''(k^*)$ above and under the fraction (above: As the term is multiplied on the brackets it just disapears and is multiplied to the second term)
+
+$$\frac{\delta s}{\delta g} = \frac{(n+g)[f(k^*)-k^*f'(k^*)]\theta + f(k^*)k^*f''(k^*)}{[f(k^*)]^2 f''(k^*)}$$
+
+-   First term should be positive?
+
+-   as we know $f''(k^*)$ is negative the last term in the nummerator is negative.
+
+-   the denominator will be negative for the same reason.
+
+The conclution is that we can not say anything about if a change in g has a positve effect on the fraction of output tht is saved on the balanced growthpath
+
+### **7. For the case where the production function is Cobb-Douglas,** $f(x) =k^\alpha$**, rewrite your answer to part (f) in terms of** $\rho, n, g,\theta$ **and** $\alpha$**, (Hint:Use the fact that** $f'(k^*) = \rho + \theta g$**)**
+
+We know when $f(k)= k^\alpha$, then $f'(k)=\alpha k^{\alpha - 1}$ and $f''(k)= \alpha(\alpha-1)k^{a-2}$.
+
+if we substitute this into the answer from the question above:
+
+$$\frac{\delta s}{\delta g}= \frac{(n+g)[k^{*\alpha}-k^* \alpha k^{*\alpha - 1}]\theta + k^{*\alpha} k^* \alpha (\alpha - 1) k^{*\alpha - 2}}{k^{*\alpha} k^{*\alpha} \alpha(\alpha - 1)k^{*\alpha - 2}}$$
+
+We can now do some reduction:
+
+$$\frac{\delta s}{\delta g}= \frac{(n+g)k^{^*\alpha}(1-\alpha)\theta - k^{^*a} \alpha (1-\alpha)k^{^* \alpha -1}} {\frac{-(1-\alpha) k^{* \alpha} \alpha k^{* \alpha -1} \alpha k^{* \alpha -1}} {\alpha}}$$
+
+And when we use $f'(k^*) = \rho + \theta g$) we get that:
+
+$$\frac{\delta s}{\delta g}= - \alpha \frac {[(n+g)\theta - (\rho+ \theta g)]} {(\rho + \theta g)^2}$$
+
+Multipling $\theta$ into the brackets:
+
+$$\frac{\delta s}{\delta g}= - \alpha \frac {n \theta - \rho} {(\rho + \theta g)^2}$$ And we can make the expretion psoitive by:
+
+$$\frac{\delta s}{\delta g}= \alpha \frac {(\rho - n \theta)} {(\rho + \theta g)^2}$$
+
+Her kan vi se at det er forholdet mellem $\rho$ og $\theta n$. der afgøre om det er positivt eller negativt. 
+
+
+
+
+## Analyze the effect of a public procurement, including a thorough presentation of the dynamics in Figures 2.8 and 2.9
+
+Antag at staten køber output af raten $G(t)$ **per unit of effective labour per unit of time??** Det antages også at disse køb ikke påvirker husholdningernes nytte (Dermed bruges det staten køber ikke til noget der giver husholdningerne nytte) 
+Det antages heller ikke at påvirke fremtidig output --> det er forbrug ik investeringer. 
+Det offentlige forbrug finansieres af en lump-sum skat af samme størrelse som forbruget
+
+Den nye udvikling i kapital per efefktiv arbejder ser nu sådan ud:
+
+$$\dot {k}(t) = f(k(t)) - c(t) - G(t) - (n+g)k(t)$$ 
+
+Vi kan dermed se en højere værdi af $G(t)$ skubber kurven for $\dot{k}(t)=0$ ned. Jo mere der bliver købt af staten jo mindre kan der købes af husholdningerne Hvis $k$ skal holdes konstant --> Vi kan se på grafen af det er $c$ op ad y aksen. 
+
+Lump-sum skatten påvirker husholdningernes budget restriktion som nu bliver ligning 2.42 side 73.
+
+
+**Stød til G(t) figur 2.8**
+
+1. Først vil vi rykke kurven for $\dot {k}(t)=0$ lige så meget som stigningen er i G(t).  
+2. siden ændringen ik vil påvirke husholdningernes nytte og dermed ikke påvirke Euler equation vil kurven for $\dot {c}=0$ ik ændres
+
+3. Hvis ikke C ændres til den nye saddle path wil det ende med at kapital bliver negativ eller at husholdningerne akkumulere uendelig gæld. 
+
+4. Stigningen i $G(t)$ og $Taxes$ kommer dermed til at sænke husholdningernes lifetime wealth, og da det er permanente stigninger vil der ikke være nogen muligheder for husholdningerne til at maksimere deres nytte yderligere ved at ændre forbrug over tid. 
+
+
+Hvis vi kigger på det i Solow modellen vil forbrug jo være $(1-s)*Y$ dermed vil $c$ i dette tilfælde ikke falde med ligså meget som $G(t)$ --> Dermed er der crowding out investment og kapital beholdningen begynder at falde. og den real interest rate will rise. 
+
+**Uforventet stød til G(t) som er kortvarig figur 2.9**
+
+*Panel(A)*
+1. Først vil det samme fald i kurven for $\dot {k}(t)=0$ ske, vi kan dog se nu at husholdningerne ikke vil sænke $c$ med lig så meget som $G(t)$ stiger. Dette skyldes at de kender dagen hvor $G(t)$ vil gå tilbage til sin gamle værdi og kan dermed maksimere nytten ud fra det og vælge optimalt forbrug. 
+
+2. Da Husholdninerne i den periode også skal betale en højere skat for at finansiere den højere $G(t)$ bliver de nødt til at tage af deres opsparing --> dermed falder $k$.
+
+3. Når $G(t)$ falder til sit gamle niveau vil $c$ stadig ligge lidt under gamle niveau og dermed vil der bygges kapital op igen --> husholdningerne hæver så $C$ ind til vi rammer $k^*$
+
+*Panel(B)*
+1. Vi ved at $r(t)= f'(k)$, og vi ved at $f''(k) <0$ dermed aftagende --> derfor når $k$ falder må $r(t)$ begynde at stige.
+
+2. Dette vender efter $G(t)$ er faldet tilbage til gamle niveau og $k$ brgynder at stige igen. 
+
+
+*Panel (c)*
+
+1. Her kan vi se at jo kortere tid ændringen i $G(t)$ er, jo mindre vil $c$ falde. 
+
+
+### Effect of a permanent increase in government purchases
+
+
+```{r}
+#knitr::include_graphics(rep("figure 2.8.png", 1), dpi = 150)
+```
+
+
+
+
+### Effect of a temoary increase in government purchases
+
+```{r}
+#knitr::include_graphics(rep("figure 2.9.png", 1))
+```
+
+
+# Opgave 2: Diamond OLG model
+
+Consider the following overlapping generations framework. Welfare is equal to:
+
+```{=tex}
+\begin{equation}
+U_t = u(C_{1,t}) + \beta u(C_{2,t+1}) (\#eq:utily)
+\end{equation}
+```
+with $\beta = \frac {1}{1+\rho} \le 1$ the discount factor.
+
+Assume the utility function is logarithmic:
+
+```{=tex}
+\begin{equation}
+u(C_{j,t}) = ln(C_{j,t}) (\#eq:utily2)
+\end{equation}
+```
+
+
+We will assume that the government implements a pension scheme, more specifically, a pay-as-you-go social security scheme, where the government taxes each young individual by an amount T , and uses that amount to pay benefits to old individuals. Hence, the budget constraints is given by:
+
+
+```{=tex}
+\begin{equation}
+C_1 + S_t = w - T (\#eq:Con1)
+\end{equation}
+```
+
+
+Whereas period 2 consumption is given by:
+
+```{=tex}
+\begin{equation}
+C_{2, t+1} = S_t (1+r) + (1+n)T (\#eq:Con2)
+\end{equation}
+```
+
+Note that $n$ represents population growth. Take the wage w and interest rate $r$ as exogenous and solve the following:
+
+## 3. Set up the intertemporal maximization problem and derive the Euler equation
+
+**Step 1:**
+
+Isolate $S_t$ in equation \@ref(eq:Con2) and we end up with the following: 
+
+$$S_t= \frac{C_2 - (1+n)T}{(1+r)}$$
+We substitute this expression into \@ref(eq:Con1)
+
+$$C_1 + \frac{C_2 - (1+n)T}{(1+r)} + T= w$$
+We now have the budget constraint and can set up the Langrange equation, using the utility function \@ref(eq:utily) and the fact that the utility function is logarithmic: \@ref(eq:utility2).
+
+$$L= ln(C_1)+ \frac{1}{1+\rho} ln(C_2)+ \lambda[w-(c_1+ \frac{C_2 - (1+n)T}{(1+r)} + T)]$$
+We now find the derivative with respect to $C_1$ and $C_2$ 
+
+- For $C_1$:
+
+$$ \frac{1}{C_1} - \lambda = 0$$
+- For $C_2$:
+
+$$\frac{1}{1+\rho} * \frac{1}{C_2} - \frac{\lambda}{(1+r)}=0$$
+- We can now calculate the eulerequation: 
+
+First we know $\frac{1}{C_1}= \lambda$ which we can substitute into the other equation
+
+$$\frac{1}{(1+\rho)*C_2}= \frac{\frac{1}{C_1}}{(1+r)}$$
+We multiply by $(1+r)$ and $C_2$ on both sites.
+
+$$\frac{(1+r)}{(1+\rho)}= \frac{C_2}{C_1}$$
+
+Here we can see 
+
+
+## 4. Derive $S_t$ as a function of $r$, $w$ and $T$. How does an increase in $T$ affect savings (show mathematically)? Discuss the result.
+
+
+
+We start with the euler equation from before: 
+
+
+$$\frac{(1+r)}{(1+\rho)}= \frac{C_2}{C_1}$$
+
+We use the fact that $\beta = \frac{1}{1+\rho}$ and get that: 
+
+$$\frac{C_2}{C_1}= \beta (1+r)$$ 
+We can now substitute in \@ref(eq:Con2) and \@ref(eq:Con1) and we get: 
+
+$$\frac{(S_t (1+r) + (1+n)T)}{(-S_t- T + w)}= \beta (1+r)$$
+
+We can multiply $-S_t- T + w$ on both sites: 
+
+$$S_t (1+r) + (1+n)T= \beta (1+r)* (-S_t- T + w)$$
+
+We divide by both sites with $(1+r)$ and multiply $\beta$ onto $-S_t$ on the right site
+
+$$S_t + \frac{(1+n)T}{(1+r)}= \beta (w-T)-\beta*S_t$$
+We can now plus $\beta*S_t$ on both sites, and substitute it out: 
+
+We also minus $\frac{(1+n)T}{(1+r)}$ on both sites
+
+$$S_t(1+\beta)=\beta (w-T) - \frac{(1+n)T}{(1+r)}$$
+
+We can now divide by $(1+\beta)$
+
+
+$$S_t=\frac{\beta (w-T) - \frac{(1+n)T}{(1+r)}}{(1+\beta)}$$
+It says in the book that when we use logarithmic utility the savings rate should not effect the savings rate. Which in this case means that the savings rate should not be affected. 
+
+
+
+
+We can now differentiate this expression with respect to $T$.
+
+$$\frac{\delta S_t}{\delta T}= \frac{- \beta - \frac{(1+n)}{(1+r)}}{(1+\beta)}$$
+
+We can move out the monus sign:
+
+$$\frac{\delta S_t}{\delta T}= -(\frac{\beta + \frac{(1+n)}{(1+r)}}{(1+\beta)})$$
+
+We can see that a rise in T has a negative effect on the savings
+
+- This means that young people will lower there consumption in 1 period less than the amount of the lump-sump tax which will influence the savings in a negative way --> this will also lead to a lower capital stock. 
+
+We can see that different parameters affects how much an increase in Taxes will lower the savings. 
+
+- if $\beta$ increases the effect will be larger 
+- if $n$ increases the effect will be larger 
+- and last if $r$ increases the effect will be lower 
+
+
+
+
+
+
+
+
+
+
+
+
+
