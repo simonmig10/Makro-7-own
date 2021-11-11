@@ -176,8 +176,8 @@ plot(pi_1,y_1, type = "l")
 
 # For beta >1
 
-L=10
-beta_2=2
+L=2
+beta_2= 1
 D= seq(from = -2, to = 2, by =0.01)
 X_2= sqrt(L-beta_2*D^2)
 pi_2= 2+D
@@ -189,7 +189,23 @@ plot(pi_2,y_2, type = "l")
 ```
 
 
+**c)** Now assume that inflation is determined by a Philips curve which, for simplicity, takes lagged inflation as a proxy of expected inflation ($E[\pi_{t+1}] = \pi_{t−1}$). The Philips curve then takes the following form: $\pi_t = \pi_{t−1} + \alpha(y_t − y_e)$. Plot the Philips curve in the same graphs that you drew the Central Bank’s loss function.
 
+
+if we rewrite the equation to get output on the y axis and $\pi$ on the x-aksis we get
+
+$$y_t= \frac {\pi_t - \pi_{t-1} + \alpha y_e}{\alpha}$$
+```{r}
+pi_t= seq(0,4,1)
+pi_t_1= 1
+alpha= 1
+y_e=3
+
+y_t= (pi_t - pi_t_1 + alpha* y_e)/alpha
+
+
+plot(pi_2,y_2, type = "l"); lines(pi_t, y_t)
+```
 
 
 
