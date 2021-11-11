@@ -39,7 +39,7 @@ Den langsigtede effekt er regnet til at en ændring i savings-rate fra 20% til 2
 
 ### will it affect overall conclusion 
 
-Yes! Det at savings raten er endogen og bestemmes ud fra husholdningernes optimerings problem gøør at vi ikke vil opnå golden rule levelof Capital 
+Yes! Det at savings raten er endogen og bestemmes ud fra husholdningernes optimerings problem gøør at vi ikke vil opnå golden rule level of Capital 
 
 - Dette skyldes at husholdningerne fortrækker forbrug i dag frem for i morgen som bestemmes af $\rho$ Dermed vil de ikke spare lig så meget op som før --> og dermed vil $k^*$ ligge under golden rule level. 
 
