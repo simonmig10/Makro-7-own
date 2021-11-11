@@ -119,9 +119,8 @@ We can now see that for a fall in $g$ to get the expression $r-g$ to fall $\thet
 
 To make $r-g$ increase we need $\theta < 1$.
 
-(a high value
-of $\theta$ indicates that the household prefers a relative smooth consumption prole while
-a small value of $\theta$ indicates that the household is not harmed signicantly by a more
+(a high value of $\theta$ indicates that the household prefers a relative smooth consumption profile while
+a small value of $\theta$ indicates that the household is not harmed significantly by a more
 volatile consumption
 
 theta = hvor smooth consumption de gerne vil have 

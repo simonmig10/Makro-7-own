@@ -42,7 +42,7 @@ DSGE models
 - Under DSGE-modeller vises det at nominelle shocks har en realøkonomisk effekt. 
 - Dermed kan økonomien nu påvirkes af både Demand og supply. 
 
-**C Write out and analyse the three meain equations in the canoniacal new Keynesian model**
+**C Write out and analyse the three main equations in the canoniacal new Keynesian model**
 
 The new Kaynsian IS curve:
 
@@ -62,7 +62,7 @@ $$r_t= \phi_\pi E_t [\pi_{t+1}] + \phi_y E_t[y_{t+1}] + u^{MP}_t$$
 
 ## a 
 
-
+Spørg Sebastian!
 
 
 ## b
@@ -143,10 +143,10 @@ Loss function:
 $$L= (y_t-y_e)^2 + \beta (\pi_t - \pi^T)^2,   \beta>0$$ 
 
 
-**A** What is the interpretation of the parameter β ? What are the implications of β being bigger, equal or smaller than 1?
+**A** What is the interpretation of the parameter $\beta$ ? What are the implications of $\beta$ being bigger, equal or smaller than 1?
 
 
-**B** Plot the loss function in the y − π space (you can put y in the horizontal axis and π in the vertical, such that the graph is the same that we use when plotting the Philips curve) for the cases where β > 1, β = 1 and β < 1.
+**B** Plot the loss function in the $y- \pi$ space (you can put y in the horizontal axis and $\pi$ in the vertical, such that the graph is the same that we use when plotting the Philips curve) for the cases where $\beta> 1$ , $\beta = 1$  and $\beta < 1$.
 
 
 
