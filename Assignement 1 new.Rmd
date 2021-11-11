@@ -60,7 +60,7 @@ $$\dot k = f(k(t))- c(t)- (n+g)k(t)$$ We can set up the rule for when $\dot k =0
 
 Next we can also see that $f'(k)=n+g$ we can see that $f'(k)$ will decrease as g decreases. Because of the falling marginal product of capital this means that K should be increasing. this also means that K will be increasing.
 
-Indsæt forklaring fra stationær
+Hvis g falder vil det led der trækker break-even investeringerne blive lavere $(n+g)k(t)$ Dermed skal der mindre savings til at holde k stabil og forbruget kan derfor stige (for en givent k som er fast på kurven jo).
 
 Kan bare ikke se på grafen hvordan $k$ stiger for hvert niveau af $c$ 
 
@@ -78,7 +78,7 @@ We get the used equation below from the Euler- equation $\frac{\dot c}{c}\frac{r
 
 We start by looking at the function $\frac{\dot c}{c}\frac{f'(k(t))-\rho-\theta g}{\theta}$ where we need this expretion to be equal to 0 which also means the nummerator (teller) should be equal to zero so we can set up this $f'(k(t))=\rho+\theta g$ We can see that if g falls $f'(k(t))$ also needs to be falling, this again means K must be increasing. If we again look at the first function for each value of c K must be increased and the line goes to the right.
 
-Her er udviklingen i c fast derfor må den nye forskel fra break even investeringen gå over i mere investering og i kapital apperatet. 
+Her er udviklingen i $c$ fast da $\dot {c} = 0$ derfor når $g$ falder må det nye lavere niveau for break even investment når $c$ er fast og dermed beholder samme savings hvilket vil resultere i en stigning i kapital apperatet. 
 
 ### **3. At the time of the change, does c rise, fall, or stay the same, or is it not possible to tell?**
 
@@ -98,7 +98,26 @@ If we assume that the shock is unexpected then the amount of capital is historic
 
 ### **5. In the long run, does r minus g rise, fall, or stay the same, or is it not possible to tell?**
 
-Skrive svar ind fra skrift 
+When the economy is in steady state we know that $f'(k)=r$ and $\dot {c}=0$ 
+
+When setting $\frac{\dot c}{c}=\frac{f'(k(t))-\rho-\theta g}{\theta}=0$ we can set $f'(k(t))-\rho-\theta g=0$ 
+
+We can now substitute in $f'(k)=r$and isolate $r$
+
+$$r=\rho + \theta g$$
+To get the expression we want we minus $g$ on both sites
+
+$$r-g = \rho + \theta g-g$$
+We can set $g$ outside the brackets 
+
+$$r-g = \rho + g(\theta -1)$$
+
+To get the effect of a fall in $g$ we differentiate with respect to $g$
+
+$$\frac {\delta (r-g)}{\delta g}= (\theta -1)$$
+We can now see that for a fall in $g$ to get the expression $r-g$ to fall $\theta > 1$. 
+
+To make $r-g$ increase we need $\theta < 1$.
 
 (a high value
 of $\theta$ indicates that the household prefers a relative smooth consumption prole while
@@ -131,13 +150,16 @@ $$\frac {\delta s} {\delta g} = \frac {(n+g)[f(k^*) -k^* f'(k^*)](\frac{\theta} 
 
 $$\frac{\delta s}{\delta g} = \frac{(n+g)[f(k^*)-k^*f'(k^*)]\theta + f(k^*)k^*f''(k^*)}{[f(k^*)]^2 f''(k^*)}$$
 
--   First term should be positive?
+-   First term should be positive to see this we need to look at the expression $f(k^*)-k^*f'(k^*)$ where we need to convince ourself that $f(k^*) > k^*f'(k^*)$
+to conclude that this is true we know tha there is (aftagende marginal produkt) so the slope will be smaller and smaller, so the slope at a given spot multiplied by $k^*$ will be smaller than just the output $f(k^*)$.
+
+If the function had been just linear the two terms would be equal. 
 
 -   as we know $f''(k^*)$ is negative the last term in the nummerator is negative.
 
 -   the denominator will be negative for the same reason.
 
-The conclution is that we can not say anything about if a change in g has a positve effect on the fraction of output tht is saved on the balanced growthpath
+The conclution is that we can not say anything about if a change in $g$ has a positve effect on the fraction of output tht is saved on the balanced growthpath
 
 ### **7. For the case where the production function is Cobb-Douglas,** $f(x) =k^\alpha$**, rewrite your answer to part (f) in terms of** $\rho, n, g,\theta$ **and** $\alpha$**, (Hint:Use the fact that** $f'(k^*) = \rho + \theta g$**)**
 
