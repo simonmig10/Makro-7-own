@@ -62,12 +62,75 @@ $$r_t= \phi_\pi E_t [\pi_{t+1}] + \phi_y E_t[y_{t+1}] + u^{MP}_t$$
 
 # Exercise 2
 
-## a 
+## Solve the Lagragian shown on page 78 (the solution is presented later on page 78 - hint: begin with finding the FOC)
+
+First we can set up the langrange for period t and t+1: 
+
+$$L= (\frac{C_t^{1-\sigma}}{{1-\sigma}} - \chi \frac{N_t^{1+\eta}}{1+\eta}) + (\beta \frac{C_{t+1}^{1-\sigma}}{{1-\sigma}}- \chi \frac{N_{t+1}^{1+\eta}}{1+\eta}) - \lambda_t(-B_{t-1} + W_t N_t - M_{t-1} + P_t C_t + Q_tB_t+ M_t) - \lambda_{t+1} \beta E (-B_{t} + W_{t+1} N_{t+1} - M_t + P_{t+1} C_{t+1} + Q_{t+1}B_{t+1}+ M_{t+1})$$
+
+From this we get the first order conditions for $C_t$ and $C_{t+1}$ and $B_t$ forklar hvorfor det lige præcis er de 3?
+
+**FOC $C_t$**
+
+$$L'_{c_t}= (1- \sigma) \frac {C_t^{-\sigma}}{1-\sigma} -\lambda_tp_t$$
+We set it equal to 0 and reduce so we isolate $\lambda$
+
+$$C_t^{-\sigma}= \lambda_t p_t$$
+
+$$\frac {C_t^{-\sigma}}{P_t}=\lambda_t$$
+**FOC $C_{t+1}$**
+
+$$L'_{c_{t+1}}= \beta(1- \sigma) \frac {C_{t+1}^{-\sigma}}{1-\sigma} -\beta\lambda_tp_t$$
+**Men skal forventningerne så ikke også ganges på begge stedder????**
+
+We set it equal to 0 and reduce to isolate $\lambda_{t+1}$
+
+$$\beta C_{t+1}= \beta \lambda_{t+1} P_{t+1}$$
+
+$$\frac{C_{t+1}^{-\sigma}}{P_{t+1}}=\lambda_{t+1}$$
+**FOC for $B_t$**
+
+$$L'_{B_t}= -\lambda_tQ_t + \beta E[\lambda_{t+1}]$$
+
+We set it equal to 0 
+
+$$-\lambda_tQ_t + \beta E[\lambda_{t+1}]=0$$ 
+
+**Solving**
+
+We can now blug in $\lambda_{t+1}$ and $\lambda_t$
+
+$$-\frac {C_t^{-\sigma}}{P_t}*Q_t + \beta E_t[\frac{C_{t+1}^{-\sigma}}{P_{t+1}}]=0$$
+We can substitute $\frac{1}{r(t)}=Q_t$ and move the minus term on the right site
+
+$$\beta E_t[\frac{C_{t+1}^{-\sigma}}{P_{t+1}}]= \frac {C_t^{-\sigma}}{P_t}*\frac{1}{r(t)}$$
+We muliply by $r(t)$
+
+$$r\beta E_t[\frac{C_{t+1}^{-\sigma}}{P_{t+1}}]= \frac {C_t^{-\sigma}}{P_t}$$
+
+We can now multiply by $P_t$
 
 
+$$r\beta E_t[\frac{P_t}{P_{t+1}}*C_{t+1}^{-\sigma}]= C_t^{-\sigma}$$
 
+We know that $\frac{P_{t+1}}{P_t}= \pi_{t+1}$ therefor $\frac{P_t}{P_{t+1}}= \frac{1}{\pi_{1+t}}$
 
-## b
+$$r\beta E_t[\frac{C_{t+1}^{-\sigma}}{\pi_{t+1}}]=  C_t^{-\sigma}$$
+We can now take log on both sites
+
+$$log(r\beta E_t[\frac{C_{t+1}^{-\sigma}}{\pi_{t+1}}])= log( C_t^{-\sigma})$$
+The terms multiplied with each other is now plussed and divisions minus
+
+$$log(r_t)+ log(\beta) + log(E_t[C^{-\sigma}_{t+1}]) - log(E_t[\pi_{t+1}]= log( C_t^{-\sigma})$$
+We can now move down the exponent and we show that the variable is loged by making $\hat$ notice that $\beta$ is a parameter and will fall away as the log is 0
+
+$$\hat{r_t} -\sigma (E_t[\hat{C_{t+1}]}) - (E_t[\hat{\pi_{t+1}}]= -\sigma \hat{C_t}$$
+We can now multiply with $-\frac{1}{\sigma}$ 
+$$E_t[\hat{C_{t+1}]} -\frac{1}{\sigma}(\hat{r_t}- E_t[\hat{\pi_{t+1}}])= \hat{C_t}$$
+
+Betydning?
+
+## In this model a Calvo price setting is used. Explain the intuition behind this method. How does it affect the price settings of the firms?
 
 Hvis virksomhederne bare kunne ændre pris som de vil ville de sætte $P^*= \mu + mc_t$
 
@@ -82,11 +145,14 @@ Hvis vi isolere $z_t$ i ovenstående ligning får vi
 
 $$\frac{1}{1-\theta}(P_t - P_{t-1})$$
 
+## How does the choice of θ affect the New Keynesian Phillips curve?
+
+
 # Exercise 3
 
 Consider the empirical DSGE-model for the Danish Economy presented in Pedersen and Ravn 2014.
 
-**A Explain the effect of a shock to government consumption in the model**
+## A Explain the effect of a shock to government consumption in the model
 
 ```{r}
 knitr::include_graphics(rep("impulse shock g.png", 1), dpi = 150)
@@ -120,7 +186,7 @@ Figuren viser Impulse response function af et stød til G på 1% af BNP
 3. Agenter kan derfor regne hvor meget priser skal falde efter inflation. 
 
 
-**B Discuss the three shocks performed in the paper - What are the main intuitions behind these shocks?**
+## B Discuss the three shocks performed in the paper - What are the main intuitions behind these shocks?
 
 Assumptions made before?: Så de antager ikke dette længere?
 
@@ -150,7 +216,7 @@ Målet er nu at bruge finanspolitik til at lukke TaylorRateGap i økonomien. -->
 
 $i_t - i^T_t$ TaylorRateGap
 
-**1. shock: Public consumption only: 1. Quarter 2006- 3. Quarter 2008** 
+### 1. shock: Public consumption only: 1. Quarter 2006- 3. Quarter 2008
 
 1. Nu bestemmes offentligt forbrug ($G_t$) sådan at Taylor interest rate er ved steady state på 4% over mellem lang sigt. Denne sequence af "stød" til $G_t$ der for Taylor renten på dette niveau indsættes i perioden beskrevet 1. quarter 2006 - 3. quarter 2008. 
 
@@ -194,7 +260,7 @@ Her nævnes at faldet der er i outputgap i perioden 2009-1010 er større end det
 We save more doing the booms and can therefor spend more doing the busts --> og stadig holde den samme debt ratio to GDP. 
 
 
-## 2. shock: Public consumption only: 1. Quarter 2006- 4. Quarter 2012 
+### 2. shock: Public consumption only: 1. Quarter 2006- 4. Quarter 2012 
 
 * stadig ud fra at taylor rule bringes til steady state på 4% på mellem sigt. 
 * Dept-to GDP ratio in 2012.Q4 = dept-to-GDP ratio in 2006Q1
@@ -221,7 +287,7 @@ We save more doing the booms and can therefor spend more doing the busts --> og 
 *public debt*
 
 
-**3. Tax on labour income, consuption and capital, and public consumption: 1. Quarter 2006- 4. Quarter 2012** 
+### 3. Tax on labour income, consuption and capital, and public consumption: 1. Quarter 2006- 4. Quarter 2012
 
 * Stadig Taylor interest rate med steady state på 4% på mellem sigt. 
 * Dept-to GDP ratio in 2012.Q4 = dept-to-GDP ratio in 2006Q1
@@ -246,14 +312,13 @@ Loss function:
 $$L= (y_t-y_e)^2 + \beta (\pi_t - \pi^T)^2,   \beta>0$$ 
 
 
-**A** What is the interpretation of the parameter $\beta$ ? What are the implications of $\beta$ being bigger, equal or smaller than 1?
+## What is the interpretation of the parameter $\beta$ ? What are the implications of $\beta$ being bigger, equal or smaller than 1?
 
 
-**B** Plot the loss function in the $y- \pi$ space (you can put y in the horizontal axis and $\pi$ in the vertical, such that the graph is the same that we use when plotting the Philips curve) for the cases where $\beta> 1$ , $\beta = 1$  and $\beta < 1$.
+## Plot the loss function in the $y- \pi$ space (you can put y in the horizontal axis and $\pi$ in the vertical, such that the graph is the same that we use when plotting the Philips curve) for the cases where $\beta> 1$ , $\beta = 1$  and $\beta < 1$.
 
 
 
-Tror dette er forkert....
 ```{r}
 # for beta=1
 L=10
@@ -292,7 +357,7 @@ plot(pi_2,y_2, type = "l")
 ```
 
 
-**c)** Now assume that inflation is determined by a Philips curve which, for simplicity, takes lagged inflation as a proxy of expected inflation ($E[\pi_{t+1}] = \pi_{t−1}$). The Philips curve then takes the following form: $\pi_t = \pi_{t−1} + \alpha(y_t − y_e)$. Plot the Philips curve in the same graphs that you drew the Central Bank’s loss function.
+## Now assume that inflation is determined by a Philips curve which, for simplicity, takes lagged inflation as a proxy of expected inflation ($E[\pi_{t+1}] = \pi_{t−1}$). The Philips curve then takes the following form: $\pi_t = \pi_{t−1} + \alpha(y_t − y_e)$. Plot the Philips curve in the same graphs that you drew the Central Bank’s loss function.
 
 
 if we rewrite the equation to get output on the y axis and $\pi$ on the x-aksis we get
@@ -311,9 +376,13 @@ plot(pi_2,y_2, type = "l"); lines(pi_t, y_t)
 ```
 
 
+## The loss function tells us that the central bank aims at making inflation converge to its target. The Philips curve describes how inflation is determined over time. As such, it can be considered as a constraint for the central bank (since it must minimize its inflation subject to the way in which inflation is determined in the economy). Given a specific rate of inflation in period t (i.e., a given Philips curve) define what is the optimal point in the loss function where the central bank would want to situate.
 
 
 
+## Derive graphically the monetary policy curve, which is given by the combination of all the optimal points for the central bank, each of them given by the different possible Philips curves. For simplicity, just draw two Philips curves and derive the monetary policy rule as the line joining the optimal points that result from those two Philips curves.
 
+
+##  Now we will solve analytically the same derivation that we did graphically in the previous points. In order to do that, you have to minimize the loss function of the central bank subject to the constraint given by the Philips curve. You should find a first order condition that is consistent with the concept of the divine coincidence, i.e., the first order condition has to describe a negative relationship between the deviations of output and inflation with respect to their long run levels.
 
 

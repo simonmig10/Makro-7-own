@@ -4,9 +4,18 @@ author: "Simon"
 date: "7/10/2021"
 output: 
   bookdown::pdf_document2: default
+editor_options: 
+  markdown: 
+    wrap: 72
 ---
 
 # Endogenous growth theory:
+
+## Short about the theory:
+
+Vi tilføjer nu en R&D sektor
+
+## opgaver
 
 Assume production function of final goods sector is given by:
 
@@ -15,8 +24,8 @@ Assume production function of final goods sector is given by:
 Y(t) = [(1-\alpha_K) K(t)\alpha][A(t)(1-\alpha_L)L(t)]^{1-\alpha} (\#eq:prod_f)
 \end{equation}
 ```
-
-where $1- \alpha_L$ and $1- \alpha_K$ is the proportion of labour and capital allocated for final production.
+where $1- \alpha_L$ and $1- \alpha_K$ is the proportion of labour and
+capital allocated for final production.
 
 **Capital stock** is given by:
 
@@ -25,7 +34,6 @@ where $1- \alpha_L$ and $1- \alpha_K$ is the proportion of labour and capital al
 \dot K(t) = sY(t) (\#eq:K_f)
 \end{equation}
 ```
-
 **Production function** of R&D sector is given by:
 
 ```{=tex}
@@ -33,100 +41,174 @@ where $1- \alpha_L$ and $1- \alpha_K$ is the proportion of labour and capital al
 \dot A(t) = B[\alpha_K K(t)]^\beta [\alpha_L L(t)]^\gamma A(t)^\theta (\#eq:A_f)
 \end{equation}
 ```
-
-
-
 **Population growth** is exogenous:
 
 $$\dot L(t) = nL(t)$$
 
 ## Derive an expression for the growth rate of capital gK(t) and growth rate of technology gA(t)
 
-**Growth rate of Capital**
+### **Growth rate of Capital**
 
 We start by substituteing \@ref(eq:prod_f) into equation \@ref(eq:K_f):
 
 $$\dot K(t) = s(1-\alpha)^\alpha (1- \alpha _L )^{1-\alpha} K(t)^\alpha A(t)^{1- \alpha} L_(t)^{1-\alpha}$$
-we can write $c_K=  s(1-\alpha)^\alpha (1- \alpha _L )^{1-\alpha}$
+we can write $c_K= s(1-\alpha)^\alpha (1- \alpha _L )^{1-\alpha}$
 
-So we get: 
+So we get:
 
-$$\dot K(t) = C_K K(t)^\alpha A(t)^{1- \alpha} L(t)^{1-\alpha}$$
-We divide the expresion by $K(t)$ so we can write $\alpha - 1$ in the exponent. 
+$$\dot K(t) = C_K K(t)^\alpha A(t)^{1- \alpha} L(t)^{1-\alpha}$$ We
+divide the expresion by $K(t)$ so we can write $\alpha - 1$ in the
+exponent.
 
 $$\frac {\dot K(t)}{K(t)} = C_K K(t)^{\alpha- 1} A(t)^{1- \alpha} L(t)^{1-\alpha}$$
-We can now chance $K(t)^{\alpha - 1}$ changing the sign of the exponent so $\frac{1}{K(t)^{1 - \alpha}}$ We can then set $1- \alpha$ out as a common exponent. 
 
+$$g_K (t) = C_K K(t)^{\alpha- 1} A(t)^{1- \alpha} L(t)^{1-\alpha}$$
 
-$$\frac {\dot K(t)}{K(t)} = C_K [\frac{A(t) L(t)}{K(t)}]^{1-\alpha}$$
+We can now chance $K(t)^{\alpha - 1}$ changing the sign of the exponent
+so $\frac{1}{K(t)^{1 - \alpha}}$ We can then set $1- \alpha$ out as a
+common exponent.
 
+$$g_K(t) = C_K [\frac{A(t) L(t)}{K(t)}]^{1-\alpha}$$
 
-**Growth rate of technology**
+### **Growth rate of technology**
 
-We divide equation \@ref(eq:A_f) by $A(t)$: 
-
+We divide equation \@ref(eq:A_f) by $A(t)$:
 
 $$\frac{\dot A(t)}{A(t)} = B[\alpha_K K(t)]^\beta [\alpha_L L(t)]^\gamma A(t)^{\theta-1}$$
-For simplicity we can write the constant $B\alpha^\beta _K \alpha^\gamma _L$ as equal to $C_\alpha$.
-
+For simplicity we can write the constant
+$B\alpha^\beta _K \alpha^\gamma _L$ as equal to $C_\alpha$.
 
 $$\frac{\dot A(t)}{A(t)} = C_\alpha K(t)^\beta L(t)^\gamma A(t)^{\theta-1}$$
 
-## Spg 2
+## Using the fact that $gA(t)$ is constant overtime (i.e., $\frac {\delta g_{A(t)}}{\delta t}$), derive an expression for the growth rate of technology $g^*_{(A)}$ along a balanced growth path (steady state), for the case when $\theta + \beta < 1$? Intuitively, explain the equation
 
-I og med vi ved at det er den case vi har må G_a^* være stejlere end G_k^* --> se den case. 
+1.  **step is to analyse how the growth rate is acting over time**
 
-Vi kan vise hvordan vi når frem til de to gange vi tagr log og differentiere med tid. 
+We start with the expressions from the previous question
+$g_A(t)= C_\alpha K(t)^\beta L(t)^\gamma A(t)^{\theta-1}$ and
+$g_K(t)= C_K [\frac{A(t) L(t)}{K(t)}]^{1-\alpha}$
 
-We start with the expression from the previous question $g_A(t)= C_\alpha K(t)^\beta L(t)^\gamma A(t)^{\theta-1}$
+We now take the log and differentiate by time for both :
 
-We now take the log and differentiate by time: 
+First for $g_A(t)$:
+
+We start by taking logs on both sites
+
+$log(g_A(t))= log(C_\alpha K(t)^\beta L(t)^\gamma A(t)^{\theta-1})$
+
+We can now bring down the exponents for each term in the log, and all
+the terms being multiplied will be added together instead
+
+$log(g_A(t))= log(C_\alpha)+ \beta log(K(t))+ \gamma log(L(t)) + (\theta - 1) logA(t)$
+
+We can now differentiate with respect to time and we end with :
 
 $$\frac{\dot g_A(t)}{g_A(t)}= \beta g_K(t) + \gamma n + (\theta - 1) g_A(t)$$
-We can set this equation equal to 0 as we know $\frac{\dot g_A(t)}{g_A(t)}=0$ in steady state.
+The same can now be done for
+$g_K(t)= C_K [\frac{A(t) L(t)}{K(t)}]^{1-\alpha}$
+
+We take log on both sites:
+
+$$
+log(g_K (t) = log(C_K) + log[\frac{A(t) L(t)}{K(t)}]^{1-\alpha}
+$$
+
+When we take $log[\frac{A(t) L(t)}{K(t)}]^{1-\alpha}$ we can add and
+subtract instead of multiplying and dividing. and we take down the
+exponent:
+
+$$
+log(g_K (t) = log(C_K) + (1-\alpha)[log(A(t)+ Log(L(t)) - log(K(t)]
+$$
+
+Again we can differentiate with respect to time:
+
+$$
+\frac{\dot {g_K}}{g_K}= (1- \alpha) [g_A + n - g_K]
+$$
+
+2.  **We can now set them equal to 0**
+
+We can set this equation equal to 0 as we know
+$\frac{\dot g_A(t)}{g_A(t)}=0$ in steady state.
 
 $$\beta g_K^*(t) + \gamma n + (\theta - 1) g_A^*(t)=0$$
 
-As we know both $g_K(t)$ and $g_A(t)$ are equal to 0 in steady state we can look at equation $\frac{\dot {g_K}}{g_K}= (1- \alpha) [g_A + n - g_K]$ And see that when $\frac{\dot {g_K}}{g_K}$ and we are in steady state this can also be written as: 
+As we know both $g_K(t)$ and $g_A(t)$ are equal to 0 in steady state we
+can look at equation
+$\frac{\dot {g_K}}{g_K}= (1- \alpha) [g_A + n - g_K]$ And see that when
+$\frac{\dot {g_K}}{g_K}$ and we are in steady state this can also be
+written as:
 
-$$g^*_A +n -g^*_K=0$$
-This can be re-written: 
+$$g^*_A +n -g^*_K=0$$ This can be re-written:
 
+$$g^*_A +n =g^*_K$$ We can now substitute this into the equation:
 
-$$g^*_A +n =g^*_K$$
-We can now substitute this into the equation: 
+$$\beta (g^*_A +n)  + \gamma n + (\theta - 1) g^*_A=0$$ We want to move
+all terms not including $g_A^*$ to the right site.
 
-$$\beta (g^*_A +n)  + \gamma n + (\theta - 1) g^*_A=0$$
-We want to move all terms not including $g_A^*$ to the right site.
+$$\beta g^*_A+ (1-\theta)g^*_A= -(\beta + \gamma)n$$ We move $g_A^*$ out
+as a common factor.
 
-$$\beta g^*_A+ (1-\theta)g^*_A= -(\beta + \gamma)n$$
-We move $g_A^*$ out as a common factor.
+$$g_A^*(\beta + (\theta - 1))= -(\beta + \gamma)n$$ we change the sign
+on both sites.
 
-$$g_A^*(\beta + (\theta - 1))= -(\beta + \gamma)n$$
-we change the sign on both sites. 
+$$g_A^*(1 - (\theta + \beta))= (\beta + \gamma)n$$ And last we divide by
+$(1 - (\theta + \beta))$
 
-$$g_A^*(1 - (\theta + \beta))= (\beta + \gamma)n$$
-And last we divide by $(1 - (\theta + \beta))$
+$$g_A^*= \frac{(\beta + \gamma)}{(1 - (\theta + \beta))}n$$ - We can see
+the growth rate of technology in steady state is effected by $\beta$
+(elasticity of capital on knowledge??????). - $\gamma$ is the output
+elasticity of labour allocated in R&D which we can see has a positive
+effect on the growth rate. - $\theta$ is a parameter describing the
+elasticity of existing knowledge (A), we can see this also has a
+positive effect on $g^*_A$
 
-$$g_A^*= \frac{(\beta + \gamma)}{(1 - (\theta + \beta))}n$$
-- We can see the growth rate of technology in steady state is effected by $\beta$ (elasticity of capital on knowledge??????). 
-- $\gamma$ is the output elasticity of labour allocated in R&D which we can see has a positive effect on the growth rate.
-- $\theta$ is a parameter describing the elasticity of existing knowledge (A), we can see this also has a positive effect on $g^*_A$
+Beta er elasticiteten på output når der allokeres 1 mere enhed af
+kapital i R&D --\> så hvor mget mere output stiger.
 
-
-Beta er elasticiteten på output når der allokeres 1 mere enhed af kapital i R&D --> så hvor mget mere output stiger. 
-
-Vi kan se at i det case hvis der ingen population growth er vil der ingen vækst rate være. 
+Vi kan se at i det case hvis der ingen population growth er vil der
+ingen vækst rate være.
 
 Ellers beskriv fra figur på side 112
+
+Vi ved at hældningen på vores $\dot{g_A}=0$ er $(1-\theta)/\beta$
+hvilket kommer af at:
+
+$$\beta g_K^*(t) + \gamma n + (\theta - 1) g_A^*(t)=0$$
+
+hvilket kan skrive som
+
+$$\beta g_K^*(t)= - \gamma n + (1- \theta) g_A^*(t)$$
+
+Divider med $\beta$
+
+$$g_K^*(t)= - \frac{\gamma n}{\beta} + \frac{(1- \theta)} {\beta} g_A^*(t)$$
+
+Da denne case er med $\beta+\theta < 1$ ved vi at
+$\frac{(1- \theta)} {\beta} > 1$
+
+Mens vi ved at hældningen på $\dot {g_K}=0$ linjen ved at hældningen er
+1.
+
+Eftersom at intercept er lavere for $\dot{g_A}=0$ ved vi at de vil mødes
+på et tidspunkt --\> Dette punkt indikere at udviklingen i begge vækst
+rater er ligmed 0. Dermed en fast growth rate for K og A.
+
+Vi kan se i ligevægten har $\alpha_L$, $\alpha_K$ og $s$ ingen effekt på
+den langsigtede vækstrate.
+
+Disse modeller kaldes også *Semi-endogenous growth models* Dette skyldes
+at den lang sigtede vækstrate er endogen i modellen --\> men afhænger
+kun af growth in population og parametre. --\> dermed er growth only
+somwhat endogenous.
 
 # Real business cycle theory
 
 Assume the following utility function:
 
-
-$$u_t= ln[c_t] + \frac{b(1-l_t)^{1-\gamma}}{1-\gamma}$$
-where, $c_t$ is consumption, $b > 0$, and $\gamma > 0$
+$$u_t= ln[c_t] + \frac{b(1-l_t)^{1-\gamma}}{1-\gamma}$$ where, $c_t$ is
+consumption, $b > 0$, and $\gamma > 0$
 
 Income of the individual is equal to $w_tl_t$
 
@@ -140,112 +222,125 @@ $$C=wl$$
 
 **How, if at all, does labour supply depend on wage?**
 
-We can now set up the langrange 
+We can now set up the langrange
 
 $$L= ln[C_t]+ \frac{b(1-l_t)^{1-\gamma}}{1-\gamma} + \lambda (wl-C_t)$$
 We now differntiate with respect to $C_t$ and $l_t$
 
-We use the constant -relative-risk -aversion instantanius utility function --> Står side 52
+We use the constant -relative-risk -aversion instantanius utility
+function --\> Står side 52
 
 $$\frac {\delta L}{\delta C_t}= \frac{1}{C_t} - \lambda =0$$
 $$\frac {\delta L}{\delta l_t}= -b(1-l_t)^{-\gamma}+ w\lambda=0$$
 
-The first equation $\frac{1}{C_t} - \lambda$ we can re-write using the budget constraint $C=wl$ or $\frac{1}{C_t} = \frac{1}{wl}$ we can therfore write:
+The first equation $\frac{1}{C_t} - \lambda$ we can re-write using the
+budget constraint $C=wl$ or $\frac{1}{C_t} = \frac{1}{wl}$ we can
+therfore write:
 
-$$\frac{1}{wl}=\lambda$$
-We can now substitute thes into the second equation $-b(1-l_t)^{-\gamma}+ w\lambda=0$: 
+$$\frac{1}{wl}=\lambda$$ We can now substitute thes into the second
+equation $-b(1-l_t)^{-\gamma}+ w\lambda=0$:
 
-$$-b(1-l_t)^{-\gamma}= \frac{1}{l_t}$$
-Allready now we can see that $w$ is no longer in the equation so it would have no effect on labour supply. 
+$$-b(1-l_t)^{-\gamma}= \frac{1}{l_t}$$ Allready now we can see that $w$
+is no longer in the equation so it would have no effect on labour
+supply.
 
-indkomst og substitutions effekten vil gå med hinanden ved en stigning i indkomst --> grundet kun 1 periode. --> noget med at når man har den løn man skal bruge til at dække sit forbrug --> vil man være ligelad med at den stiger da man bare skal have nok til at dække sit forbrug i den periode. 
+indkomst og substitutions effekten vil gå med hinanden ved en stigning i
+indkomst --\> grundet kun 1 periode. --\> noget med at når man har den
+løn man skal bruge til at dække sit forbrug --\> vil man være ligelad
+med at den stiger da man bare skal have nok til at dække sit forbrug i
+den periode.
 
-B er vægten man tillægger fritid. 
+B er vægten man tillægger fritid.
 
 $\gamma$
 
-
-
-## Re-consider the above problem for two periods: 
+## Re-consider the above problem for two periods:
 
 $$u= ln[C_1] + \frac{b(1-l_1)^{1-\gamma}}{1-\gamma} + e^{- \rho} [ln[C_2] + \frac{b(1-l_2)^{1-\gamma}}{1-\gamma}]$$
-where 
+where
 
-- Periode 1 consumption $C_1 = w_1l_1$
-- Periode 2 consumption $C_2 = w_2l_2 + s_1(1+r)$ where $s_1= w_1l_1 - C_1$. 
+-   Periode 1 consumption $C_1 = w_1l_1$
+-   Periode 2 consumption $C_2 = w_2l_2 + s_1(1+r)$ where
+    $s_1= w_1l_1 - C_1$.
 
 ## Define the budget constraint and give intuitive answers to the following questions after solving the problem:
 
-lige kig på den her igen --> forkert
+lige kig på den her igen --\> forkert
 
-To get the budget constraint we first re-write $C_2$: 
+To get the budget constraint we first re-write $C_2$:
 
-$$C_2 = w_2l_2 +  (w_1l_1 - C_1)(1+r)$$
-We divide by $(1+r)$ and isolate the consumption for periode 1 and 2 on the left site. 
+$$C_2 = w_2l_2 +  (w_1l_1 - C_1)(1+r)$$ We divide by $(1+r)$ and isolate
+the consumption for periode 1 and 2 on the left site.
 
 $$C_1+ \frac{C_2}{(1+r)} = w_1 l_1 + w_2 l_2* \frac{1}{(1+r)}$$
 
-We now have the budget constraint, and we can set up the langrange equation. 
+We now have the budget constraint, and we can set up the langrange
+equation.
 
 $$L= ln[C_1] + \frac{b(1-l_1)^{1-\gamma}}{1-\gamma} + e^{- \rho} [ln[C_2] + \frac{b(1-l_2)^{1-\gamma}}{1-\gamma}] + \lambda [w_1l_1 + w_2l_2 * \frac{1}{(1+r)} - C_1 - \frac{C_2}{(1+r)}]$$
 Now i differentiate with respcect to $l_1$ and $l_2$:
 
-- For $l_1$
+-   For $l_1$
 
 $$-b(1-l_1)^{-\gamma} +w_1 \lambda= 0$$
 
-- For $l_2$
+-   For $l_2$
 
-$$-e^{- \rho}b(1-l_2)^{- \gamma} + \frac {w_2 \lambda} {(1+r)}=0$$
-We isolate lambda in the equation for $l_1$ and then substitute into the equation for $l_2$
-
+$$-e^{- \rho}b(1-l_2)^{- \gamma} + \frac {w_2 \lambda} {(1+r)}=0$$ We
+isolate lambda in the equation for $l_1$ and then substitute into the
+equation for $l_2$
 
 $$-e^{- \rho}b(1-l_2)^{- \gamma}+ \frac {w_2 \frac{b(1-l_1)^{- \gamma}}{w_1}}{(1+r)} =0$$
 
-We need to isolate so we get $\frac{(1-l_2)}{(1-l_1)}$ 
+We need to isolate so we get $\frac{(1-l_2)}{(1-l_1)}$
 
-We can split up the fraction and collect the $w$ expressions in one fraction. 
+We can split up the fraction and collect the $w$ expressions in one
+fraction.
 
 $$-e^{- \rho}b(1-l_2)^{- \gamma}+ \frac {w_2}{(1+r)}* \frac{b(1-l_1)^{- \gamma}}{w_1} =0$$
 Kan jeg godt gøre det? burde jeg ik vende brøkken om?
 
-
 $$-e^{- \rho}b(1-l_2)^{- \gamma}+ \frac {w_2}{w_1}* \frac{b(1-l_1)^{- \gamma}}{(1+r)} =0$$
-We can now divide with $b(1-l_1)^{- \gamma}$ 
+We can now divide with $b(1-l_1)^{- \gamma}$
 
 $$-e^{- \rho} \frac{b(1-l_2)^{- \gamma}}{b(1-l_1)^{- \gamma}}+ \frac {w_2}{w_1}* \frac{1}{(1+r)} =0$$
 We can now move the second term on the other site of the equal sign
 
 $$-e^{- \rho} \frac{b(1-l_2)^{- \gamma}}{b(1-l_1)^{- \gamma}} =- \frac {w_2}{w_1}* \frac{1}{(1+r)}$$
 
+We can remove $b$ and we want to make $-\gamma$ positive by taking the
+inverse.
 
-We can remove the $- \gamma$ and $b$ so we end up with: 
+$$
+\frac{(1-l_2)^{- \gamma}}{(1-l_1)^{- \gamma}} = \frac {1}{(1-l_2)^\gamma}* (1-l_1)^ \gamma
+$$
 
-Vi kan ik fjerne gamma men flyt den udenfor og så bytter de plads 
+Vi kan nu sætte $\gamma$ udenfor en parentes
 
-$$-e^{- \rho} \frac{(1-l_2)}{(1-l_1)} =- \frac {w_2}{w_1}* \frac{1}{(1+r)}$$
+$$-e^{- \rho} [\frac{(1-l_1)}{(1-l_2)}]^\gamma =- \frac {w_2}{w_1}* \frac{1}{(1+r)}$$
 We can now multiply with $\frac{1}{-e^-\rho}$
 
 And we end up with the following equation:
 
-$$\frac{(1-l_2)}{(1-l_1)} = \frac {w_2}{w_1}* \frac{1}{(1+r)e^{- \rho}}$$
-We can take the inverse on both sites:
+$$[\frac{(1-l_1)}{(1-l_2)}]^\gamma = \frac {w_2}{w_1}* \frac{1}{(1+r)e^{- \rho}}$$
 
-$$\frac{(1-l_1)}{(1-l_2)} = \frac {w_1}{w_2}* \frac{1}{(1+r)e^{- \rho}}$$
+-   How does the relative demand for leisure $\frac{(1-l_1)}{(1-l_2)}$
+    depend on the relative wage $\frac{w_1}{w_2}$.
 
-- How does the relative demand for leisure $\frac{(1-l_1)}{(1-l_2)}$ depend on the relative wage $\frac{w_1}{w_2}$. 
+We can see that if the relative wage $\frac{w_2}{w_1}$ falls which means
+the wage in periode 1 is now higher relative to the one in periode 2.
+$\frac{(1-l_1)}{(1-l_2)}$ would also have to fall meaning $l_1$ needs to
+fall and/or $l_2$ needs to increase.
 
-We can see that if the relative wage $\frac{w_1}{w_2}$ increases which means the wage in periode 1 is now higher relative to the one in periode 2. $\frac{(1-l_1)}{(1-l_2)}$ would also have to increase meaning $l_1$ needs to fall and/or $l_2$ needs to increase. 
+so the increase in Wages at period 1 would mean that $(1-l_1)$ would
+need to fall meaning $l_1$ would need to increase. Meaning more will
+work in period 1.
 
+-   How does the relative demand for leisure $\frac{(1-l_1)}{(1-l_2)}$
+    depend on the interest rate (r)?
 
-- How does the relative demand for leisure $\frac{(1-l_1)}{(1-l_2)}$ depend on the interest rate (r)?
-
-We can see if $r$ increases we get that the right hand site will decrease, this means $\frac{(1-l_1)}{(1-l_2)}$ also should decrease. For this to happen $l_1$ needs to increase, and/or $l_2$ needs to increase. makes since as a higher interres rate means i can work more in periode 1 to have more savings that increases my income. 
-
-
-
-
-
-
-
-
+We can see if $r$ increases we get that the right hand site will
+decrease, this means $\frac{(1-l_1)}{(1-l_2)}$ also should decrease. For
+this to happen $l_1$ needs to increase, and/or $l_2$ needs to decrease.
+makes since as a higher interres rate means i can work more in periode 1
+to have more savings that increases my income in period 2.
