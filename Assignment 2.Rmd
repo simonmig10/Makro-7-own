@@ -58,7 +58,7 @@ $$\frac {\dot K(t)}{K(t)} = C_K K(t)^{\alpha- 1} A(t)^{1- \alpha} L(t)^{1-\alpha
 We can now chance $K(t)^{\alpha - 1}$ changing the sign of the exponent so $\frac{1}{K(t)^{1 - \alpha}}$ We can then set $1- \alpha$ out as a common exponent. 
 
 
-$$\frac {\dot K(t)}{k(t)} = C_K [\frac{A(t) L(t)}{K(t)}]^{1-\alpha}$$
+$$\frac {\dot K(t)}{K(t)} = C_K [\frac{A(t) L(t)}{K(t)}]^{1-\alpha}$$
 
 
 **Growth rate of technology**
@@ -74,6 +74,9 @@ $$\frac{\dot A(t)}{A(t)} = C_\alpha K(t)^\beta L(t)^\gamma A(t)^{\theta-1}$$
 
 ## Spg 2
 
+I og med vi ved at det er den case vi har må G_a^* være stejlere end G_k^* --> se den case. 
+
+Vi kan vise hvordan vi når frem til de to gange vi tagr log og differentiere med tid. 
 
 We start with the expression from the previous question $g_A(t)= C_\alpha K(t)^\beta L(t)^\gamma A(t)^{\theta-1}$
 
@@ -111,8 +114,11 @@ $$g_A^*= \frac{(\beta + \gamma)}{(1 - (\theta + \beta))}n$$
 - $\theta$ is a parameter describing the elasticity of existing knowledge (A), we can see this also has a positive effect on $g^*_A$
 
 
+Beta er elasticiteten på output når der allokeres 1 mere enhed af kapital i R&D --> så hvor mget mere output stiger. 
 
+Vi kan se at i det case hvis der ingen population growth er vil der ingen vækst rate være. 
 
+Ellers beskriv fra figur på side 112
 
 # Real business cycle theory
 
@@ -139,6 +145,8 @@ We can now set up the langrange
 $$L= ln[C_t]+ \frac{b(1-l_t)^{1-\gamma}}{1-\gamma} + \lambda (wl-C_t)$$
 We now differntiate with respect to $C_t$ and $l_t$
 
+We use the constant -relative-risk -aversion instantanius utility function --> Står side 52
+
 $$\frac {\delta L}{\delta C_t}= \frac{1}{C_t} - \lambda =0$$
 $$\frac {\delta L}{\delta l_t}= -b(1-l_t)^{-\gamma}+ w\lambda=0$$
 
@@ -150,9 +158,11 @@ We can now substitute thes into the second equation $-b(1-l_t)^{-\gamma}+ w\lamb
 $$-b(1-l_t)^{-\gamma}= \frac{1}{l_t}$$
 Allready now we can see that $w$ is no longer in the equation so it would have no effect on labour supply. 
 
+indkomst og substitutions effekten vil gå med hinanden ved en stigning i indkomst --> grundet kun 1 periode. --> noget med at når man har den løn man skal bruge til at dække sit forbrug --> vil man være ligelad med at den stiger da man bare skal have nok til at dække sit forbrug i den periode. 
 
+B er vægten man tillægger fritid. 
 
-**Explain why!!!**
+$\gamma$
 
 
 
@@ -165,6 +175,8 @@ where
 - Periode 2 consumption $C_2 = w_2l_2 + s_1(1+r)$ where $s_1= w_1l_1 - C_1$. 
 
 ## Define the budget constraint and give intuitive answers to the following questions after solving the problem:
+
+lige kig på den her igen --> forkert
 
 To get the budget constraint we first re-write $C_2$: 
 
@@ -205,7 +217,11 @@ $$-e^{- \rho} \frac{b(1-l_2)^{- \gamma}}{b(1-l_1)^{- \gamma}}+ \frac {w_2}{w_1}*
 We can now move the second term on the other site of the equal sign
 
 $$-e^{- \rho} \frac{b(1-l_2)^{- \gamma}}{b(1-l_1)^{- \gamma}} =- \frac {w_2}{w_1}* \frac{1}{(1+r)}$$
+
+
 We can remove the $- \gamma$ and $b$ so we end up with: 
+
+Vi kan ik fjerne gamma men flyt den udenfor og så bytter de plads 
 
 $$-e^{- \rho} \frac{(1-l_2)}{(1-l_1)} =- \frac {w_2}{w_1}* \frac{1}{(1+r)}$$
 We can now multiply with $\frac{1}{-e^-\rho}$

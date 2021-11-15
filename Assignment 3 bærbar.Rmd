@@ -1,13 +1,11 @@
 ---
 title: "Assignment 3"
 output:
-  bookdown::pdf_document2:
-    latex_engine: lualatex
+  pdf_document: default
+  bookdown::pdf_document2: default
 ---
 
 # Exercise 1
-
-RBC er en udbygning af Ramsey modellen 
 
 **A Identify and discuss weaknesses related to the RBC-models.**
 
@@ -28,6 +26,23 @@ Critisism from last slide lection 4:
 - Monetary policy has no role and is inconsequantial
 - Recessionns are caused by shocks to A
 - Model enerates insufficient fluctuations in hours worked --> but not in this example i think as i talked to Hamid about. 
+
+
+fra kap 5.10
+
+
+1. ingen pengepolitisk effekt:
+
+- Det findes empirisk at pengepolitik har en realøkonomisk effekt --> hvilket den ikke har i RBC modeller --> som byger på Ramsy modellen 
+- Disse effekter kommer i DSGE modellerne gennem incomplete adjustments i priser og løn 
+
+2. 
+modellen benytter teknologi shocks med en standard deviation på 1% hvert kvartal. --> det er dog svært i den virkelige verden at finde innovationer der er så "banbrydende" hert kvartal. - Undersøgelser viser at Solow residualet (går ud fra det er stødende) bevæger sig lige så meget med output under the greate resession som ved 2. verdens krig --> og det er ikke teknologi shocks der laver udsving i den sidste af kriserne i hvert fald. 
+
+3. 
+De seneste undersøgelser viser et et positivt stød til teknologi resultere i et fald i labor input istedet for --> dermed vil labor og kapital gå i hver sin retning --> hvilket er resultatet når der er sticky-prices
+
+4. 
 
 **B How does the DSGE-model bypass these problems**
 
@@ -64,7 +79,7 @@ $$r_t= \phi_\pi E_t [\pi_{t+1}] + \phi_y E_t[y_{t+1}] + u^{MP}_t$$
 
 ## a 
 
-
+Spørg Sebastian!
 
 
 ## b
@@ -122,118 +137,17 @@ Figuren viser Impulse response function af et stød til G på 1% af BNP
 
 **B Discuss the three shocks performed in the paper - What are the main intuitions behind these shocks?**
 
-Assumptions made before?: Så de antager ikke dette længere?
+Er det de her 3 shocks der menes???
 
-- We assume that policy makers have complete information about the economy --> size of the output gap
-- There are no implementation lags in the conduct of fiscal policy
-- No information lags with regards to data. 
+1. Supply site shock
 
+2. Demand site shock 
 
-De starter deres analyser fra 1. quarter 2006 as this is where there is clear evidence of a positive output gap
-i senario 1 stopper de 3. quarter 2008 --> der hvor Lehman Brothers gik konkurs. 
+3. Mark-up shock
 
+**Explain the results of the three shocks**
 
-**Tayler rule for Danmark**
-
-Taylor renten er sat op på følgende måde: 
-
-Først definere vi Tayler Rule --> dermed hvad den optimale rente er for dDanmark givet outpur gap $\chi$ og inflationsgapet $(\pi_t - \pi^*)$ derudover bestemmer $\phi_\pi$ og $\phi_\chi$ vægtende af de to gaps. 
-
-$$i^T_t= \bar{r} + \pi_t + \phi_\pi (\pi_t - \pi^*)+ \phi_\chi \chi_t$$
-As a result of the fixed exchange rate, we assume that the prevailing nominal interest
-rate in Denmark is given by the policy rate of the European Central Bank, which in turn is
-determined by a Taylor rule for the euro area, plus a country-specific risk premium which is
-increasing in the ratio of Danish foreign debt to GDP
-
-$$i_t=i_t^{EU}$$
-Målet er nu at bruge finanspolitik til at lukke TaylorRateGap i økonomien. --> kontraktiv finanspolitik vil sænke output og inflations gapet og dermed sænke $i_t^T$ så den optimale rente givet økonomiens status passer på den der bliver sat af EU og dermed også Danmark. 
-
-$i_t - i^T_t$ TaylorRateGap
-
-**1. shock: Public consumption only: 1. Quarter 2006- 3. Quarter 2008** 
-
-1. Nu bestemmes offentligt forbrug ($G_t$) sådan at Taylor interest rate er ved steady state på 4% over mellem lang sigt. Denne sequence af "stød" til $G_t$ der for Taylor renten på dette niveau indsættes i perioden beskrevet 1. quarter 2006 - 3. quarter 2008. 
-
-
-
-2. Efter 3. quarter 2008 følger finanspolitiken sin naturlige rute. Dermed kan forskellen der observeres kun tilskrives den ændring der har været i finanspolitikken op til 2008 Q3. 
-
-
-Effect of the shock:
-
-*Output gap*
-
-* Outputgap ligger nu relativt lavere i perioden op til krisen grundet den kontraktive finanspolitik 
-* Da krisen rammer sker der ikke et lige så kraftigt fald 
-* Efter krisen ligger outputgappet relativt over niveauet uden kontraktiv finanspolitik. 
-
-*inflation gap*
-
-* Vi kan se der ik er den store forskel på inflationsgap med den kontraktive finanspolitik op til krisen. 
-* Dette kan skyldes at inflationen op til krisen ikke var specielt høj --> kan ses på grafen der viser decomposition of the Danish GDP at Demand og supply shocks er næsten lige store. Dermed ikke de store prisstigninger. 
-
-
-*public consumption* 
-
-* Vi kan se public consumption i perioden op til krisen skal falde med 15 procent point for at taylor reglen overholdes. --> dette virker nærmest umuligt at gøre på 2 år. 
-
-*Interest rate*
-
-* I tilfældet uden counterfactual finanspolitik vil Taylor reglen vise en optimal rente på op til 9% inden krisen ramte (blå)
-* I tilfældet med counterfactual finanspolitik kan vi se at den optimale rente givet taylor reglen ligger tæt på den reele rente i DK. 
-
-*public debt-to-GDP-ratio*
-
-* Her kan vi se at gældsraten falder i det der føres en kontraktikv finanspolitik op til krisen. Hvor den igen efter krisen begynnder at stige og ender lige under niveauet for det factual tilfælde. 
-
-
-**konklussion på shock 1**
-
-Her nævnes at faldet der er i outputgap i perioden 2009-1010 er større end det output gapet falder mindre ved krisen --> derfor ik worth it --> Men man skal tænke på at staten jo har brugt betydelig mindre G og derfor har mulighed for at føre ekstra meget ekspansiv finanspolitik under krisen nu iog stadig holde den samme gældsratio som de ellers ville have haft. 
-
-We save more doing the booms and can therefor spend more doing the busts --> og stadig holde den samme debt ratio to GDP. 
-
-
-## 2. shock: Public consumption only: 1. Quarter 2006- 4. Quarter 2012 
-
-* stadig ud fra at taylor rule bringes til steady state på 4% på mellem sigt. 
-* Dept-to GDP ratio in 2012.Q4 = dept-to-GDP ratio in 2006Q1
-
-* Da perioden nu også går til efter krisen, er det en mulighed at der føres mere ekspansiv finanspolitik efter krisen som et resultat af den counterfactual finanspolitik der føres. 
-
-* Her ligges en begrænsning at gæld i procent af BNP skal være på det samme level i 2012 når stødet stoppes som det var i begyndelsen 2006. 
-
-
-*public consumption*
-
-* Vi kan igen se samme fald op til krisen på 14 procent point
-* Vi kan se at det offenlige forbrug til sidst overstiger i det counter factual eksempel --> Dette skyldes at der er brugt mindre op til 2010 og dermed kan de godt overstige og stadig holde sig under den gældsrate der er i Factual eksempel. 
-
-
-*Interest rate*
-
-* Vi kan se taylerrule siger renten skal ligge på 9% i det factual eksempel --> hvorimod hvis vi køre kontraktiv finanspolitik vil den ligge omkring den realle rente (pink) som blev ført dengang.
-
-* Vi kan dog se at efter krisen ligger det factual eksempel tættere på den reel førte rente. 
-
-*output gap*
-
-*public debt*
-
-
-**3. Tax on labour income, consuption and capital, and public consumption: 1. Quarter 2006- 4. Quarter 2012** 
-
-* Stadig Taylor interest rate med steady state på 4% på mellem sigt. 
-* Dept-to GDP ratio in 2012.Q4 = dept-to-GDP ratio in 2006Q1
-* Mere realistiske udsving i de finanspolitiske instrumenter. 
-
-- Her ligges en begrænsning at gæld i procent af BNP skal være på det samme level i 2012 når stødet stoppes som det var i begyndelsen 2006. 
-
-
-## Explain the results of the three shocks
-
-
-## Discuss the relevance of the results
+**Discuss the relevance of the results**
 
 
 
@@ -309,11 +223,3 @@ y_t= (pi_t - pi_t_1 + alpha* y_e)/alpha
 
 plot(pi_2,y_2, type = "l"); lines(pi_t, y_t)
 ```
-
-
-
-
-
-
-
-
