@@ -64,7 +64,7 @@ Hvis g falder vil det led der trækker break-even investeringerne blive lavere $
 
 Kan bare ikke se på grafen hvordan $k$ stiger for hvert niveau af $c$ 
 
-- Den sidste effekt med at k stiger for hvert niveau af c er kun for store værdier af k --> me for små værdier af k vil det være faldende? måske spørge Mikael. 
+- Den sidste effekt med at k stiger for hvert niveau af c er kun for store værdier af k --> men for små værdier af k vil det være faldende? måske spørge Mikael. 
 
 ### **2. How, if at all, does this affect the c = 0-curve?**
 

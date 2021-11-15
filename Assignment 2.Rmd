@@ -195,6 +195,9 @@ We need to isolate so we get $\frac{(1-l_2)}{(1-l_1)}$
 We can split up the fraction and collect the $w$ expressions in one fraction. 
 
 $$-e^{- \rho}b(1-l_2)^{- \gamma}+ \frac {w_2}{(1+r)}* \frac{b(1-l_1)^{- \gamma}}{w_1} =0$$
+Kan jeg godt gøre det? burde jeg ik vende brøkken om?
+
+
 $$-e^{- \rho}b(1-l_2)^{- \gamma}+ \frac {w_2}{w_1}* \frac{b(1-l_1)^{- \gamma}}{(1+r)} =0$$
 We can now divide with $b(1-l_1)^{- \gamma}$ 
 
