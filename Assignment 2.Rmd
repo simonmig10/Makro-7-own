@@ -250,6 +250,14 @@ løn man skal bruge til at dække sit forbrug --\> vil man være ligelad
 med at den stiger da man bare skal have nok til at dække sit forbrug i
 den periode.
 
+FRa bogen:
+
+Labor supply is independent of the wage --\> intuitively , because
+utilityy is logarithmic in consumption and the household has no initial
+wealth the income and substitution effect of a change in Wage offset
+each other --\> But the wage will affect labour supply when it is more
+than one periode
+
 B er vægten man tillægger fritid.
 
 $\gamma$
@@ -264,8 +272,6 @@ where
     $s_1= w_1l_1 - C_1$.
 
 ## Define the budget constraint and give intuitive answers to the following questions after solving the problem:
-
-lige kig på den her igen --\> forkert
 
 To get the budget constraint we first re-write $C_2$:
 
@@ -344,3 +350,20 @@ decrease, this means $\frac{(1-l_1)}{(1-l_2)}$ also should decrease. For
 this to happen $l_1$ needs to increase, and/or $l_2$ needs to decrease.
 makes since as a higher interres rate means i can work more in periode 1
 to have more savings that increases my income in period 2.
+
+Fra bogen side 199
+
+Now we can see that relative labour supply in the two periods responds
+to the relative wage. Fx if $W_1$ rises relative to $W_2$ the housholds
+decrease first period leisure relative to the second-period leisure:
+that is , it increases first periode labour supply relative to second
+period supply. (in the book because of the logarithmic functional form,
+the elasticity of substitution between leisure in the two periods is 1)
+(Her tror jeg det er $\gamma$
+
+It also shows that a rise in $r$ raises first period labor-supply
+relative to second-period supply. Intuitivly, a rise in $r$ increasesthe
+attractiveness of working today and saving relative to working tomorrow.
+
+These responses of labor supply to the relative wage and the interest
+rate are known as *intertemporal substitution* in labor supply
