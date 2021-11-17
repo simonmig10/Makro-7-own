@@ -27,7 +27,27 @@ Fra bogen 206:
  - output dynamics the special case (uden G_t og med 100% afskrivning af kapital) matcher ikke major features of fluctuation very well. --> blandt andet er savings raten konstant --> dermed er C og I lige volatile hvilket data viser de ikke er og labor input does not vary
  
  - Derudover siger modellen at løn og output er procyklical --> real wage rises one to one with output --> data viser at real wage kun er lidt procyclical (sticky wages and prices som i DSGE måske?)
+ 
+ 
+Fra bogen side 227-229
 
+5 problemstillinger ved RBC modeller: 
+
+1. ingen realøøkonomisk effekt ved monetary shocks --> dette kommer igennem at der ingen incomplete adjustmenets er i wages og prices. empiri viser at monetary shocks har en real økonomisk effekt. 
+
+2. modellen består af teknologi shocks med en standard afvigelse på 1% hver kvartal. Hvor det er svært at finde de innovationer der i real life skulle lave så store stød hvert kvartal. 
+
+- Derudover viser det sig at flere processer der ikke har noget med teknologi at gøre også følger disse stød som kommer af ændringerne i teknologi (Solow residual?)
+
+
+3. Empiri finder at labor input falder ved et positivt teknologi shock og dermed går modsat output--> hvor det i modellen er modsat?
+Dette resultat er i hvet fald hvad man forventer med nominelle rigidities. 
+
+4. Der findes bevis for at markeder som kredit markedet ikke er Walrasian 
+
+5. output fælger the dynamics of teknology meget tæt --> men det findes at output har sigen egne mønstre (og ikke bare følger teknologi udvikling) fx tilfælde hvor ratio af forbrug i forhold til income er høj er dette typisk efterfulgt af høj output vækst. 
+
+ 
 Antagelser:
 
 - Antager at der er efterspørgsel til alt udbud. 
@@ -190,7 +210,7 @@ Figuren viser Impulse response function af et stød til G på 1% af BNP
 
 7. men som demand falder gennem de højere priser begynder modsatte effekt og virksomhederne sænker igen priser 
 
-8. Konklussion er at inflation møødes med fremtidig deflation **one-to one**
+8. Konklussion er at inflation mødes med fremtidig deflation **one-to one**
 
 
 **Antagelser der giver dette resultat**
