@@ -395,75 +395,116 @@ $$L= (y_t-y_e)^2 + \beta (\pi_t - \pi^T)^2,   \beta>0$$
 
 ## What is the interpretation of the parameter $\beta$ ? What are the implications of $\beta$ being bigger, equal or smaller than 1?
 
+fra bog fra sebastian side 94: 
+
+beta er en relative weight attached to inflation if beta > 1vil centralbanken sætte mindre vægt på outputgap end inflationsgap. 
+
+With beta= 1 er centralbanken vægter den output og inflations gap lige vigtigt. 
+
 
 ## Plot the loss function in the $y- \pi$ space (you can put y in the horizontal axis and $\pi$ in the vertical, such that the graph is the same that we use when plotting the Philips curve) for the cases where $\beta> 1$ , $\beta = 1$  and $\beta < 1$.
 
 
-
 ```{r}
-# for beta=1
-L=10
-beta=1
-D= seq(from = -2, to = 2, by =0.01)
-X= sqrt(L-beta*D^2)
-pi= 2+D
-y= 2+X
-
-plot(pi,y, type = "l")
-
-# for beta <1
-
-L=10
-beta_1=0.5
-D= seq(from = -2, to = 2, by =0.01)
-X_1= sqrt(L-beta_1*D^2)
-pi_1= 2+D
-y_1= 2+X_1
-
-plot(pi_1,y_1, type = "l")
-
-
-# For beta >1
-
-L=2
-beta_2= 1
-D= seq(from = -2, to = 2, by =0.01)
-X_2= sqrt(L-beta_2*D^2)
-pi_2= 2+D
-y_2= 2+X_2
-
-plot(pi_2,y_2, type = "l")
-
-
+knitr::include_graphics(rep("lossfunction.png", 1), dpi = 150)
 ```
+
+**Balanced: $\beta = 1$**
+
+we have the target values for $\pi^T$ (inflation) and output $y_e$ (output). If the inflation and outpur reaches these target values the lossfunction will only be a point in the $\pi$ and $y$ space. called "bliss point" 
+- When $\beta = 1$ the central bank is indifferent between inflations 1% above/belove target and output 1% above/below target.  as thhey will be in the same loss function. 
+
+**Inflation averse: $\beta > 1$**
+
+The central bank is now "more" okay with output deviading from the target than inflation diviading from the target. --> If it would have to choose between a 1% deviation from inflation target and 1% deviation from output target. The lowest loss function will be with the 1% deviation from the output target.
+
+**Unemployment Averse $\beta < 1$**
+
+Den er nu mere vertikal --> dermed har central banken mere fokus på at holde outputgap tæt på target --> Dermed vil en afvigelse på 1% i inflation have et lavere loss end en afvigelse på 1% i output. 
 
 
 ## Now assume that inflation is determined by a Philips curve which, for simplicity, takes lagged inflation as a proxy of expected inflation ($E[\pi_{t+1}] = \pi_{t−1}$). The Philips curve then takes the following form: $\pi_t = \pi_{t−1} + \alpha(y_t − y_e)$. Plot the Philips curve in the same graphs that you drew the Central Bank’s loss function.
 
 
-if we rewrite the equation to get output on the y axis and $\pi$ on the x-aksis we get
+The phillips curve shows all the combinations of inflation and output the central bank can choose between for a given level of expected inflation. --> her er expected inflation inflationen fra sidste periode. 
 
-$$y_t= \frac {\pi_t - \pi_{t-1} + \alpha y_e}{\alpha}$$
+
+if we assume the phillips curve has $\alpha = 1$ the plot will look like this: 
+
 ```{r}
-pi_t= seq(0,4,1)
-pi_t_1= 1
-alpha= 1
-y_e=3
-
-y_t= (pi_t - pi_t_1 + alpha* y_e)/alpha
-
-
-plot(pi_2,y_2, type = "l"); lines(pi_t, y_t)
+knitr::include_graphics(rep("phiillips curve.png", 1), dpi = 150)
 ```
+
+We can see that for a given level of inflation in last period the central bank will choose the point with the lowest losses. 
 
 
 ## The loss function tells us that the central bank aims at making inflation converge to its target. The Philips curve describes how inflation is determined over time. As such, it can be considered as a constraint for the central bank (since it must minimize its inflation subject to the way in which inflation is determined in the economy). Given a specific rate of inflation in period t (i.e., a given Philips curve) define what is the optimal point in the loss function where the central bank would want to situate.
+
+
+In the plot above we can see that if the expected/past inflation is 4% the central bank will choose the minimum loos at point D with a output under it's target and a inflation on 3%--> sinde that point B and C would mean a larger loss. 
+
+if the central bank has a large wheight on hitting the output target the central bank would maybe choose point B to keep the output at the target but still have inflation on 4% 
+
+If the central bank has a very high weight on inflation and want to hit the target of 2% the central bank would have to lower the output by a lot and pick point C. 
 
 
 
 ## Derive graphically the monetary policy curve, which is given by the combination of all the optimal points for the central bank, each of them given by the different possible Philips curves. For simplicity, just draw two Philips curves and derive the monetary policy rule as the line joining the optimal points that result from those two Philips curves.
 
 
+```{r}
+knitr::include_graphics(rep("MR curve.png", 1), dpi = 150)
+```
+
+This shows the output and inflation the central bank would choose to minimize its loss function for any given phillipscurve it is faced with 
+
+The MR curve tells the central bank what outputgap to choose when it observes that inflation is away from its target 
+
+The difference between the MR curve and the Taylor rule is that the later is expressed in terms of the interrest rate the central bank should choose to implement its chosen output gap 
+
 ##  Now we will solve analytically the same derivation that we did graphically in the previous points. In order to do that, you have to minimize the loss function of the central bank subject to the constraint given by the Philips curve. You should find a first order condition that is consistent with the concept of the divine coincidence, i.e., the first order condition has to describe a negative relationship between the deviations of output and inflation with respect to their long run levels.
 
+We do it in periode 1: 
+
+
+So we have the loss function for the central bank, and the phillipscurve for the economy. 
+
+$$L= (y_1-y_e)^2 + \beta (\pi_1 - \pi^T)^2,   \beta>0$$
+
+$$\pi_1 = \pi_0 + \alpha(y_1 − y_e)$$
+
+We start by substituting the equation for the phillips curve into the central bank loss function we can rewrite the loss function as: 
+
+$$L=(y_1-y_e)^2 + \beta((\pi_0+\alpha(y_1 - y_e))-\pi^T)^2$$
+
+If we now differentiate this with respect to $y_1$ (since this is the variable the central bank can control via its choice of the interest rate) we have: 
+
+$$\frac{\delta L}{\delta y_1}= (y_1 -y_e) + \alpha \beta (\pi_0 + \alpha (y_1 - y_e)) - \pi^T)=0$$
+
+We can now isolate $\pi_0$ in the phillipscurve 
+
+$$\pi_1 = \pi_0 + \alpha(y_1 − y_e)$$
+$$\pi_0 = \pi_1 - \alpha(y_1 − y_e)$$
+
+When we plug this into the equation he two $\alpha$ erms cancel out and we end up with 
+
+$$(y_1 - y_e) = - \alpha \beta (\pi_1 - \pi^T)$$
+
+
+så husk at central banken kan vælge output ud fra renten --> dermed Tayloer rule viser hvilken rente du skal sætte for at få et givetn utput som giver en givent inflation 
+
+Her skal de blot vælgge output direkte så uden at vælge renten først?
+
+er dette rigtigt forstået?
+
+
+In the general form ofthe MR curve shown above, it can be seen directly that the larger is a
+(i.e. the more responsive are wages to employment) or the larger is ,8 (i.e. the more inflation
+averse is the central bank), the flatter will be the slope of the monetary rule.
+
+In the first case this is because any reduction in aggregate demand achieves a bigger cut in
+inflation, i.e. whatever its preferences, the central bank gets a ’bigger bang (i.e. fall in inflation)
+for its buck (i.e. fall in aggregate demand)’.
+In the second case, this is because, whatever the labour market it faces, a more inflation—
+averse central bank will wish to reduce inflation by more than a less ’hard-nosed' one.
 
