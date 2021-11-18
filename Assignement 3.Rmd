@@ -11,7 +11,7 @@ RBC er en udbygning af Ramsey modellen blot med den forskel at fritid nu er med 
 
 et andet sted RBC afviger fra Ramsey er i HH optimization problem --< da der er usikkerhed med omkring rates of return og fremtidige løn. På baggrund af denne usikkerhed vælger HH ikke deterministic paths (Der hvor de kan forudse hvad der sker og vælger forbrug ud fra det?) for consumption and labor supply
 
-**A Identify and discuss weaknesses related to the RBC-models.**
+## A Identify and discuss weaknesses related to the RBC-models.
 
 - Before growth was a smooth procces now we will also explain medium and short term fluctuations in growth 
 - We need a model to explain fluctuations which alsom account for stylized facts --> fxx that consumption is more stable than investment. 
@@ -21,7 +21,7 @@ Weaknesses:
 Fra bogen side 205: 
 
 - modsat DSGE modeller er fluktationer her ikke et resultat af markedsfejl --> observed aggregate output movements represent the time varying pareto optimum
-- I RBC er output udsving som det fremgår af modellen bestemt af dynamikken i teknologiog dynamikken i kapital beholdfningen. 
+- I RBC er output udsving som det fremgår af modellen bestemt af dynamikken i teknologi og dynamikken i kapital beholdfningen. 
 
 Fra bogen 206:
  - output dynamics the special case (uden G_t og med 100% afskrivning af kapital) matcher ikke major features of fluctuation very well. --> blandt andet er savings raten konstant --> dermed er C og I lige volatile hvilket data viser de ikke er og labor input does not vary
@@ -63,7 +63,7 @@ Critisism from last slide lection 4:
 - Recessionns are caused by shocks to A
 - Model enerates insufficient fluctuations in hours worked --> but not in this example i think as i talked to Hamid about. 
 
-**B How does the DSGE-model bypass these problems**
+## B How does the DSGE-model bypass these problems
 
 Endogenous models:
 
@@ -78,7 +78,7 @@ DSGE models
 - Under DSGE-modeller vises det at nominelle shocks har en realøkonomisk effekt. 
 - Dermed kan økonomien nu påvirkes af både Demand og supply. 
 
-**C Write out and analyse the three main equations in the canoniacal new Keynesian model**
+## C Write out and analyse the three main equations in the canoniacal new Keynesian model
 
 The new Kaynsian IS curve:
 
@@ -156,7 +156,7 @@ $$log(r\beta E_t[\frac{C_{t+1}^{-\sigma}}{\pi_{t+1}}])= log( C_t^{-\sigma})$$
 The terms multiplied with each other is now plussed and divisions minus
 
 $$log(r_t)+ log(\beta) + log(E_t[C^{-\sigma}_{t+1}]) - log(E_t[\pi_{t+1}]= log( C_t^{-\sigma})$$
-We can now move down the exponent and we show that the variable is loged by making $\hat$ notice that $\beta$ is a parameter and will fall away as the log is 0
+We can now move down the exponent and we show that the variable is loged by making hat notice that $\beta$ is a parameter and will fall away as the log is 0
 
 Når vi lag linearize skal vi også bruge taylor rule --> se side 208. 
 
@@ -174,14 +174,16 @@ We can start by setting up the aggregate price $P_t$ so we consider the average 
 
 (Det er skrevet med andre parameter navne i bogen)
 
-$$P_t= \theta P_{t-1} + (1- \theta)z_t $$
+$$P_t= \theta P_{t-1} + (1- \theta)Z_t $$
 Hvor $\theta$ er sandsynligheden for at en virksomhed ikke må skifte pris og $(1-\theta)$ er sandsynligheden for at virksomheden må skifte pris. --> dermed er $z_t$ den pris de vil sætte hvis de fik muligheden for at ændre den. 
 
 Hvis vi isolere $z_t$ i ovenstående ligning får vi 
 
-$$\frac{1}{1-\theta}(P_t - P_{t-1})$$
+$$\frac{1}{1-\theta}(P_t - P_{t-1})=Z_t$$
 
-## How does the choice of θ affect the New Keynesian Phillips curve?
+Vi kan se jo større sandsynligheden er for at et firma må skifte pris $(1-\theta)$
+
+## How does the choice of $\theta$ affect the New Keynesian Phillips curve?
 
 
 # Exercise 3
@@ -263,35 +265,35 @@ $i_t - i^T_t$ TaylorRateGap
 
 Effect of the shock:
 
-*Output gap*
+**Output gap**
 
 * Outputgap ligger nu relativt lavere i perioden op til krisen grundet den kontraktive finanspolitik 
 * Da krisen rammer sker der ikke et lige så kraftigt fald 
 * Efter krisen ligger outputgappet relativt over niveauet uden kontraktiv finanspolitik. 
 
-*inflation gap*
+**inflation gap**
 
 * Vi kan se der ik er den store forskel på inflationsgap med den kontraktive finanspolitik op til krisen. 
 * Dette kan skyldes at inflationen op til krisen ikke var specielt høj --> kan ses på grafen der viser decomposition of the Danish GDP at Demand og supply shocks er næsten lige store. Dermed ikke de store prisstigninger. 
 
 
-*public consumption* 
+**public consumption**
 
 * Vi kan se public consumption i perioden op til krisen skal falde med 15 procent point for at taylor reglen overholdes. --> dette virker nærmest umuligt at gøre på 2 år. 
 
-*Interest rate*
+**Interest rate**
 
 * I tilfældet uden counterfactual finanspolitik vil Taylor reglen vise en optimal rente på op til 9% inden krisen ramte (blå)
 * I tilfældet med counterfactual finanspolitik kan vi se at den optimale rente givet taylor reglen ligger tæt på den reele rente i DK. 
 
-*public debt-to-GDP-ratio*
+**public debt-to-GDP-ratio**
 
 * Her kan vi se at gældsraten falder i det der føres en kontraktikv finanspolitik op til krisen. Hvor den igen efter krisen begynnder at stige og ender lige under niveauet for det factual tilfælde. 
 
 
 **konklussion på shock 1**
 
-Her nævnes at faldet der er i outputgap i perioden 2009-1010 er større end det output gapet falder mindre ved krisen --> derfor ik worth it --> Men man skal tænke på at staten jo har brugt betydelig mindre G og derfor har mulighed for at føre ekstra meget ekspansiv finanspolitik under krisen nu iog stadig holde den samme gældsratio som de ellers ville have haft. 
+Her nævnes at faldet der er i outputgap i perioden 2009-1010 er større end det output gapet falder mindre ved krisen --> derfor ik worth it --> Men man skal tænke på at staten jo har brugt betydelig mindre G og derfor har mulighed for at føre ekstra meget ekspansiv finanspolitik under krisen nu og stadig holde den samme gældsratio som de ellers ville have haft. 
 
 We save more doing the booms and can therefor spend more doing the busts --> og stadig holde den samme debt ratio to GDP. 
 
@@ -306,36 +308,79 @@ We save more doing the booms and can therefor spend more doing the busts --> og 
 * Her ligges en begrænsning at gæld i procent af BNP skal være på det samme level i 2012 når stødet stoppes som det var i begyndelsen 2006. 
 
 
-*public consumption*
+**public consumption**
 
 * Vi kan igen se samme fald op til krisen på 14 procent point
 * Vi kan se at det offenlige forbrug til sidst overstiger i det counter factual eksempel --> Dette skyldes at der er brugt mindre op til 2010 og dermed kan de godt overstige og stadig holde sig under den gældsrate der er i Factual eksempel. 
 
 
-*Interest rate*
+**Interest rate**
 
 * Vi kan se taylerrule siger renten skal ligge på 9% i det factual eksempel --> hvorimod hvis vi køre kontraktiv finanspolitik vil den ligge omkring den realle rente (pink) som blev ført dengang.
 
-* Vi kan dog se at efter krisen ligger det factual eksempel tættere på den reel førte rente. 
+* Vi kan dog se at efter krisen ligger det factual eksempel tættere på den reel førte rente. --> Vi kan se at den optimale rente under det counterfactual eksempel næsten rammer 0% i 2009 --> da målet er at ramme target på 4% føres der ekstra meget ekspansiv finanspolitik --> derfor overskyder modellen den nuværrende rente da det kan se ud som om der er en ny trend som ligger under de 4% som modellen skyder efter at ramme. 
 
-*output gap*
+**output gap**
 
-*public debt*
+Når krisen rammer nu har vi et lavere løn niveau og pris niveau samtidig med der kan føres ekstra meget ekspansiv finanspolitik 
+
+If inflations is above its steady state the central bank needs to increase the policy rate more than the increase in inflation (real renten ($r+\pi$)) So as to increase the real interrest rate which in turn depresses aggregate demand and creats a negative outputgap 
+
+**public debt**
+
+Vi kan se at gælds ratioen ligger på samme niveau i 2012 men der har nu været muligt at føre mere ekspansiv finanspolitik under krisen. 
+
+**Konlussion**
+
+* Flytter økonomisk aktivitetr fra en periode hvor efterspørgslen var relativt høj til en periode hvor efterspøørgslen var relativt lav. --> flyttes så taylor rule er så tæt på de 4% som muligt. 
+* Dermed en mere smooth GDP og andre makro-variable. 
+* Kræver stadig urealistiske fald i offentlig forbrug 
 
 
 ### 3. Tax on labour income, consuption and capital, and public consumption: 1. Quarter 2006- 4. Quarter 2012
 
 * Stadig Taylor interest rate med steady state på 4% på mellem sigt. 
 * Dept-to GDP ratio in 2012.Q4 = dept-to-GDP ratio in 2006Q1
-* Mere realistiske udsving i de finanspolitiske instrumenter. 
+* Mere realistiske udsving i de finanspolitiske instrumenter. --> der laves nu et "narrow band"
+- Det kan ses at de skatter der pålægges har en meget lille effekt på output. fra deres impulse respons functions. 
 
-- Her ligges en begrænsning at gæld i procent af BNP skal være på det samme level i 2012 når stødet stoppes som det var i begyndelsen 2006. 
+* Her ligges en begrænsning at gæld i procent af BNP skal være på det samme level i 2012 når stødet stoppes som det var i begyndelsen 2006. 
+
+
+**fiscal instruments**
+
+* Vi kan her se udviklingen i de 4 instrumenter i det factual og counter factual eksempel --> Vi kan se de stiplede linjer er grænserne. 
+1. offentlig forbrug skal ligge indenfor 21-29% af GDP
+2. Tax on labour income to reside within 28.5-43.5% 
+3. tac on capital and VAT-rate within 22.5-27.5%
+
+```{r}
+knitr::include_graphics(rep("scenario 3 instruments.png", 1), dpi = 150)
+```
+
+
+
+**outputgap**
+
+* Vi kan se at begrensningerne på de finanspolitiske instrumenter gør at vi ikke kan lukke taylorRuleGappet op til krisen. --> men det at der er først kontraktiv finanspolitik gør det nemmere at lukke Taylor Rule Gappet efter krisen uden at ramme den lavere grænse for instrumenterne. 
+
+
+**dept to GDP**
+
+
+**interrest rate**
 
 
 ## Explain the results of the three shocks
 
+Gjordt 
+
 
 ## Discuss the relevance of the results
+
+in scenario 1: undersøgelsen viser at hvis finanspolitikken var belvet anvendt til at stabilisere outputgap og inflations gap op til krisen vil dette have gjordt Danamrk bedre i stand til den finansielle krisen --> grundet lavere lønninger og priser og dermed mere konkurrence dygtig overfor udlandet. Samtidig vil offentlige finanser ha været mere fordelagtige. 
+
+In scenario 2: 
 
 
 
