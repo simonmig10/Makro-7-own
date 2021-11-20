@@ -90,18 +90,73 @@ DSGE models
 The new Kaynsian IS curve:
 
 $$y_t= E_t[y_{t+1}] - \frac{1}{\theta}r_t +u_t^{IS}$$
+hvor: 
+$$u^{IS}_t=\rho_{IS} u_{t-1}^{IS} + e_t^{IS}$$
+
 fra bog side 52: One can show that $1/\theta$ is the elasticity of substitution between consumption at any two points of time 
 
 when $\theta$ is small the household will allow consumption to vary more over time --> men hvordan er det negativt --> hvis den er lav skriver de at husholdningerne vil tage mere advantage hvis de kan. 
 
+
+Fra bog side 240-241: 
+
+* Den new Keynesian IS curve kommer fra en optimering af en reprensative husholdning --> viser et negativt forhold mellem output og den reale rente 
+
+* Modsat den originale IS curve har vi nu også $Y_{t+1}$ med på højere side. 
+
+* Igen modsat den originale IS kurve hvor vi har $Y=C+G+I$ har vi her kun $Y=C$ i den originale IS kurve vil en stigning i renten lower investments --> hvilket vil lower output --> dermed påvirkes forbrug ikke af ændringer i renten. --> i den nye IS kurve er det kun consumption der bliver påvirket --> stigning i r --> flere vil spare op for at forbruge mere i næste periode --> dermed mindre forbrug nu. 
+
+på side 263 skriver de at det er en stor simplificering at forholdet mellem forvented output og output bare er one to one. 
+
 The new Keynesian phillips curve:
 
 $$\pi_t = \beta E_t [\pi_{t+1}] + \kappa y_t + u^{\pi}_t$$
-Beta afgøre 
+hvor: 
 
-The forward looking interest-rate rule: 
+$$u^{\pi}_t=\rho_{\pi} u_{t-1}^{\pi} + e_t^{\pi}$$
+
+Bog side 259-260: 
+* Vi kan se inflation i dag afhænger af den forventede inflation Af side 259 kalder de en phillipskurve med ekxpectations til inlation for "expectations augmented phillipscurve"
+- Med denne er der et forhold mellem outout og ÆNDRINGEN i inflation hvis det antages at expected inflation er sidste periodes inflation. 
+- Kaldes også *accelerationist* phillips curve
+
+- Denne udgave er dog ikke særlig god med korte periode (fx quarters) da "core inflation" is likely to take more than one period to respond fully to changes in actual inflation --> derfor brug weighted averrage of inflation for more periods. 
+
+* mest important drawback er at men ud fra ligning 6.23 6.24 kan holde output over sit naturlige niveau ved at have "ever increasing inflation" --> men som friedman sagde vil virksomhederne på et tidspunkt opfange denne adfærd og allerede forvente inflations stigningerne og sætte priser og løn efter dette. 
+
+* Grundet kritikken erstattes core inflation med expected inflation
+
+- Nu kan output ikke holdes konstant over target da dette vil betyde at virksomhederne altid forventer for lav inflation. 
+
+- men denne model for supply bakkes ikke op af data. 
+
+
+Side 327-329: 
+* The new Keynesian phillips curve kommer af Calvo price settings 
+* Her bruger de en poisson procces til at bestemme hvilke virksomheder der får lov at ændre pris. 
+* $\kappa= \frac{\alpha[1-(1-\alpha)\beta ]\phi}{1- \alpha}$ i eksemplet med poisson fordelingen. 
+
+* her er $\alpha$ den andel der for lov at skifte priser, $\beta$ er discount factor, $\phi$ er jeg ik helt sikker på --> men udtrykket er positivt. 
+
+
+* to nye features der adskiller den fra *accelerationist* phillips curve og lucas supply curve fra 6.9. 
+
+1. den er bestemt ud fra pris sættere der har barriere i form af at de ikke bare kan sætte prisen når de vil. 
+
+2. Det er nu kun denne periodes forvetning til inflationen i næste periode der er med $E_t[\pi_{t+1}]$ hvor det i *accelerationist* phillips curve er sidste periodes inflation $\pi_{t-1}$ og i Lucas supply curve er forventningerne til nuværende inflation. 
+
+
+ 
+
+**The forward looking interest-rate rule:**
 
 $$r_t= \phi_\pi E_t [\pi_{t+1}] + \phi_y E_t[y_{t+1}] + u^{MP}_t$$
+hvor: 
+$$u^{MP}_t=\rho_{MP} u_{t-1}^{MP} + e_t^{MP}$$
+Fra bog side 262: 
+
+Eftersom som de trægheder der er i økonomien ikke bare er lavet sådan at endte priser eller wages er fixed er der noget til at være en regl som viser hvordan centralbanken laver politik ved brug af renten?
+
 
 
 # Exercise 2
@@ -188,6 +243,14 @@ We can start by setting up the aggregate price $P_t$ so we consider the average 
 
 (Det er skrevet med andre parameter navne i bogen)
 
+fra bog side 327: 
+
+* Da dem der kan skifte priser er valgt randomly samt at det antages at antalet af virksomheder er stort vil gennemsnittet af de virksomheder der ikke skiter priser antages stadig at være prisen fra sidste periode $P_{t-1}$
+
+* I bogen antages det at muligheden for at få lov at ændre pris følger en Poisson fordeling 
+
+
+
 $$P_t= \theta P_{t-1} + (1- \theta)Z_t $$
 Hvor $\theta$ er sandsynligheden for at en virksomhed ikke må skifte pris og $(1-\theta)$ er sandsynligheden for at virksomheden må skifte pris. --> dermed er $z_t$ den pris de vil sætte hvis de fik muligheden for at ændre den. 
 
@@ -199,10 +262,41 @@ Vi kan se jo større sandsynligheden er for at et firma må skifte pris $(1-\the
 
 find ud af hvordan p_t ændres ved stød til pengemængden se side 325-327
 
+
+**Calvo pricing fra Mikaels**
+
+Stadig $\theta$ er den andel der ikke kan ændre pris opskriver dermed gennemsnit af prisen i periode t som: 
+
+$$[\theta*(P_{t-1})^{1-\varepsilon} + (1-\theta)*(P^*_t)^{1-\varepsilon}]^{\frac{1}{1-\varepsilon}}$$
+Hvilket skulle være det samme som i slides hvor $\varepsilon$ udtryk går ud med hinanden. 
+
+divideres igennem med $P_{t-1}$ fåes et udtryk for inflationen 
+
+$$\Pi_t ^{1-\varepsilon}= \theta + (1-\theta) (\frac{P^*_t}{P_{t-1}})^{1-\varepsilon}$$
+
+Hvis der ingen inflation er vil dette svare til ar P ikke ændres over tid. 
+
+log lineariseres dette udtryk fås
+
+$$\pi_t= (1-\theta)(p^*_t-p_{t-1})$$
+Ud fra resten af side 80 fremgår det at virksomhederne der vælger prisn vil vælge en pris der afspejler den ønskede mark-up over et vægted gennemsnit af deres nuværrende og fremtidige marginale omkostnigner --> hvor vægtende er bestemt efter hvor ofte der kan vælges pris --> dermed er der ikke fuld konkurrence på markedet. 
+
+Tilstedeværelsen af en markupen i en situation med imperfekt konkurrence sænker output niveauet (den imperfekte konkurrence bliver større jo større $\theta$ er?) Spørg Mikael 
+
 ## How does the choice of $\theta$ affect the New Keynesian Phillips curve?
 
 Der er noget om det i Mikaels og Finns artikel side 80
 
+* Fortæller noget om at hvis $\theta =0$
+
+
+fra bogen side 328: 
+
+* Her kan vi se at andelen af virksomheder der kan ændrer prisen i hver periode indgår i termet $\kappa y_t$ hvor $\kappa= \frac{\alpha[1-(1-\alpha)\beta ]\phi}{1- \alpha}$ hvor $\alpha$ er den andel der kan ændre pris. (Dermed omvednt fra slide hvor $\theta$ er den andel der ik kan ændre pris dermed $\alpha = 1-\theta$) 
+
+* Ud fra hvad jeg kan se vil en stigning i $\theta$ altså dem der ikke kan vælge ny pris medføre et fald i $kappa$ dermed har $y_t$ en mindre effekt på inflationen. 
+
+- giver også okay mening at jo mindre en andel der kan skifte pris når ourpur ændrer sig jo mindre mindre vil denne ændring have af effekt på pris ændringerne. 
 
 # Exercise 3
 
