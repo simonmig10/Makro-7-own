@@ -32,12 +32,54 @@ Done
 
 ## 1. Explain crucial differences between Post-Keynesian SFC-models and General Equilibrium models?
 
+Fra slides: 
+
+Hvad karakterisere SFC-modeller?
+
+* Fokus på sektor balancer 
+* Regnskabsprincipper - Gengiver national regnskabet 
+* Link mellem den reale og finansielle side 
+* Fokus på makro relationer 
+* Keynesianske adfærdsrelationer 
+- Hvis politiken ændrer sig vil de styre efter disse normer og deres adfærd vil ændrer sig --> dermed modsvar til lukas kritik --> men til debat. 
+* Stock-flow normer 
+
+
+
+Fra introduktion til SFC modeller: 
+
+* SFC-Modeller bygger ikke på et mikro fundament men derimod regnskabs principer fra national regnskabet. 
+* I SFC-modeller tages både den rele og finansielle side med 
+- Her tages udganspunkt i en monetær produktions økonomi --> hvilket vil sige at virksomheder starter deres produktion op gennem lån i banken som derfor gældsætter virksomhederne 
+- Samtiig kan Husholdningernen benytte de finansielle markeder til at placere deres formue eller optage lån --> hvor placeringen af deres formue både kan være i finansielle akrtiver eller reale aktiver og bestemmes oftest af Tobins portefølje teori --> som forklare husholdningernes valg ud fra forventede afkast og risikovillighed ved husholdningerne 
+- Hvis husholdningerne efterspørger lån skabes disse endogent i modellen (side 8)
+* Den langsigtede ligevægt er en kæde af kortsigtede dermed går intet tabt. 
+* SFC kigger på en sektor opdelt økonomi --> med flows og stocks der skuber penge mellem hver sektor. 
+* SFC- modeller tilhøre ikke en desideret økonomisk skole men ønsker blot at gengive en konsistent opgørelse af strømme og beholdninger fra national regnskabet. --> men kravet om at være konsistent overholder de fleste makro modeller (Bare at der ik er noget der "forsvinder")
+- Det er først ved at anvende post-Keynesiansk teori at PK-SFC-modeller afviger fra andre modeller som DSGE 
+
+FRa intro side 8
+
+* I SFC-modeller tages både den rele og finansielle side med 
+- Her tages udganspunkt i en monetær produktions økonomi --> hvilket vil sige at virksomheder starter deres produktion op gennem lån i banken som derfor gældsætter virksomhederne 
+- Samtiig kan Husholdningernen benytte de finansielle markeder til at placere deres formue eller optage lån --> hvor placeringen af deres formue både kan være i finansielle akrtiver eller reale aktiver og bestemmes oftest af Tobins portefølje teori --> som forklare husholdningernes valg ud fra forventede afkast og risikovillighed ved husholdningerne 
+- Hvis husholdningerne efterspørger lån skabes disse endogent i modellen (side 8)
+
+* et andet post-keynesiansk bidrag omhandler markeds clearing gennem pris tilpasning der finder sted på det finansielle marked 
+
+* Er demand drevet --> men der er stadig udbuds restriktioner med 
+
+* Tredje punkt de afviger på er ved at agenter der er rationelle i den forstand at de søger at tilfredsstille deres behov --> dermed er der ikke tale om optimerende agenter --> kaldes bounded rationality --> de sætter normer og mål samt har forventninger til fremtiden som de agere efter --> dermed kan de have fejlagtige forventninger (fx. vælges ikke bare det finansielle aktiv med højest forventede afkast.)
+
+* Der anvendes ingen repræsentativ agent --> i DSGE modeller foreksempel varetager den repræsentative agent alle roller i økonomien --> dermed fald i løn vil opvejes af mere indtægt gennem kapital. --> i PK teori har fokus traditonielt været på fordelingen af indkomst i økonomien -->Kalecki opdeling af husholdnignerne i arbejdere og kapital ejere 
+
 ## 2.  Explain some of the key transmission channels between financial markets and the real economy – how does a drop in the price of a financial asset affect the real economy?
 
 
 ## 3. Discuss the macroeconomic effects of a drop in house prices within the empirical SFC-model.
 
 ## 4. Does the high level of household debt pose a risk to macroeconomic stability in case of a negative shock to the Danish Economy?
+
 
 
 # Part 3 Modern Money
