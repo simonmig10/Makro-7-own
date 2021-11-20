@@ -38,15 +38,18 @@ Fra bogen side 227-229
 2. modellen består af teknologi shocks med en standard afvigelse på 1% hver kvartal. Hvor det er svært at finde de innovationer der i real life skulle lave så store stød hvert kvartal. 
 
 - Derudover viser det sig at flere processer der ikke har noget med teknologi at gøre også følger disse stød som kommer af ændringerne i teknologi (Solow residual?)
+* Solow residual --> teknologiske udviklinger som her er white-noise se i Solow
 
 
-3. Empiri finder at labor input falder ved et positivt teknologi shock og dermed går modsat output--> hvor det i modellen er modsat?
+3. Empiri finder at labor input falder ved et positivt teknologi shock og dermed går modsat output--> hvor det i modellen er modsat hvor ourput og labour inpu følges en til en?
 Dette resultat er i hvet fald hvad man forventer med nominelle rigidities. 
+
 
 4. Der findes bevis for at markeder som kredit markedet ikke er Walrasian 
 
 5. output fælger the dynamics of teknology meget tæt --> men det findes at output har sigen egne mønstre (og ikke bare følger teknologi udvikling) fx tilfælde hvor ratio af forbrug i forhold til income er høj er dette typisk efterfulgt af høj output vækst. 
 
+6. Fuld arbejdskraaft hele tiden --> går blot ned i timer hvis udbud sænkes. 
  
 Antagelser:
 
@@ -70,6 +73,8 @@ Endogenous models:
 - First we looked at microfoundation: Micro foundations givet at vi har forkslellige vare og imperfect competition er ikke nok til at fortælle noget om unemployment eller out eller andre reale mål. 
 
 
+
+
 DSGE models
 - We need som barrier to price /wage asjustment -->  Vi antager nu at nogle firmaer har fixed prices og andre har flexible priser. --> folk der her flexibile     priser bidrager til inflation. 
 - Her får vi at der er en realøkonomisk effekt. 
@@ -78,16 +83,21 @@ DSGE models
 - Under DSGE-modeller vises det at nominelle shocks har en realøkonomisk effekt. 
 - Dermed kan økonomien nu påvirkes af både Demand og supply. 
 
+
+
 ## C Write out and analyse the three main equations in the canoniacal new Keynesian model
 
 The new Kaynsian IS curve:
 
 $$y_t= E_t[y_{t+1}] - \frac{1}{\theta}r_t +u_t^{IS}$$
+fra bog side 52: One can show that $1/\theta$ is the elasticity of substitution between consumption at any two points of time 
 
+when $\theta$ is small the household will allow consumption to vary more over time --> men hvordan er det negativt --> hvis den er lav skriver de at husholdningerne vil tage mere advantage hvis de kan. 
 
 The new Keynesian phillips curve:
 
 $$\pi_t = \beta E_t [\pi_{t+1}] + \kappa y_t + u^{\pi}_t$$
+Beta afgøre 
 
 The forward looking interest-rate rule: 
 
@@ -166,6 +176,10 @@ $$E_t[\hat{C_{t+1}]} -\frac{1}{\sigma}(\hat{r_t}- E_t[\hat{\pi_{t+1}}])= \hat{C_
 
 Betydning?
 
+Sigma er igen ligsom theta før med hvor smooth de vil ha forbrug. 
+
+
+
 ## In this model a Calvo price setting is used. Explain the intuition behind this method. How does it affect the price settings of the firms?
 
 Hvis virksomhederne bare kunne ændre pris som de vil ville de sætte $P^*= \mu + mc_t$
@@ -179,11 +193,15 @@ Hvor $\theta$ er sandsynligheden for at en virksomhed ikke må skifte pris og $(
 
 Hvis vi isolere $z_t$ i ovenstående ligning får vi 
 
-$$\frac{1}{1-\theta}(P_t - P_{t-1})=Z_t$$
+$$\frac{1}{1-\theta}(P_t - \theta P_{t-1})=Z_t$$
 
 Vi kan se jo større sandsynligheden er for at et firma må skifte pris $(1-\theta)$
 
+find ud af hvordan p_t ændres ved stød til pengemængden se side 325-327
+
 ## How does the choice of $\theta$ affect the New Keynesian Phillips curve?
+
+Der er noget om det i Mikaels og Finns artikel side 80
 
 
 # Exercise 3
@@ -275,6 +293,10 @@ Effect of the shock:
 
 * Vi kan se der ik er den store forskel på inflationsgap med den kontraktive finanspolitik op til krisen. 
 * Dette kan skyldes at inflationen op til krisen ikke var specielt høj --> kan ses på grafen der viser decomposition of the Danish GDP at Demand og supply shocks er næsten lige store. Dermed ikke de store prisstigninger. 
+
+De bruger argument for lille fald i output som at de har bedre konkurrence evne over for udlandet før krisen --> men inflation er ikke ændret specielt så kan ik se hvorfor bedre konkurrenceevne. 
+
+Kan kun få det til at give mening hvis det er at krisen kun rammer os. 
 
 
 **public consumption**
@@ -383,7 +405,8 @@ in scenario 1: undersøgelsen viser at hvis finanspolitikken var belvet anvendt 
 In scenario 2: 
 
 
-
+økonomien var urealistisk derfor er resultaterne også urealistiske 
+sidste del af kap 4
 
 # Ecercise 4
 
@@ -397,7 +420,7 @@ $$L= (y_t-y_e)^2 + \beta (\pi_t - \pi^T)^2,   \beta>0$$
 
 fra bog fra sebastian side 94: 
 
-beta er en relative weight attached to inflation if beta > 1vil centralbanken sætte mindre vægt på outputgap end inflationsgap. 
+beta er en relative weight attached to inflation if beta > 1 vil centralbanken sætte mindre vægt på outputgap end inflationsgap. 
 
 With beta= 1 er centralbanken vægter den output og inflations gap lige vigtigt. 
 
@@ -406,7 +429,7 @@ With beta= 1 er centralbanken vægter den output og inflations gap lige vigtigt.
 
 
 ```{r}
-knitr::include_graphics(rep("lossfunction.png", 1), dpi = 150)
+#knitr::include_graphics(rep("lossfunction.png", 1), dpi = 150)
 ```
 
 **Balanced: $\beta = 1$**
@@ -432,7 +455,7 @@ The phillips curve shows all the combinations of inflation and output the centra
 if we assume the phillips curve has $\alpha = 1$ the plot will look like this: 
 
 ```{r}
-knitr::include_graphics(rep("phiillips curve.png", 1), dpi = 150)
+#knitr::include_graphics(rep("phiillips curve.png", 1), dpi = 150)
 ```
 
 We can see that for a given level of inflation in last period the central bank will choose the point with the lowest losses. 
@@ -453,7 +476,7 @@ If the central bank has a very high weight on inflation and want to hit the targ
 
 
 ```{r}
-knitr::include_graphics(rep("MR curve.png", 1), dpi = 150)
+#knitr::include_graphics(rep("MR curve.png", 1), dpi = 150)
 ```
 
 This shows the output and inflation the central bank would choose to minimize its loss function for any given phillipscurve it is faced with 
