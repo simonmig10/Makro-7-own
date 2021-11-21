@@ -64,6 +64,7 @@ FRa intro side 8
 - Her tages udganspunkt i en monetær produktions økonomi --> hvilket vil sige at virksomheder starter deres produktion op gennem lån i banken som derfor gældsætter virksomhederne 
 - Samtiig kan Husholdningernen benytte de finansielle markeder til at placere deres formue eller optage lån --> hvor placeringen af deres formue både kan være i finansielle akrtiver eller reale aktiver og bestemmes oftest af Tobins portefølje teori --> som forklare husholdningernes valg ud fra forventede afkast og risikovillighed ved husholdningerne 
 - Hvis husholdningerne efterspørger lån skabes disse endogent i modellen (side 8)
+- IDSE modeller kan man ikke analysere gæld isoleret --> som Mikael gør i hans artikel 
 
 * et andet post-keynesiansk bidrag omhandler markeds clearing gennem pris tilpasning der finder sted på det finansielle marked 
 
@@ -73,12 +74,110 @@ FRa intro side 8
 
 * Der anvendes ingen repræsentativ agent --> i DSGE modeller foreksempel varetager den repræsentative agent alle roller i økonomien --> dermed fald i løn vil opvejes af mere indtægt gennem kapital. --> i PK teori har fokus traditonielt været på fordelingen af indkomst i økonomien -->Kalecki opdeling af husholdnignerne i arbejdere og kapital ejere 
 
+
+Side 10-11 Forskelle mellem SFC og DSGE modeller: 
+
+* I DSGE modeller lukkes modellen oftest med opstillingen af en pengepolitisk reaktions funktion fx. en variant af Taylor-Rule --> hvor renten ændres ved afvigelser fra inflations målet eller afvigelser fra optimalt output. 
+
+* I PK-SFC modeller er der ikke sådan en reaktions funktion --> i PK er renten blot en fordelings variable der flytter indkomsten mellem befolknings grupper 
+
+* En stor styrke der fremhæves ved DSGE modeller er at de er immune overfor Lucas-kritikken --> hvor fremadskuende forventninger sikre at modellerne ikke er sårbare overfor ændringer i den økonomiske politik. 
+
+- Der diskuteres stadig om PK-SFC modeller er immune overfor denne kritik hvor argumentet er at kritikken rammer de fleste modeller hvor forventningerne er adaptive --> men andvendelsen af normer og målsætninger imødegår kritikken.
+
+* PK-SFC er efterspørgsles dreven adfærden styres af normer og målsætninger og agenterne ændrer adfærd ved afvigelser fra disse normer og målsætninger. 
+
 ## 2.  Explain some of the key transmission channels between financial markets and the real economy – how does a drop in the price of a financial asset affect the real economy?
+
 
 
 ## 3. Discuss the macroeconomic effects of a drop in house prices within the empirical SFC-model.
 
+```{r}
+knitr::include_graphics(rep("Fald i hus.png", 1), dpi = 150)
+```
+
+
+1. Vi ved gennem husholdningernes investerings funktion at et fald i huspriserne vil lede til et fald i investeringerne (Tobins Q) --> derfor falder investeringer meget 
+
+Fra den anden artikel: 
+
+Faldet i huspriserne vil sænke aggregate demand gennem investeringer og forbrug 
+- Den negative effekt på forbrug kommer af et fald i den samlede formue (Hvor husholdningerne forbruger en del af deres formue)
+- Den negative effekt på invetseringer kommer igennem Tobins q, hvor et flad i huspriserne vil resultere i at mindre vil investere i nye huse. 
+
+* Det overall lavere demand sænker også efterspørgslen efter at importere 
+
+* Faldet i den overall økonomiske aktivitet sænke yderligere investeringer og forbrug hvilket gør faldet endnu større (Her kan vi se at huspriserne falder med 30% og ikke kun de 5% stødet var på)
+
+*Samtidig kan vi se at det lavere demand for huse leder til et lavere demand efter lån 
+
+
+Fra den rigtige artikel: 
+
+* Faldet i huspriserne contracts the real economy og hæver arbejdsløsheden 
+* Faldet i GDP kommer af et stort fald i investeringer -- Faldet her kommer af at mindre vil investere i nye huse nu. 
+
+* Real consumption also falls as a result of lower housing wealth 
+
+* Der sker ikke det store med eksport, da der ikke sker de store prisændringer på vare markedet 
+* Større fald i imports hvilket er forklaret af et fald i den hjemmelige efterspørgsel og lavere hjemmelige priser 
+
+* Det ser du til at på mellem sigt er der kun en effekt på investeringer og importen 
+
+* Det kan også ses at den lavere efterspørgsel hæver arbejdsløsheden 
+
+
+**Financial balances for each sector**
+
+* Vi kan se der sker et fald i den udenlandske sektor balance hvilket skyldes det relativt større fald i import end i eksport. 
+
+* Vi kan også se et fald i statens sektor balance hvilket kommer af lavere skatte betalinger og en eksogent bestemt. 
+
+* For households a fall in house prices results in capital losses --> leading to a fall in total netwealth --> which in turn negatively affects investments and consumption --> the fall in prices also reduces the insetement to invest in new houses --> dermed mindre efterspørgsel efter lån --> lsowdown in demand for loans combined with a fall in consumptions leads to an improvement in the financial balance of the household sector --> det er fordi der er forskel på housing wealth og deres financial balance wealth --> for deres housing wealth falder 
+
+
 ## 4. Does the high level of household debt pose a risk to macroeconomic stability in case of a negative shock to the Danish Economy?
+
+
+Fra rigtige artikel: 
+
+vigtige antagelser: 
+* husk det antages at husholdningernes gæld er hjemmelig 
+* der er ingen rente forskelle 
+* valutakurs er fixed
+alt dette sænker effekten af et fald i huspriser og renten på current account balance --> making output relative stable. 
+
+
+* Først laver de et shock på 3% point til renten samtidig med et 10% fald i hus priser --> her falder gdp kun med 0.3% point fra baseline (det er procent point right?)
+
+* Dermed ser det ikke ud til at den nuværrende gæld ser ud til at være et problem selv om et stort negativt shock skulle ramme økonomien. 
+
+* Hvorfor havde samme størrelse stød en større effekt under finanskrisen?
+1. There is no effect interrest decision on the stock prices 
+2. there is no contagius effect of house prices on stock prices as a result of negative market sentiment 
+- under finanskrisen resulterede et fald i aktiepriser med et fald i huspriser og stigning af renten. 
+3. we do not assumen a globale shock (Dermed opnår Danmark bedre konkurrence evne) import falder men eksport forbliver nærmest uænderet. 
+
+* Hvis der samtidig i modellen laves ovenstående effekter ved et fald i global output og samme stigning i renten og fald i huspriser bliver det en alvorlig krise 
+
+
+
+
+FRa anden artikel: 
+
+
+
+* Højere disp. Indkomst resultere i en højere accepteret stock of gæld som husholdningerne er villige til at holde --> men også som de finansielle virksomheder er villige til at give. 
+
+
+Fra slides: 
+
+*Den høje gæld forstærker den negative effekt af et stød til økonomien gennem flere forskellige kanaler 
+
+* Et negativt stød til økonomien medføre et fald i den økonomiske 
+
+* Hjemlig stød udgør ingen seriøs risiko for den makroøkonmiske stabilitet 
 
 
 
