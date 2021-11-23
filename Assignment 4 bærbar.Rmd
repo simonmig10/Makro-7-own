@@ -1,0 +1,195 @@
+---
+title: "Assignment 4"
+author: "Simon"
+date: "16/11/2021"
+output: html_document
+---
+# Part 1 post keynesian theory
+In these exercises the Kalecki-Steindl model will be used to discuss some of the recent events registered in advanced economies. The main goal is to critically analyze the economic conjuncture through the lenses of Post Keynesian theory.
+
+## 1. Read The Economist's note "Wages are surging across the rich world"
+
+Done 
+
+## 2. Explain the following statement using Kalecki’s micro-foundations: "But pay can rise for a variety of reasons, some more benign than others. For a given level of productivity, higher wages must show up in one of two ways: as higher inflation or as a higher "labour share" of GDP". Why is it that, if nominal wages increase and firms choose not to pass on the higher labour costs to prices, the "labour share" increases?
+
+
+
+
+## 3. Assume that the increase in nominal wages discussed in the note is finally passed on to prices one-on-one. What would be the impact on output (proxied by the rate of capacity utilization) and growth. Use the graphical setting developed in the Kalecki-Steindl model.
+
+
+## 4. Evaluate the following statement through the lenses of the Kalecki-Steindl graphical device: "But an ever-rising labour share would be a worry: it would crimp companies' profits and thus the investments that are crucial to improving long-run economic growth". Does an increase in the labour share reduce long-run growth in this model? Why? Why not?
+
+## 5. The note stresses that: "There is another, happier, possibility. If productivity rises, then wage growth need not cause sustained inflation, nor push up the labour share. Instead the economic pie would grow, with more for everyone."
+
+### a Explain why a raise in productivity could offset the inflationary pressure or increasing wages
+
+### b Illustrate this scenario using the Kalecki-Steindl graphical model. Does the model predict a higher size of the income (a.k.a. “the economic pie”)? What would be needed for the "economic pie" to grow in the model?
+
+
+# Part 2 Post keynesian Stock-Flow Consistent Models
+
+## 1. Explain crucial differences between Post-Keynesian SFC-models and General Equilibrium models?
+
+Fra slides: 
+
+Hvad karakterisere SFC-modeller?
+
+* Fokus på sektor balancer 
+* Regnskabsprincipper - Gengiver national regnskabet 
+* Link mellem den reale og finansielle side 
+* Fokus på makro relationer 
+* Keynesianske adfærdsrelationer 
+- Hvis politiken ændrer sig vil de styre efter disse normer og deres adfærd vil ændrer sig --> dermed modsvar til lukas kritik --> men til debat. 
+* Stock-flow normer 
+
+
+
+Fra introduktion til SFC modeller: 
+
+* SFC-Modeller bygger ikke på et mikro fundament men derimod regnskabs principer fra national regnskabet. 
+* I SFC-modeller tages både den rele og finansielle side med 
+- Her tages udganspunkt i en monetær produktions økonomi --> hvilket vil sige at virksomheder starter deres produktion op gennem lån i banken som derfor gældsætter virksomhederne 
+- Samtiig kan Husholdningernen benytte de finansielle markeder til at placere deres formue eller optage lån --> hvor placeringen af deres formue både kan være i finansielle akrtiver eller reale aktiver og bestemmes oftest af Tobins portefølje teori --> som forklare husholdningernes valg ud fra forventede afkast og risikovillighed ved husholdningerne 
+- Hvis husholdningerne efterspørger lån skabes disse endogent i modellen (side 8)
+* Den langsigtede ligevægt er en kæde af kortsigtede dermed går intet tabt. 
+* SFC kigger på en sektor opdelt økonomi --> med flows og stocks der skuber penge mellem hver sektor. 
+* SFC- modeller tilhøre ikke en desideret økonomisk skole men ønsker blot at gengive en konsistent opgørelse af strømme og beholdninger fra national regnskabet. --> men kravet om at være konsistent overholder de fleste makro modeller (Bare at der ik er noget der "forsvinder")
+- Det er først ved at anvende post-Keynesiansk teori at PK-SFC-modeller afviger fra andre modeller som DSGE 
+
+FRa intro side 8
+
+* I SFC-modeller tages både den rele og finansielle side med 
+- Her tages udganspunkt i en monetær produktions økonomi --> hvilket vil sige at virksomheder starter deres produktion op gennem lån i banken som derfor gældsætter virksomhederne 
+- Samtiig kan Husholdningernen benytte de finansielle markeder til at placere deres formue eller optage lån --> hvor placeringen af deres formue både kan være i finansielle akrtiver eller reale aktiver og bestemmes oftest af Tobins portefølje teori --> som forklare husholdningernes valg ud fra forventede afkast og risikovillighed ved husholdningerne 
+- Hvis husholdningerne efterspørger lån skabes disse endogent i modellen (side 8)
+- IDSE modeller kan man ikke analysere gæld isoleret --> som Mikael gør i hans artikel 
+
+* et andet post-keynesiansk bidrag omhandler markeds clearing gennem pris tilpasning der finder sted på det finansielle marked 
+
+* Er demand drevet --> men der er stadig udbuds restriktioner med 
+
+* Tredje punkt de afviger på er ved at agenter der er rationelle i den forstand at de søger at tilfredsstille deres behov --> dermed er der ikke tale om optimerende agenter --> kaldes bounded rationality --> de sætter normer og mål samt har forventninger til fremtiden som de agere efter --> dermed kan de have fejlagtige forventninger (fx. vælges ikke bare det finansielle aktiv med højest forventede afkast.)
+
+* Der anvendes ingen repræsentativ agent --> i DSGE modeller foreksempel varetager den repræsentative agent alle roller i økonomien --> dermed fald i løn vil opvejes af mere indtægt gennem kapital. --> i PK teori har fokus traditonielt været på fordelingen af indkomst i økonomien -->Kalecki opdeling af husholdnignerne i arbejdere og kapital ejere 
+
+
+Side 10-11 Forskelle mellem SFC og DSGE modeller: 
+
+* I DSGE modeller lukkes modellen oftest med opstillingen af en pengepolitisk reaktions funktion fx. en variant af Taylor-Rule --> hvor renten ændres ved afvigelser fra inflations målet eller afvigelser fra optimalt output. 
+
+* I PK-SFC modeller er der ikke sådan en reaktions funktion --> i PK er renten blot en fordelings variable der flytter indkomsten mellem befolknings grupper 
+
+* En stor styrke der fremhæves ved DSGE modeller er at de er immune overfor Lucas-kritikken --> hvor fremadskuende forventninger sikre at modellerne ikke er sårbare overfor ændringer i den økonomiske politik. 
+
+- Der diskuteres stadig om PK-SFC modeller er immune overfor denne kritik hvor argumentet er at kritikken rammer de fleste modeller hvor forventningerne er adaptive --> men andvendelsen af normer og målsætninger imødegår kritikken.
+
+* PK-SFC er efterspørgsles dreven adfærden styres af normer og målsætninger og agenterne ændrer adfærd ved afvigelser fra disse normer og målsætninger. 
+
+## 2.  Explain some of the key transmission channels between financial markets and the real economy – how does a drop in the price of a financial asset affect the real economy?
+
+
+Fald i pris på et finansielt aktiv 
+
+
+
+## 3. Discuss the macroeconomic effects of a drop in house prices within the empirical SFC-model.
+
+```{r}
+knitr::include_graphics(rep("Fald i hus.png", 1), dpi = 150)
+```
+
+
+1. Vi ved gennem husholdningernes investerings funktion at et fald i huspriserne vil lede til et fald i investeringerne (Tobins Q) --> derfor falder investeringer meget 
+
+Fra den anden artikel: 
+
+Faldet i huspriserne vil sænke aggregate demand gennem investeringer og forbrug 
+- Den negative effekt på forbrug kommer af et fald i den samlede formue (Hvor husholdningerne forbruger en del af deres formue)
+- Den negative effekt på invetseringer kommer igennem Tobins q, hvor et flad i huspriserne vil resultere i at mindre vil investere i nye huse. 
+
+* Det overall lavere demand sænker også efterspørgslen efter at importere 
+
+* Faldet i den overall økonomiske aktivitet sænke yderligere investeringer og forbrug hvilket gør faldet endnu større (Her kan vi se at huspriserne falder med 30% og ikke kun de 5% stødet var på)
+
+*Samtidig kan vi se at det lavere demand for huse leder til et lavere demand efter lån 
+
+
+Fra den rigtige artikel: 
+
+* Faldet i huspriserne contracts the real economy og hæver arbejdsløsheden 
+* Faldet i GDP kommer af et stort fald i investeringer -- Faldet her kommer af at mindre vil investere i nye huse nu. 
+
+* Real consumption also falls as a result of lower housing wealth 
+
+* Der sker ikke det store med eksport, da der ikke sker de store prisændringer på vare markedet 
+* Større fald i imports hvilket er forklaret af et fald i den hjemmelige efterspørgsel og lavere hjemmelige priser 
+
+* Det ser du til at på mellem sigt er der kun en effekt på investeringer og importen 
+
+* Det kan også ses at den lavere efterspørgsel hæver arbejdsløsheden 
+
+
+**Financial balances for each sector**
+
+* Vi kan se der sker et fald i den udenlandske sektor balance hvilket skyldes det relativt større fald i import end i eksport. 
+
+* Vi kan også se et fald i statens sektor balance hvilket kommer af lavere skatte betalinger og en eksogent bestemt. 
+
+* For households a fall in house prices results in capital losses --> leading to a fall in total netwealth --> which in turn negatively affects investments and consumption --> the fall in prices also reduces the insetement to invest in new houses --> dermed mindre efterspørgsel efter lån --> lsowdown in demand for loans combined with a fall in consumptions leads to an improvement in the financial balance of the household sector --> det er fordi der er forskel på housing wealth og deres financial balance wealth --> for deres housing wealth falder 
+
+
+## 4. Does the high level of household debt pose a risk to macroeconomic stability in case of a negative shock to the Danish Economy?
+
+
+Fra rigtige artikel: 
+
+vigtige antagelser: 
+* husk det antages at husholdningernes gæld er hjemmelig 
+* der er ingen rente forskelle 
+* valutakurs er fixed
+alt dette sænker effekten af et fald i huspriser og renten på current account balance --> making output relative stable. 
+
+
+* Først laver de et shock på 3% point til renten samtidig med et 10% fald i hus priser --> her falder gdp kun med 0.3% point fra baseline (det er procent point right?)
+
+* Dermed ser det ikke ud til at den nuværrende gæld ser ud til at være et problem selv om et stort negativt shock skulle ramme økonomien. 
+
+* Hvorfor havde samme størrelse stød en større effekt under finanskrisen?
+1. There is no effect interrest decision on the stock prices 
+2. there is no contagius effect of house prices on stock prices as a result of negative market sentiment 
+- under finanskrisen resulterede et fald i aktiepriser med et fald i huspriser og stigning af renten. 
+3. we do not assumen a globale shock (Dermed opnår Danmark bedre konkurrence evne) import falder men eksport forbliver nærmest uænderet. 
+
+* Hvis der samtidig i modellen laves ovenstående effekter ved et fald i global output og samme stigning i renten og fald i huspriser bliver det en alvorlig krise 
+
+
+
+
+FRa anden artikel: 
+
+
+
+* Højere disp. Indkomst resultere i en højere accepteret stock of gæld som husholdningerne er villige til at holde --> men også som de finansielle virksomheder er villige til at give. 
+
+
+Fra slides: 
+
+*Den høje gæld forstærker den negative effekt af et stød til økonomien gennem flere forskellige kanaler 
+
+* Et negativt stød til økonomien medføre et fald i den økonomiske 
+
+* Hjemlig stød udgør ingen seriøs risiko for den makroøkonmiske stabilitet 
+
+
+
+# Part 3 Modern Money
+
+## 1. Why would a Central Bank normally refrain from setting the policy rate significantly below 0%?
+
+## 2. Can Central Banks keep on pursuing an expansionary monetary policy when the zero-lower bound has been hit? If so, how can they do it?
+
+## 3. Why is it that quantitative easing does not necessarily lead to an increase in lending?
+
+## 4. Taking into account Epstein’s concerns about the international spillovers of expansionary monetary policies, what are the risks of sustaining quantitative easing for an extended period? What might be the reasons why despite these risks, Central Banks these days (end of 2021) are being slow at tapering quantitative easing?
