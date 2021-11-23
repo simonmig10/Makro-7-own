@@ -238,7 +238,7 @@ Hvis vi kigger på det i Solow modellen vil forbrug jo være $(1-s)*Y$ dermed vi
 
 
 ```{r}
-#knitr::include_graphics(rep("figure 2.8.png", 1), dpi = 150)
+knitr::include_graphics(rep("2.8.png", 1), dpi = 150)
 ```
 
 
@@ -247,7 +247,7 @@ Hvis vi kigger på det i Solow modellen vil forbrug jo være $(1-s)*Y$ dermed vi
 ### Effect of a temoary increase in government purchases
 
 ```{r}
-#knitr::include_graphics(rep("figure 2.9.png", 1))
+knitr::include_graphics(rep("2.9.png", 1))
 ```
 
 

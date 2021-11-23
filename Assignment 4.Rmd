@@ -79,11 +79,16 @@ Men hvis vi allerede er tæt på fuld udnyttelse $u^*=1$ vil øøkonomien ikke k
 
 ### a Explain why a raise in productivity could offset the inflationary pressure or increasing wages
 
-So looking at the exxpression $P=(1++\tau)W\alpha_0$ we can see that an increase in productivity $1/\alpha_0$ would mean a decrease in $\alpha_0$ 
+So looking at the exxpression $P=(1+\tau)W\alpha_0$ we can see that an increase in productivity $1/\alpha_0$ would mean a decrease in $\alpha_0$ 
 
-if we look at the expression for the real wage $w^*= 1- \pi/\alpha_0$ a decrease in $\alpha_0$ will increase the real wage. 
+The question is till concerning a raise in $W$ i guess. So if $a_0$ falls this could counter the rise in $W$ and does so prices wount have to increase. 
 
 ### b Illustrate this scenario using the Kalecki-Steindl graphical model. Does the model predict a higher size of the income (a.k.a. “the economic pie”)? What would be needed for the "economic pie" to grow in the model?
+
+If the $a_0$ goes down this will also affect the real wage, (giver mening eftersom W stiger Men vi lige har sagt P ik stiger grundet fald i $a_0$). Real wage is given by $w^*\frac{1- \pi}{a_0}$
+
+We can see that the shock to $\alpha_0$ is a supply site shock --> and in PK theory er at variable er demand determined. --> increase in productivity leads t giher wages and a lower level of employment, leaving total workers’ disposable income unchanged. Consumption and output are, therefore, constant.
+
 
 
 # Part 2 Post keynesian Stock-Flow Consistent Models
@@ -241,6 +246,10 @@ Fra slides:
 
 # Part 3 Modern Money
 
+Base money --> 
+
+Broad money --> 
+
 ## 1. Why would a Central Bank normally refrain from setting the policy rate significantly below 0%?
 
 Hvis penge lavet af de private banker ikke er nok til at en pengemængde der gøør at vi kan nå inflationsmålet --> her kan centralbanken sænke renten for at få flere private og viorksomheder til at vil låne, og samtidig gøøre det mere profitabelt for banker at låne ud. --> men på et tidspunkt vil vi nå lower bound på 0.5% --> når vi når en rente omkring 0% er det ik længere muligt for central banken at yde med mere stimilus til økonomien 
@@ -253,8 +262,11 @@ gennem "program of asset purchases" som kan stimulere økonomien og derved nå i
 
 Hvordan QE virker: 
 
-1. central banknen køber aktiver finansieret af broad money og en tilsvarende stigning i centralbankens reserver 
-2. The seller of the asset vil nu holde de nyskabte deposits "in place of goverment bonds" (forstår ik helt)
+
+
+1. central banknen køber aktiver finansieret af broad money og en tilsvarende stigning i centralbankens reserver (række 2 i grafen) --> vi kan se staten køber noget af sin gæld tilbage i form af statsobligationer og samtidig gør det ved at oprette mere reserve. 
+
+2. The seller of the asset vil nu holde de nyskabte deposits istedet for den offentlige gæld i form af goverment bonds.  (forstår ik helt)
 3. Sælger holder nu flere penge relativt til andre aktiver de vil derfor bruge pengene på at køber aktiver med højere afkast (obligationer og aktier) 
 4. DEt vil hæve priser på disse aktiver og gøre virksomheders finansierings omkostninger gennem obligations og aktie markedet billigere?
 
@@ -263,10 +275,52 @@ Hvordan QE virker:
 
 Et eksempel kunne være at centralbanken printer 1 mil kr for at køber statsobligationer ved en pensions kasse. 
 
+```{r}
+knitr::include_graphics(rep("QE.png", 1), dpi = 150)
+```
 
+
+1.  Pensions fondens bank kreditere pensions fondens account med 1 mil kr. deposits til gengæld for statsobligationer (første række)
+
+2. The bank of england kreditere til pension fondens bank--> it gives the commercial bank an IOU (I Owe You betyder bare jeg skylder dig gæld, men kan ik handles med?) (second row)
+
+3. the commercial banks balance sheet expands: New deposit liabilities are matched with an asset in the form of reserves (third row)
+- Så banken får den eksrta reserve som centralbanken laver og derfor kan de give pensions fonden de nye deposits. 
+-Nogle tilfælde snakkes de nye reserver for banken om at være free money --> da disse kan investeres i rente bærende aktiver, eller aktiver med afkast. 
+- Men QE skaber også en tilsvarende liability i form af pensions fondens deposits som banken så skal betale rente til pensions kassen for. 
 
 ## 3. Why is it that quantitative easing does not necessarily lead to an increase in lending?
+
+
+- Banks can not directly lend out reservs as reserves are an IOU from the central bank to commercial banks --> bankerne kan dermed bruge dem til payments mellem hinanden (låne dem til hinanden?) --> men kan ikke låne dem til husholdninger da de ikke har reservs accounts. --> when banks make additional loans they are matched by etra deposits --> the amount of reservs stay the same. 
+
+
+- Derfor er reserves ikke dirkete ligmed flere lån. men vil måske gøre banken mere sikker da de har hævet deres reserve og dermed kan de låne mere ud og holde en god ratio af pengene i banken stadig? 
+
+
+
+- It is possible that QE might indirectly affect the incentives facing banks to make new loans-- > by reducing their funding costs, or by increasing the quantity of credit quantity by boosting activity
+
+- Equally QE could lead to companies repaying bank credit, if they were to issue more bonds or equity and use those funds to repay bank loans. 
+
+- Derfor kan QE både sænke eller hæver lending
+
 
 ## 4. Taking into account Epstein’s concerns about the international spillovers of expansionary monetary policies, what are the risks of sustaining quantitative easing for an extended period? What might be the reasons why despite these risks, Central Banks these days (end of 2021) are being slow at tapering quantitative easing?
 
 
+MMT vil holde den langsigtede rente lav ligsom QE gør --> vil resultere i en meget ekspansiv pengepolitik der kan have spillover effects. 
+
+MMT vil føre "american first" policy --> her ignoreres den makroøkonomiske politiks effekt på resten af verdenen
+- Der er impiriske beviser på at US monetary policy påvirker emerging markets and developing countries gennem spillover effekter gennem dollarens "predominant international role" 
+
+- disse spillovers kan have stor betydning for destabilisering hvis FED føre meget stram eller løs finanspolitik uden at tænke på deres effekt på udviklings lande
+
+Man skulle tro at spillover effekterne vil være positive ved at holde en lav rente gennem QE da dette bidrager til billig kapital for de lande --> men her ignoreres den høøje spekulative natur på finansielle markeder 
+
+- En analyse af lave lange renter viser at i tilfældet af stærke finansielle regalutioner (både hjemmelige og internationale) er udkommet meget likely to become accumulation of high leverage, asset bubbles and financial instability. --> her snakker MMT ik så meget om financielle reguleringer. 
+
+
+
+
+MMT siger at progressives with programmatic plans (QE går jeg ud fra) do not need to say or worry about the costs of these programs or how they are going to be "paid for". --> Men det mener Epstein er forkert --> MMT siger selv at omkring full employment further economic expansion could lead to an increase in inflation and if this fiscal and monetary expansion could lead to an increase in inflation and if fiscal and monetary epansions were pushed too far, inflation could accelerate --> MMT argue that at full employment goverment would have to raise taxes or cut public spending to make room for new fiscal initiatives --> her giver MMT ikke en systematisk måde at gøøre dete på.  
