@@ -14,16 +14,74 @@ Done
 ## 2. Explain the following statement using Kalecki’s micro-foundations: "But pay can rise for a variety of reasons, some more benign than others. For a given level of productivity, higher wages must show up in one of two ways: as higher inflation or as a higher "labour share" of GDP". Why is it that, if nominal wages increase and firms choose not to pass on the higher labour costs to prices, the "labour share" increases?
 
 
+We know that the prices are detemined by: 
 
+$$P= (1+ \tau)Wa_o$$
+We can see if the nominal wages increases and the unit labour requirement $\alpha_0$ and price is fixed. the expression $(1- \tau)$ would need to decrease this would mean the mark-up $\tau$ would need to go down. 
+
+And as the profit share is bestmet af mark-uppen vil profit andelen falde mens løn andelen $1- \pi$ vil stige. 
+
+Vil dette ikke også sænke nogle af steady state værdierne for $u^*$, $r^*$ og $g^*$?
 
 ## 3. Assume that the increase in nominal wages discussed in the note is finally passed on to prices one-on-one. What would be the impact on output (proxied by the rate of capacity utilization) and growth. Use the graphical setting developed in the Kalecki-Steindl model.
 
+If we assume that the increase in $W$ is passed on one to one into prices 
+
+Both of them appear in the exxpression for real wages $w^*=W/P$ but as they both increase by the same amount nothing will happend. 
+
+Derudover indgår W eller P ikke i andre steady statre værdier. 
+
+
+Svar fr sebastian: 
+
+There would be no impact, because if nominal wages and prices increase in the same
+proportion the real wage stays constant. As a result, there is no change in consumption and
+output (proxied by the rate of capacity utilisation). This, in turn, implies that the rate of profit
+and growth are also constant.
 
 ## 4. Evaluate the following statement through the lenses of the Kalecki-Steindl graphical device: "But an ever-rising labour share would be a worry: it would crimp companies' profits and thus the investments that are crucial to improving long-run economic growth". Does an increase in the labour share reduce long-run growth in this model? Why? Why not?
+
+1. First an increase in the labor share $(1-\pi)$ would mean a decrease in $\pi$
+
+2. if $\pi$ goes down --> $u^*=\frac{g_0}{(Sr-g_1) (\pi/\alpha_1)-g_2}$ will be affected. 
+- Assuming that $Sr-g_1$ is positive  the fall in $\pi$ would mean an increase in $u^*$
+- Det er et krav for ader er ligevægt at $(g_1- S_r) (\pi/\alpha_1)+g_2 < 0$ 
+
+
+3.  investments $g$ i relation til renten kan skrives som $g= g_0+(g_1++\frac{g_2}{\pi}*\alpha_1)r$ hvor det skal bemærkes at et fald i $\pi$ vil gøre at hældningen stiger. og eftersom vi har $r$ op ad y aktien vil det være hældningen i forhold til denne. 
+- When g increases for every point of r this also means long run growth increases. 
+
+
+4. $\pi$ indgår også i $w^*= (1-\pi)/\alpha_0$ --> dermed stiger $w^*$
+
+5. So we get that $u^*$, $g^*$, $\sigma ^*$ and $w^*$ goes up (Stadig lige høøre til det med g og g^* om det bare følges ad?) 
+
+6. Vi burde igså kunne se direkte i $g^*$ og $r^*$ ligningerne at niveaut vil stige. 
+
+
+```{r}
+knitr::include_graphics(rep("increase in l share.png", 1), dpi = 150)
+```
+
+Selvom det er en stigning i labor share vil $u^*$ stige dermed stiger helle økonomien da de udnytter en større del af kapital apperatet? 
+
+```{r}
+knitr::include_graphics(rep("fordeling .png", 1), dpi = 150)
+```
+
+noget med vi ved $K$ er fixed og når u stiger benytter de blot en større del af kapital apperatet og $r$ ændres men ved ik om $P$ ændres nu hvor $\tau$ ændres da $\pi$ ændres.
+
+
+Men hvis vi allerede er tæt på fuld udnyttelse $u^*=1$ vil øøkonomien ikke kunne udvides. 
+
 
 ## 5. The note stresses that: "There is another, happier, possibility. If productivity rises, then wage growth need not cause sustained inflation, nor push up the labour share. Instead the economic pie would grow, with more for everyone."
 
 ### a Explain why a raise in productivity could offset the inflationary pressure or increasing wages
+
+So looking at the exxpression $P=(1++\tau)W\alpha_0$ we can see that an increase in productivity $1/\alpha_0$ would mean a decrease in $\alpha_0$ 
+
+if we look at the expression for the real wage $w^*= 1- \pi/\alpha_0$ a decrease in $\alpha_0$ will increase the real wage. 
 
 ### b Illustrate this scenario using the Kalecki-Steindl graphical model. Does the model predict a higher size of the income (a.k.a. “the economic pie”)? What would be needed for the "economic pie" to grow in the model?
 
@@ -185,7 +243,27 @@ Fra slides:
 
 ## 1. Why would a Central Bank normally refrain from setting the policy rate significantly below 0%?
 
+Hvis penge lavet af de private banker ikke er nok til at en pengemængde der gøør at vi kan nå inflationsmålet --> her kan centralbanken sænke renten for at få flere private og viorksomheder til at vil låne, og samtidig gøøre det mere profitabelt for banker at låne ud. --> men på et tidspunkt vil vi nå lower bound på 0.5% --> når vi når en rente omkring 0% er det ik længere muligt for central banken at yde med mere stimilus til økonomien 
+
+*' Hvis centralbanken vil sætte renten til under 0% --> ville banker kunne bytte deres reserver til penge som vil betale en højere afkast nemlig 0% --> dermed vil efterspørgslen efter central-bankens reserver forsvinde --> og centralbanken kan ik længere påvirke økonomien ved at ændrer prisen på reserverne 
+
 ## 2. Can Central Banks keep on pursuing an expansionary monetary policy when the zero-lower bound has been hit? If so, how can they do it?
+
+gennem "program of asset purchases" som kan stimulere økonomien og derved nå inflations mål
+
+Hvordan QE virker: 
+
+1. central banknen køber aktiver finansieret af broad money og en tilsvarende stigning i centralbankens reserver 
+2. The seller of the asset vil nu holde de nyskabte deposits "in place of goverment bonds" (forstår ik helt)
+3. Sælger holder nu flere penge relativt til andre aktiver de vil derfor bruge pengene på at køber aktiver med højere afkast (obligationer og aktier) 
+4. DEt vil hæve priser på disse aktiver og gøre virksomheders finansierings omkostninger gennem obligations og aktie markedet billigere?
+
+5. Dette vil lede til højere forbrug i økonomien 
+
+
+Et eksempel kunne være at centralbanken printer 1 mil kr for at køber statsobligationer ved en pensions kasse. 
+
+
 
 ## 3. Why is it that quantitative easing does not necessarily lead to an increase in lending?
 
