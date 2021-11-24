@@ -20,7 +20,11 @@ We know that the prices are detemined by:
 $$P= (1+ \tau)Wa_o$$
 We can see if the nominal wages increases and the unit labour requirement $\alpha_0$ and price is fixed. the expression $(1- \tau)$ would need to decrease this would mean the mark-up $\tau$ would need to go down. 
 
-And as the profit share is bestmet af mark-uppen vil profit andelen falde mens løn andelen $1- \pi$ vil stige. 
+And as the profit share is bestmet af mark-uppen vil profit andelen falde mens løn andelen $1- \pi$ vil stige. hvilket kommer af: 
+
+$$\pi= \frac{\tau}{1+\tau}$$
+
+I den anden model kan det godet påvrike g både positivt og negativt efter som den er løn dreven eller profit dreven
 
 Vil dette ikke også sænke nogle af steady state værdierne for $u^*$, $r^*$ og $g^*$?
 
@@ -46,7 +50,7 @@ and growth are also constant.
 
 2. if $\pi$ goes down --> $u^*=\frac{g_0}{(Sr-g_1) (\pi/\alpha_1)-g_2}$ will be affected. 
 - Assuming that $Sr-g_1$ is positive  the fall in $\pi$ would mean an increase in $u^*$
-- Det er et krav for ader er ligevægt at $(g_1- S_r) (\pi/\alpha_1)+g_2 < 0$ 
+- Det er et krav for at der er ligevægt at $(g_1- S_r) (\pi/\alpha_1)+g_2 < 0$ Hvilket på grafen kan ses ved at hældningen på investeringer i forhold til renten $g= g_0 + (g_1 + g_2 \alpha_1 /\pi)r$ er større end hældningen på opsparing i forhold til renten. 
 
 
 3.  investments $g$ i relation til renten kan skrives som $g= g_0+(g_1++\frac{g_2}{\pi}*\alpha_1)r$ hvor det skal bemærkes at et fald i $\pi$ vil gøre at hældningen stiger. og eftersom vi har $r$ op ad y aktien vil det være hældningen i forhold til denne. 
@@ -80,6 +84,8 @@ Men hvis vi allerede er tæt på fuld udnyttelse $u^*=1$ vil øøkonomien ikke k
 
 ### a Explain why a raise in productivity could offset the inflationary pressure or increasing wages
 
+Det skal vist være on increasing wages og ik or. 
+
 So looking at the exxpression $P=(1+\tau)W\alpha_0$ we can see that an increase in productivity $1/\alpha_0$ would mean a decrease in $\alpha_0$ 
 
 The question is till concerning a raise in $W$ i guess. So if $a_0$ falls this could counter the rise in $W$ and does so prices wount have to increase. 
@@ -88,7 +94,7 @@ The question is till concerning a raise in $W$ i guess. So if $a_0$ falls this c
 
 If the $a_0$ goes down this will also affect the real wage, (giver mening eftersom W stiger Men vi lige har sagt P ik stiger grundet fald i $a_0$). Real wage is given by $w^*\frac{1- \pi}{a_0}$
 
-We can see that the shock to $\alpha_0$ is a supply site shock --> and in PK theory er at variable er demand determined. --> increase in productivity leads t giher wages and a lower level of employment, leaving total workers’ disposable income unchanged. Consumption and output are, therefore, constant.
+We can see that the shock to $\alpha_0$ is a supply site shock --> and in PK theory er at variable er demand determined. --> increase in productivity leads to higher wages and a lower level of employment, leaving total workers’ disposable income unchanged. Consumption and output are, therefore, constant.
 
 
 
@@ -199,6 +205,11 @@ Fra den rigtige artikel:
 * Vi kan også se et fald i statens sektor balance hvilket kommer af lavere skatte betalinger og en eksogent bestemt. 
 
 * For households a fall in house prices results in capital losses --> leading to a fall in total netwealth --> which in turn negatively affects investments and consumption --> the fall in prices also reduces the insetement to invest in new houses --> dermed mindre efterspørgsel efter lån --> lsowdown in demand for loans combined with a fall in consumptions leads to an improvement in the financial balance of the household sector --> det er fordi der er forskel på housing wealth og deres financial balance wealth --> for deres housing wealth falder 
+
+Hamid sagde:
+
+	-  det er fordi det er financial balance hvor husenes værdi ikke er med --> den dårligere økonomi gør at YD vil falde og deres gæld vil falde dermed kan de låne mindre og deres financial balance er derfor forbedret. 
+
 
 
 ## 4. Does the high level of household debt pose a risk to macroeconomic stability in case of a negative shock to the Danish Economy?
@@ -320,8 +331,6 @@ MMT vil føre "american first" policy --> her ignoreres den makroøkonomiske pol
 Man skulle tro at spillover effekterne vil være positive ved at holde en lav rente gennem QE da dette bidrager til billig kapital for de lande --> men her ignoreres den høøje spekulative natur på finansielle markeder 
 
 - En analyse af lave lange renter viser at i tilfældet af stærke finansielle regalutioner (både hjemmelige og internationale) er udkommet meget likely to become accumulation of high leverage, asset bubbles and financial instability. --> her snakker MMT ik så meget om financielle reguleringer. 
-
-
 
 
 MMT siger at progressives with programmatic plans (QE går jeg ud fra) do not need to say or worry about the costs of these programs or how they are going to be "paid for". --> Men det mener Epstein er forkert --> MMT siger selv at omkring full employment further economic expansion could lead to an increase in inflation and if this fiscal and monetary expansion could lead to an increase in inflation and if fiscal and monetary epansions were pushed too far, inflation could accelerate --> MMT argue that at full employment goverment would have to raise taxes or cut public spending to make room for new fiscal initiatives --> her giver MMT ikke en systematisk måde at gøøre dete på.  

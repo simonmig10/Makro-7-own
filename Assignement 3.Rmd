@@ -39,6 +39,8 @@ Fra bogen side 227-229
 
 - Derudover viser det sig at flere processer der ikke har noget med teknologi at gøre også følger disse stød som kommer af ændringerne i teknologi (Solow residual?)
 * Solow residual --> teknologiske udviklinger som her er white-noise se i Solow
+* Så solow residual er alt det vi har udover kapital labour o output som vi ved er fast givet solow model? --> i dette tilfælde teknologi?
+
 
 
 3. Empiri finder at labor input falder ved et positivt teknologi shock og dermed går modsat output--> hvor det i modellen er modsat hvor ourput og labour inpu følges en til en?
@@ -50,6 +52,10 @@ Dette resultat er i hvet fald hvad man forventer med nominelle rigidities.
 5. output fælger the dynamics of teknology meget tæt --> men det findes at output har sigen egne mønstre (og ikke bare følger teknologi udvikling) fx tilfælde hvor ratio af forbrug i forhold til income er høj er dette typisk efterfulgt af høj output vækst. 
 
 6. Fuld arbejdskraaft hele tiden --> går blot ned i timer hvis udbud sænkes. 
+
+Fra Sebastian: 
+
+- I RBC vil maksimering af HH ik påvirke langsigtede growth som den vil i DSGE modeller. Dermed er der ingen demand site effect i RBC modeller. 
  
 Antagelser:
 
@@ -81,7 +87,7 @@ DSGE models
 - Det giver dog kun en effekt på kort- medium tid.  
 
 - Under DSGE-modeller vises det at nominelle shocks har en realøkonomisk effekt. 
-- Dermed kan økonomien nu påvirkes af både Demand og supply. 
+- Dermed kan økonomien nu påvirkes af både Demand og supply. --> Dette skyldes de constraints der nu er lagt på prisskabelse og løn skabelse. --> derfor kommer det ind gennem optimeringen?
 
 
 
@@ -165,7 +171,7 @@ Eftersom som de trægheder der er i økonomien ikke bare er lavet sådan at endt
 
 First we can set up the langrange for period t and t+1: 
 
-$$L= (\frac{C_t^{1-\sigma}}{{1-\sigma}} - \chi \frac{N_t^{1+\eta}}{1+\eta}) + (\beta \frac{C_{t+1}^{1-\sigma}}{{1-\sigma}}- \chi \frac{N_{t+1}^{1+\eta}}{1+\eta}) - \lambda_t(-B_{t-1} + W_t N_t - M_{t-1} + P_t C_t + Q_tB_t+ M_t) - \lambda_{t+1} \beta E (-B_{t} + W_{t+1} N_{t+1} - M_t + P_{t+1} C_{t+1} + Q_{t+1}B_{t+1}+ M_{t+1})$$
+$$L= (\frac{C_t^{1-\sigma}}{{1-\sigma}} - \chi \frac{N_t^{1+\eta}}{1+\eta}) + E\beta( \frac{C_{t+1}^{1-\sigma}}{{1-\sigma}}- \chi \frac{N_{t+1}^{1+\eta}}{1+\eta}) - \lambda_t(-B_{t-1} + W_t N_t - M_{t-1} + P_t C_t + Q_tB_t+ M_t) - \lambda_{t+1} \beta E (-B_{t} + W_{t+1} N_{t+1} - M_t + P_{t+1} C_{t+1} + Q_{t+1}B_{t+1}+ M_{t+1})$$
 
 From this we get the first order conditions for $C_t$ and $C_{t+1}$ and $B_t$ forklar hvorfor det lige præcis er de 3?
 
@@ -177,16 +183,17 @@ We set it equal to 0 and reduce so we isolate $\lambda$
 $$C_t^{-\sigma}= \lambda_t p_t$$
 
 $$\frac {C_t^{-\sigma}}{P_t}=\lambda_t$$
+
+
 **FOC $C_{t+1}$**
 
-$$L'_{c_{t+1}}= \beta(1- \sigma) \frac {C_{t+1}^{-\sigma}}{1-\sigma} -\beta\lambda_tp_t$$
-**Men skal forventningerne så ikke også ganges på begge stedder????**
+$$L'_{c_{t+1}}= \beta E[(1- \sigma) \frac {C_{t+1}^{-\sigma}}{1-\sigma}] -\beta E[\lambda_t*p_t]$$
 
 We set it equal to 0 and reduce to isolate $\lambda_{t+1}$
 
-$$\beta C_{t+1}= \beta \lambda_{t+1} P_{t+1}$$
+$$\beta E[C_{t+1}]= \beta E[\lambda_{t+1} P_{t+1}]$$
 
-$$\frac{C_{t+1}^{-\sigma}}{P_{t+1}}=\lambda_{t+1}$$
+$$E[\frac{C_{t+1}^{-\sigma}}{P_{t+1}}]=E[\lambda_{t+1}]$$
 **FOC for $B_t$**
 
 $$L'_{B_t}= -\lambda_tQ_t + \beta E[\lambda_{t+1}]$$
@@ -197,7 +204,7 @@ $$-\lambda_tQ_t + \beta E[\lambda_{t+1}]=0$$
 
 **Solving**
 
-We can now blug in $\lambda_{t+1}$ and $\lambda_t$
+We can now blug in $E[\lambda_{t+1}]$ and $\lambda_t$
 
 $$-\frac {C_t^{-\sigma}}{P_t}*Q_t + \beta E_t[\frac{C_{t+1}^{-\sigma}}{P_{t+1}}]=0$$
 We can substitute $\frac{1}{r(t)}=Q_t$ and move the minus term on the right site
@@ -225,13 +232,17 @@ We can now move down the exponent and we show that the variable is loged by maki
 
 Når vi lag linearize skal vi også bruge taylor rule --> se side 208. 
 
+her finder vi variablenes afvigelse fra steady state $log(\frac{variabel_t}{variable}$ som noteres med en hat. 
+
 $$\hat{r_t} -\sigma (E_t[\hat{C_{t+1}]}) - (E_t[\hat{\pi_{t+1}}]= -\sigma \hat{C_t}$$
-We can now multiply with $-\frac{1}{\sigma}$ 
+We can now multiply with $-\frac{1}{\sigma}$ and the reason we remove the "hat" is because we assume steady state --> her vil variablene ikke afvige fra deres steady state værdi. 
+
+
 $$E_t[\hat{C_{t+1}]} -\frac{1}{\sigma}(\hat{r_t}- E_t[\hat{\pi_{t+1}}])= \hat{C_t}$$
 
-Betydning?
+Vi kan se forskellen mellem real renten $r_t$ og forventningerne i denne periode til inflationen i næste periode $E_t[\pi_{t+1}]$ påvirker forbrug i periode t negativt --> Dermed ved høj inflation vil jeg forbruge mere i periode t da mine penge er mindre værd i næste periode --> samtidig er renten høj vil jeg forbruge mindre da jeg kan få mere afkast på savings. 
 
-Sigma er igen ligsom theta før med hvor smooth de vil ha forbrug. 
+- $\sigma$ er igen smoothing parameter --> jo mindre $\sigma$ jo mindre behøves forbrug at være smooth --> jo mere kan jeg udnytte renten og inflation --> derfor har de større effekt på forbrug.
 
 
 

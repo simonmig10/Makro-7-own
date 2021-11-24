@@ -21,7 +21,7 @@ Assume production function of final goods sector is given by:
 
 ```{=tex}
 \begin{equation}
-Y(t) = [(1-\alpha_K) K(t)\alpha][A(t)(1-\alpha_L)L(t)]^{1-\alpha} (\#eq:prod_f)
+Y(t) = [(1-\alpha_K) K(t)\alpha][A(t)(1-\alpha_L)L(t)]^{1-\alpha} 
 \end{equation}
 ```
 where $1- \alpha_L$ and $1- \alpha_K$ is the proportion of labour and
@@ -31,14 +31,14 @@ capital allocated for final production.
 
 ```{=tex}
 \begin{equation}
-\dot K(t) = sY(t) (\#eq:K_f)
+\dot K(t) = sY(t) 
 \end{equation}
 ```
 **Production function** of R&D sector is given by:
 
 ```{=tex}
 \begin{equation}
-\dot A(t) = B[\alpha_K K(t)]^\beta [\alpha_L L(t)]^\gamma A(t)^\theta (\#eq:A_f)
+\dot A(t) = B[\alpha_K K(t)]^\beta [\alpha_L L(t)]^\gamma A(t)^\theta 
 \end{equation}
 ```
 **Population growth** is exogenous:
@@ -49,7 +49,7 @@ $$\dot L(t) = nL(t)$$
 
 ### **Growth rate of Capital**
 
-We start by substituteing \@ref(eq:prod_f) into equation \@ref(eq:K_f):
+We start by substituteing 1 into equation 2:
 
 $$\dot K(t) = s(1-\alpha)^\alpha (1- \alpha _L )^{1-\alpha} K(t)^\alpha A(t)^{1- \alpha} L_(t)^{1-\alpha}$$
 we can write $c_K= s(1-\alpha)^\alpha (1- \alpha _L )^{1-\alpha}$
@@ -72,13 +72,15 @@ $$g_K(t) = C_K [\frac{A(t) L(t)}{K(t)}]^{1-\alpha}$$
 
 ### **Growth rate of technology**
 
-We divide equation \@ref(eq:A_f) by $A(t)$:
+We divide equation 3 by $A(t)$:
 
 $$\frac{\dot A(t)}{A(t)} = B[\alpha_K K(t)]^\beta [\alpha_L L(t)]^\gamma A(t)^{\theta-1}$$
 For simplicity we can write the constant
 $B\alpha^\beta _K \alpha^\gamma _L$ as equal to $C_\alpha$.
 
 $$\frac{\dot A(t)}{A(t)} = C_\alpha K(t)^\beta L(t)^\gamma A(t)^{\theta-1}$$
+
+$$g_A= C_\alpha K(t)^\beta L(t)^\gamma A(t)^{\theta-1}$$
 
 ## Using the fact that $gA(t)$ is constant overtime (i.e., $\frac {\delta g_{A(t)}}{\delta t}$), derive an expression for the growth rate of technology $g^*_{(A)}$ along a balanced growth path (steady state), for the case when $\theta + \beta < 1$? Intuitively, explain the equation
 
@@ -157,15 +159,17 @@ $$g_A^*(1 - (\theta + \beta))= (\beta + \gamma)n$$ And last we divide by
 $(1 - (\theta + \beta))$
 
 $$g_A^*= \frac{(\beta + \gamma)}{(1 - (\theta + \beta))}n$$ - We can see
-the growth rate of technology in steady state is effected by $\beta$
-(elasticity of capital on knowledge??????). - $\gamma$ is the output
-elasticity of labour allocated in R&D which we can see has a positive
-effect on the growth rate. - $\theta$ is a parameter describing the
-elasticity of existing knowledge (A), we can see this also has a
+the growth rate of technology in steady state is effected by:
+* $\beta$ elasticiteten på output når der allokeres 1 mere enhed af
+kapital i R&D --> så hvor mget mere output stiger.
+
+* $\gamma$ is the output elasticity of labour allocated in R&D which we can see has a positive
+effect on the growth rate. 
+
+* $\theta$ is a parameter describing the elasticity of existing knowledge (A), we can see this also has a
 positive effect on $g^*_A$
 
-Beta er elasticiteten på output når der allokeres 1 mere enhed af
-kapital i R&D --\> så hvor mget mere output stiger.
+
 
 Vi kan se at i det case hvis der ingen population growth er vil der
 ingen vækst rate være.
@@ -189,7 +193,7 @@ Da denne case er med $\beta+\theta < 1$ ved vi at
 $\frac{(1- \theta)} {\beta} > 1$
 
 Mens vi ved at hældningen på $\dot {g_K}=0$ linjen ved at hældningen er
-1.
+1. ud fra ligningen $\frac{\dot {g_K}}{g_K}= (1- \alpha) [g_A + n - g_K]$ hvor når den blvier sat ligmed 0 kan vi isolere $g_A$ og se der er en hældning på 1. 
 
 Eftersom at intercept er lavere for $\dot{g_A}=0$ ved vi at de vil mødes
 på et tidspunkt --\> Dette punkt indikere at udviklingen i begge vækst
@@ -228,7 +232,7 @@ $$L= ln[C_t]+ \frac{b(1-l_t)^{1-\gamma}}{1-\gamma} + \lambda (wl-C_t)$$
 We now differntiate with respect to $C_t$ and $l_t$
 
 We use the constant -relative-risk -aversion instantanius utility
-function --\> Står side 52
+function --> bare at vi forsøger at smooth vores fritid $1-l_t$ ud over tid --> vil ik har fri 24 timer i 1 periode og 0 i en anden. 
 
 $$\frac {\delta L}{\delta C_t}= \frac{1}{C_t} - \lambda =0$$
 $$\frac {\delta L}{\delta l_t}= -b(1-l_t)^{-\gamma}+ w\lambda=0$$
@@ -250,6 +254,13 @@ løn man skal bruge til at dække sit forbrug --\> vil man være ligelad
 med at den stiger da man bare skal have nok til at dække sit forbrug i
 den periode.
 
+Det eneste lønnen bestemmer er det level af consumption vi vil have --> så hvis lønnen stiger vil jeg vælge at arbejde det samme men der er en level effekt og jeg forbruger mere. 
+
+indkomst effekten --> Når lønnen stiger vil det være muligt at opbå samme indkosmt og arbejde mindre --> derfor vil jeg gå ned i arbejdstimer. 
+
+Substitutions effekten --> jeg vil arbejde mere da lønnen er højere og kan dermed øøøge min indkomst mere per time som jeg kan bruge til forbrug, og dermed opnå mere nytte.
+
+
 FRa bogen:
 
 Labor supply is independent of the wage --\> intuitively , because
@@ -258,9 +269,11 @@ wealth the income and substitution effect of a change in Wage offset
 each other --\> But the wage will affect labour supply when it is more
 than one periode
 
-B er vægten man tillægger fritid.
+Vi kan se det kun er parametre der påvirker hvor meget jeg vil arbejde: 
 
-$\gamma$
+$b$ er vægten man tillægger fritid.
+
+$\gamma$ --> Hamid siger det er elasticiteten på labor supply når løn stiger --> men jeg tror altså det er utility??
 
 ## Re-consider the above problem for two periods:
 
@@ -318,7 +331,7 @@ We can remove $b$ and we want to make $-\gamma$ positive by taking the
 inverse.
 
 $$
-\frac{(1-l_2)^{- \gamma}}{(1-l_1)^{- \gamma}} = \frac {1}{(1-l_2)^\gamma}* (1-l_1)^ \gamma
+\frac{(1-l_2)^{\gamma}}{(1-l_1)^{\gamma}} = \frac {1}{(1-l_2)^\gamma}* (1-l_1)^ \gamma
 $$
 
 Vi kan nu sætte $\gamma$ udenfor en parentes

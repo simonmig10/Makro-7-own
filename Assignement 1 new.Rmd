@@ -62,9 +62,12 @@ Next we can also see that $f'(k)=n+g$ we can see that $f'(k)$ will decrease as g
 
 Hvis g falder vil det led der trækker break-even investeringerne blive lavere $(n+g)k(t)$ Dermed skal der mindre savings til at holde k stabil og forbruget kan derfor stige (for en givent k som er fast på kurven jo).
 
-Kan bare ikke se på grafen hvordan $k$ stiger for hvert niveau af $c$ 
+Derfor kan vi se at kurven nu viser at for et hvert niveau af k vil vi få et højere niveau af forbrug. --> dermed kan vi sige at eftersom nivea 
 
-- Den sidste effekt med at k stiger for hvert niveau af c er kun for store værdier af k --> men for små værdier af k vil det være faldende? måske spørge Mikael. 
+Vi kan se komboneneterne i ligningen er $C$ (forbrug), $-(n+g)k$ (break-even investeringer), og $f(k)$ output bestemt af kapital niveau. --> vi kan se hvis $f(k)>c+(n+g)k$ vil det betyde at vi har opsparing som vil blive investeret i kapital apereatet --> derfor udvikler det sig over tid. 
+
+Dermed hvis $\dot{k}=0$ må der ik være nogen savings Derfor når $-(n+g)k$ falder må $c$ stige med samme mængde. (så fremt $f(k)$ er uændret hvilket jeg mener den er)
+
 
 ### **2. How, if at all, does this affect the c = 0-curve?**
 
@@ -74,9 +77,9 @@ knitr::include_graphics(rep("c dot.png", 1), dpi = 250)
 
 Maybe tell something from page 57
 
-We get the used equation below from the Euler- equation $\frac{\dot c}{c}\frac{r(t)-\rho-\theta g}{\theta}$ where the marginal product of capital $r(t)$ is equal to $f'(k(t))$ so we can do the substitution.
+We get the used equation below from the Euler- equation $\frac{\dot c}{c}=\frac{r(t)-\rho-\theta g}{\theta}$ where the marginal product of capital $r(t)$ is equal to $f'(k(t))$ so we can do the substitution.
 
-We start by looking at the function $\frac{\dot c}{c}\frac{f'(k(t))-\rho-\theta g}{\theta}$ where we need this expretion to be equal to 0 which also means the nummerator (teller) should be equal to zero so we can set up this $f'(k(t))=\rho+\theta g$ We can see that if g falls $f'(k(t))$ also needs to be falling, this again means K must be increasing. If we again look at the first function for each value of c K must be increased and the line goes to the right.
+We start by looking at the function $\frac{\dot c}{c}=\frac{f'(k(t))-\rho-\theta g}{\theta}$ where we need this expretion to be equal to 0 which also means the nummerator (teller) should be equal to zero so we can set up this $f'(k(t))=\rho+\theta g$ We can see that if g falls $f'(k(t))$ also needs to be falling, this again means K must be increasing. If we again look at the first function for each value of c K must be increased and the line goes to the right.
 
 Her er udviklingen i $c$ fast da $\dot {c} = 0$ derfor når $g$ falder må det nye lavere niveau for break even investment når $c$ er fast og dermed beholder samme savings hvilket vil resultere i en stigning i kapital apperatet. 
 
@@ -89,7 +92,7 @@ knitr::include_graphics(rep("udvikling i c.png", 1), dpi = 350)
 
 Assume it is an unepected fall? hvis det er uforventet vil de ik ha haft mulighed for at tilpasse sig deres makimeringsproblem.
 
-Kan vi ik sige noget om da faldet i $\rho$ vil medføre $\dot{c} = 0$ kurven rykkes ud ad, og det samme gør $\dot{k}$ kurven. Dog er kapital apperatet historisk og ændres ikke med det samme stødet rammer derfor ryger forbrugt $c$ ned på den nye saddel path ud fra den nye balanced roeth path. ligsom side 68. Kan det ses at forbruget er der hvor denne saddel path krydser det gamle kapital apperat som ikke ændres med det samme. Dog kan det ikke siges om dette punkt ligger over eller under det gamle niveau for $c$
+Kan vi ik sige noget om da faldet i $\rho$ vil medføre $\dot{c} = 0$ kurven rykkes ud ad, og det samme gør $\dot{k}$ kurven. Dog er kapital apperatet historisk og ændres ikke med det samme stødet rammer derfor ryger forbrugt $c$ ned på den nye saddel path ud fra den nye balanced growth path. ligsom side 68. Kan det ses at forbruget er der hvor denne saddel path krydser det gamle kapital apperat som ikke ændres med det samme. Dog kan det ikke siges om dette punkt ligger over eller under det gamle niveau for $c$
 
 
 ### **4. At the time of the change, does r minus g rise, fall, or stay the same, or is it not possible to tell?**
@@ -102,7 +105,7 @@ When the economy is in steady state we know that $f'(k)=r$ and $\dot {c}=0$
 
 When setting $\frac{\dot c}{c}=\frac{f'(k(t))-\rho-\theta g}{\theta}=0$ we can set $f'(k(t))-\rho-\theta g=0$ 
 
-We can now substitute in $f'(k)=r$and isolate $r$
+We can now substitute in $f'(k)=r$ and isolate $r$
 
 $$r=\rho + \theta g$$
 To get the expression we want we minus $g$ on both sites
@@ -200,9 +203,16 @@ $$\dot {k}(t) = f(k(t)) - c(t) - G(t) - (n+g)k(t)$$
 Vi kan dermed se en højere værdi af $G(t)$ skubber kurven for $\dot{k}(t)=0$ ned. Jo mere der bliver købt af staten jo mindre kan der købes af husholdningerne Hvis $k$ skal holdes konstant --> Vi kan se på grafen af det er $c$ op ad y aksen. 
 
 Lump-sum skatten påvirker husholdningernes budget restriktion som nu bliver ligning 2.42 side 73.
+- Grunden til skatten påvirker budget restriktionen er vel at skatten nu gør de får en lavere indkomst --> eftersom det er en lumpsump skat påvirker det ikke hvor meget husholdnignerne vil vælge at forbruge/arbejde. Derfor påvirker det kun i deres budget restriktion.
 
 
 **Stød til G(t) figur 2.8**
+
+```{r}
+knitr::include_graphics(rep("2.8.png", 1), dpi = 150)
+```
+
+
 
 1. Først vil vi rykke kurven for $\dot {k}(t)=0$ lige så meget som stigningen er i G(t).  
 2. siden ændringen ik vil påvirke husholdningernes nytte og dermed ikke påvirke Euler equation vil kurven for $\dot {c}=0$ ik ændres
@@ -215,6 +225,10 @@ Lump-sum skatten påvirker husholdningernes budget restriktion som nu bliver lig
 Hvis vi kigger på det i Solow modellen vil forbrug jo være $(1-s)*Y$ dermed vil $c$ i dette tilfælde ikke falde med ligså meget som $G(t)$ --> Dermed er der crowding out investment og kapital beholdningen begynder at falde. og den real interest rate will rise. 
 
 **Uforventet stød til G(t) som er kortvarig figur 2.9**
+
+```{r}
+knitr::include_graphics(rep("2.9.png", 1))
+```
 
 *Panel(A)*
 1. Først vil det samme fald i kurven for $\dot {k}(t)=0$ ske, vi kan dog se nu at husholdningerne ikke vil sænke $c$ med lig så meget som $G(t)$ stiger. Dette skyldes at de kender dagen hvor $G(t)$ vil gå tilbage til sin gamle værdi og kan dermed maksimere nytten ud fra det og vælge optimalt forbrug. 
@@ -234,21 +248,7 @@ Hvis vi kigger på det i Solow modellen vil forbrug jo være $(1-s)*Y$ dermed vi
 1. Her kan vi se at jo kortere tid ændringen i $G(t)$ er, jo mindre vil $c$ falde. 
 
 
-### Effect of a permanent increase in government purchases
 
-
-```{r}
-knitr::include_graphics(rep("2.8.png", 1), dpi = 150)
-```
-
-
-
-
-### Effect of a temoary increase in government purchases
-
-```{r}
-knitr::include_graphics(rep("2.9.png", 1))
-```
 
 
 # Opgave 2: Diamond OLG model
@@ -357,9 +357,6 @@ We can now divide by $(1+\beta)$
 
 
 $$S_t=\frac{\beta (w-T) - \frac{(1+n)T}{(1+r)}}{(1+\beta)}$$
-It says in the book that when we use logarithmic utility the savings rate should not effect the savings rate. Which in this case means that the savings rate should not be affected. 
-
-
 
 
 We can now differentiate this expression with respect to $T$.
