@@ -159,7 +159,8 @@ Side 10-11 Forskelle mellem SFC og DSGE modeller:
 
 ## 2.  Explain some of the key transmission channels between financial markets and the real economy – how does a drop in the price of a financial asset affect the real economy?
 
-
+slide 21
+section 4.5 SFC debt 
 
 ## 3. Discuss the macroeconomic effects of a drop in house prices within the empirical SFC-model.
 
