@@ -188,6 +188,12 @@ $$\frac{\delta s}{\delta g}= \alpha \frac {(\rho - n \theta)} {(\rho + \theta g)
 Her kan vi se at det er forholdet mellem $\rho$ og $\theta n$. der afgøre om det er positivt eller negativt. 
 
 
+* $\alpha$ er andelen allokeret til kapital. 
+* $\rho$ er utålmodigheds parameter we care less about consumption in the future compared to now. --> det antages at $\rho > n+g+\theta g$ Derfor må det antages at en stigning i $g$ påvirker positivt?
+
+* $\theta$ er hvor villig husholdningerne er til at substituere forbrug mellem perioderne. antages positiv
+* $g$ er en eksogen vækst i $A(t)$
+* $n$ er befolkningstilvækst.
 
 
 ## Analyze the effect of a public procurement, including a thorough presentation of the dynamics in Figures 2.8 and 2.9
@@ -321,7 +327,9 @@ We multiply by $(1+r)$ and $C_2$ on both sites.
 
 $$\frac{(1+r)}{(1+\rho)}= \frac{C_2}{C_1}$$
 
-Here we can see 
+- Here we can see that an increase in $r$ demands a rise in the ratio $\frac{C_2}{C_1}$ which means $C_2$ should increase compared to $C_1$ 
+
+- The other effect is $\rho$ where the effect is the oposite way
 
 
 ## 4. Derive $S_t$ as a function of $r$, $w$ and $T$. How does an increase in $T$ affect savings (show mathematically)? Discuss the result.
@@ -373,9 +381,10 @@ We can see that a rise in T has a negative effect on the savings
 
 We can see that different parameters affects how much an increase in Taxes will lower the savings. 
 
-- if $\beta$ increases the effect will be larger 
-- if $n$ increases the effect will be larger 
-- and last if $r$ increases the effect will be lower 
+- if $\beta$ increases the effect will be larger --> Where $\beta = \frac{1}{1+\rho}$ so $\beta$ will increase if $\rho$ falls. --> Så jo støørre utålmodigheds parameter jo lavere $\beta$ jo lavere effekt har taes på savings. --> Why? og er det overhovedet rigtigt? --> kun rigtigt hvis $r>n$ så brøken $<1$
+
+- if $n$ increases the effect will be larger --> Why?
+- and last if $r$ increases the effect will be lower --> Hvis $r$ stiger vil jeg spare mere op og eftersom skatten kommer på vil jeg være mere okay med at forbruge mindre (grundet skatten) jo højere $r$.
 
 
 
