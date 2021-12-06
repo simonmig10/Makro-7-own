@@ -9,12 +9,12 @@ output:
 
 RBC er en udbygning af Ramsey modellen blot med den forskel at fritid nu er med i nytte funktionen og at der er en AR(1) proces med i A(t) funktionen og (G_t) funktionen.
 
-et andet sted RBC afviger fra Ramsey er i HH optimization problem --< da der er usikkerhed med omkring rates of return og fremtidige løn. På baggrund af denne usikkerhed vælger HH ikke deterministic paths (Der hvor de kan forudse hvad der sker og vælger forbrug ud fra det?) for consumption and labor supply
+et andet sted RBC afviger fra Ramsey er i HH optimization problem --< da der er usikkerhed med omkring rates of return og fremtidige løn. På baggrund af denne usikkerhed vælger HH ikke deterministic paths (Der hvor de kan forudse hvad der sker og vælger forbrug ud fra det?) for consumption and labor supply --> Defor Ramsey modellen hedder en DEG model --> dermed ik stokastisk (der er ingen randomness) og de kan planlægge deres forbrug gennem hele modellen. 
 
 ## A Identify and discuss weaknesses related to the RBC-models.
 
 - Before growth was a smooth procces now we will also explain medium and short term fluctuations in growth 
-- We need a model to explain fluctuations which alsom account for stylized facts --> fxx that consumption is more stable than investment. 
+- We need a model to explain fluctuations which also account for stylized facts --> fxx that consumption is more stable than investment. 
 
 Weaknesses: 
 
@@ -101,7 +101,7 @@ $$u^{IS}_t=\rho_{IS} u_{t-1}^{IS} + e_t^{IS}$$
 
 fra bog side 52: One can show that $1/\theta$ is the elasticity of substitution between consumption at any two points of time 
 
-when $\theta$ is small the household will allow consumption to vary more over time --> men hvordan er det negativt --> hvis den er lav skriver de at husholdningerne vil tage mere advantage hvis de kan. 
+when $\theta$ is small the household will allow consumption to vary more over time. Dermed vil renten have en større effekt på $y_t$. Modsat er $\theta$ høj vil renten haven en mindre effekt på $y_t$ 
 
 
 Fra bog side 240-241: 
@@ -401,7 +401,9 @@ Effect of the shock:
 
 De bruger argument for lille fald i output som at de har bedre konkurrence evne over for udlandet før krisen --> men inflation er ikke ændret specielt så kan ik se hvorfor bedre konkurrenceevne. 
 
-Kan kun få det til at give mening hvis det er at krisen kun rammer os. 
+Kan kun få det til at give mening hvis det er at krisen kun rammer os.
+
+* Eftersom inflationen kun påvirkes meget lidt, og deres argument for at output ikke falder lige så meget i det counter factual eksempel er den forbedrede konkurrence evne, må dette betyde at Danmarks handels balance er let påvirkelig og har en stor effekt på import og eksport. 
 
 
 **public consumption**

@@ -273,7 +273,7 @@ Vi kan se det kun er parametre der påvirker hvor meget jeg vil arbejde:
 
 $b$ er vægten man tillægger fritid.
 
-$\gamma$ --> Hamid siger det er elasticiteten på labor supply når løn stiger --> men jeg tror altså det er utility??
+$\gamma$ --> jo lavere $\gamma$ er jo mindre går jeg op i om min fritid er smooth. 
 
 ## Re-consider the above problem for two periods:
 
@@ -380,3 +380,8 @@ attractiveness of working today and saving relative to working tomorrow.
 
 These responses of labor supply to the relative wage and the interest
 rate are known as *intertemporal substitution* in labor supply
+
+- In this case $\gamma$ viser hvor meget ændringer i relativ løn og de andre parametre vil påvirke den relative fritid. --> Hvis vi opløfter med $1/\gamma$ kan vi se jo lavere $\gamma$ jo større effekt vil der være ved ændringer i disse. 
+
+
+- $\rho$ eller diskonterings raten viser at ved en stigning vil højere siden også stige --> Dermed vil fritid i periode 1 stige relativt til periode 2 --> giver ik mening?

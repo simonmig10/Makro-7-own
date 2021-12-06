@@ -305,16 +305,23 @@ knitr::include_graphics(rep("QE.png", 1), dpi = 120)
 ## 3. Why is it that quantitative easing does not necessarily lead to an increase in lending?
 
 
-- Banks can not directly lend out reservs as reserves are an IOU from the central bank to commercial banks --> bankerne kan dermed bruge dem til payments mellem hinanden (låne dem til hinanden?) --> men kan ikke låne dem til husholdninger da de ikke har reservs accounts. --> when banks make additional loans they are matched by etra deposits --> the amount of reservs stay the same. 
+- Banks can not directly lend out reservs as reserves are an IOU from the central bank to commercial banks --> bankerne kan dermed bruge dem til payments mellem hinanden (låne dem til hinanden?) --> men kan ikke låne dem til husholdninger da de ikke har reservs accounts. --> when banks make additional loans they are matched by extra deposits --> the amount of reservs stay the same. 
 
 
-- Derfor er reserves ikke dirkete ligmed flere lån. men vil måske gøre banken mere sikker da de har hævet deres reserve og dermed kan de låne mere ud og holde en god ratio af pengene i banken stadig? 
+- Derfor er reserves ikke dirkete ligmed flere lån. men som den almene makro teori siger vil gøre banken mere sikker da de har hævet deres reserve og dermed kan de låne mere ud og holde en god ratio af pengene i banken stadig 
+
+
+Bank og englands argumenter: 
 
 
 
 - It is possible that QE might indirectly affect the incentives facing banks to make new loans-- > by reducing their funding costs, or by increasing the quantity of credit quantity by boosting activity
 
-- Equally QE could lead to companies repaying bank credit, if they were to issue more bonds or equity and use those funds to repay bank loans. 
+Reducing their funding cost is becasue the larger amount of reerves will reduce the interbank rate --> this will make it cheaper for firms to take loans --> but the interrest rate is not the only factor that determines if business take loans. 
+
+Der vil også være et øget økonomisk niveau da højere gevinster på de finansielle markeder kan hives ud og bruges. 
+
+- Equally QE could lead to companies repaying bank credit, if they were to issue more bonds or equity and use those funds to repay bank loans. --> Grundet gevindter på finansielle markeder vil der være større efterspørgsel her --> derfor kan det være muligt for virksomhederne at få finansieret deres investeringer gennem disse. Og kan bruge disse til at betale deres lån af. 
 
 - Derfor kan QE både sænke eller hæver lending
 
@@ -332,6 +339,8 @@ MMT vil føre "american first" policy --> her ignoreres den makroøkonomiske pol
 Man skulle tro at spillover effekterne vil være positive ved at holde en lav rente gennem QE da dette bidrager til billig kapital for de lande --> men her ignoreres den høøje spekulative natur på finansielle markeder 
 
 - En analyse af lave lange renter viser at i tilfældet af stærke finansielle regalutioner (både hjemmelige og internationale) er udkommet meget likely to become accumulation of high leverage, asset bubbles and financial instability. --> her snakker MMT ik så meget om financielle reguleringer. 
+
+Grundet den lave rente i Europ/USA grundet QE vil investore gå mod højere afkast i developing countries dermed vil disse lande opnå en stor beholdning af USD/Euro. Dermed vil et stop af QE medføre en kapital flugt fra disse lande tilbage til mere sikre papire. 
 
 
 MMT siger at progressives with programmatic plans (QE går jeg ud fra) do not need to say or worry about the costs of these programs or how they are going to be "paid for". --> Men det mener Epstein er forkert --> MMT siger selv at omkring full employment further economic expansion could lead to an increase in inflation and if this fiscal and monetary expansion could lead to an increase in inflation and if fiscal and monetary epansions were pushed too far, inflation could accelerate --> MMT argue that at full employment goverment would have to raise taxes or cut public spending to make room for new fiscal initiatives --> her giver MMT ikke en systematisk måde at gøøre dete på.  
