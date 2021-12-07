@@ -23,10 +23,26 @@ We can see if the nominal wages increases and the unit labour requirement $\alph
 And as the profit share is bestmet af mark-uppen vil profit andelen falde mens løn andelen $1- \pi$ vil stige. hvilket kommer af: 
 
 $$\pi= \frac{\tau}{1+\tau}$$
+De giver også dette som grund i starten af Kalecki hvor de nævner at arbejdere der danner fagforening og efterspørger højere løn kan få mark-up graden til at falde --> dermed lavere profit andel. 
 
-I den anden model kan det godet påvrike g både positivt og negativt efter som den er løn dreven eller profit dreven
+
+
 
 Vil dette ikke også sænke nogle af steady state værdierne for $u^*$, $r^*$ og $g^*$?
+
+Vi kan se i ligningen for: 
+
+$$u^*= \frac{g_0}{(s_r - g_1)(\pi/\alpha_1)-g_2}$$ 
+at et fald i $\pi$ vil resultere i højere $u^*$ 
+
+$$r^* = \frac{g_0(\pi/\alpha_1)} {(s_r - g_1)(\pi /\alpha_1)-g_2}$$ 
+Hvor et fald i $\pi$ vil resultere i højere $r$
+
+$$g^*=\sigma^*= \frac{s_r g_0 (\pi/\alpha_1)} {(s_r - g_1)(\pi/\alpha_1)- g_2}$$
+Hvor vi igen finder at et fald i $\pi$ påvirker positivt. kan også siges at investeringerne påvirkes positivt af både $r$ og $u$ derfor stiger $g$. 
+
+
+Dermed da økonomien er wage-led vil det påvirke økonomien positivt. 
 
 ## 3. Assume that the increase in nominal wages discussed in the note is finally passed on to prices one-on-one. What would be the impact on output (proxied by the rate of capacity utilization) and growth. Use the graphical setting developed in the Kalecki-Steindl model.
 
@@ -46,10 +62,11 @@ and growth are also constant.
 
 ## 4. Evaluate the following statement through the lenses of the Kalecki-Steindl graphical device: "But an ever-rising labour share would be a worry: it would crimp companies' profits and thus the investments that are crucial to improving long-run economic growth". Does an increase in the labour share reduce long-run growth in this model? Why? Why not?
 
+(I den anden model kan det godet påvrike g både positivt og negativt efter som den er løn dreven eller profit dreven)
+
 1. First an increase in the labor share $(1-\pi)$ would mean a decrease in $\pi$
 
 2. if $\pi$ goes down --> $u^*=\frac{g_0}{(Sr-g_1) (\pi/\alpha_1)-g_2}$ will be affected. 
-- Assuming that $Sr-g_1$ is positive  the fall in $\pi$ would mean an increase in $u^*$
 - Det er et krav for at der er ligevægt at $(g_1- S_r) (\pi/\alpha_1)+g_2 < 0$ Hvilket på grafen kan ses ved at hældningen på investeringer i forhold til renten $g= g_0 + (g_1 + g_2 \alpha_1 /\pi)r$ er større end hældningen på opsparing i forhold til renten. 
 
 
@@ -68,7 +85,17 @@ and growth are also constant.
 knitr::include_graphics(rep("increase in l share.png", 1), dpi = 350)
 ```
 
-Selvom det er en stigning i labor share vil $u^*$ stige dermed stiger helle økonomien da de udnytter en større del af kapital apperatet? 
+
+1. Vi ved at når pi falder vil dette resultere i en stigning i "u" da en større andel af indkomsten flyttesfra profit til løn --> hvor der ikke opspares af lønnen. 
+
+2. Dette resultere i at vi ud fra real-løn funktionen kan se en stigning i real-lønnen. 
+
+3. Den højere utilization rate hæver profit raten --> vi bruger en større andel af vores kapital og kan derfor lave større afkast på kapital. --> vi kan se at r funktionen stiger når u stiger. --> her stiger u mere end pi falder. 
+
+ 4. Stigningen i "r" og "u" påvirker investeringerne positivt --> hvor der er 2 effekter --> både at der for hvert niveau af r vil være en højere mængde investeringer (grundet stigning i "u" --> og at r^* stiger. 
+
+5. Vi kan se når vi får en højere u/alpha_1 er det fordi vi bruger mere af vores kapital derfor er produktiviteten af kapital i alt steget. 
+
 
 ```{r}
 knitr::include_graphics(rep("fordeling.png", 1), dpi = 330)
@@ -78,6 +105,9 @@ noget med vi ved $K$ er fixed og når u stiger benytter de blot en større del a
 
 
 Men hvis vi allerede er tæt på fuld udnyttelse $u^*=1$ vil øøkonomien ikke kunne udvides. 
+
+
+Vi ved i hvertfald at når $u^*$ stiger vil $l$ også stige. 
 
 
 ## 5. The note stresses that: "There is another, happier, possibility. If productivity rises, then wage growth need not cause sustained inflation, nor push up the labour share. Instead the economic pie would grow, with more for everyone."
