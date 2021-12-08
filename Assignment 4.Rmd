@@ -26,7 +26,7 @@ $$\pi= \frac{\tau}{1+\tau}$$
 De giver også dette som grund i starten af Kalecki hvor de nævner at arbejdere der danner fagforening og efterspørger højere løn kan få mark-up graden til at falde --> dermed lavere profit andel. 
 
 
-
+Stigningen i $W$ samtidig med $P$ er fast vil også resultere i højere real-løn. 
 
 Vil dette ikke også sænke nogle af steady state værdierne for $u^*$, $r^*$ og $g^*$?
 
@@ -62,13 +62,25 @@ and growth are also constant.
 
 ## 4. Evaluate the following statement through the lenses of the Kalecki-Steindl graphical device: "But an ever-rising labour share would be a worry: it would crimp companies' profits and thus the investments that are crucial to improving long-run economic growth". Does an increase in the labour share reduce long-run growth in this model? Why? Why not?
 
-(I den anden model kan det godet påvrike g både positivt og negativt efter som den er løn dreven eller profit dreven)
+
+Forskellen der kan gøre den er profit-led i model med anden investerings funktion. 
+
+- De laver investringsfunktionen en funktion af profit share i stedet for profit rate. Og utilization 
+	
+-  I Kalecki bliver utilization double counted eftersom den også indgår i renten 
+	
+- I Kalecki har de profit rate med fordi de mener at det er realized profit der bestemmer hvor meget virksomhederne vil investere
+
+	- Når profit andelen (pi) falder i denne model er det ikke sikkert det har en positiv effekt på utilization --> Dermed kan være profit eller wage-led. --> for at den skal være profit-led skal der være en stor effekt på investeringer af profit share (en høj elasticitet>1))
+
+En stigning i PI her har dermed mulighed for at påvirke investeringerne positivt da PI indgår direkte i investerings funktionen --> hvorimod den i Kalecki går gennem profit raten -->Hvor en stigning i PI vil resultere i lavere U da efterspørgslen falder da profit andelen sparer en del op. Derfor vil r falde. 
+
+Alternativ forklaring: 
 
 1. First an increase in the labor share $(1-\pi)$ would mean a decrease in $\pi$
 
 2. if $\pi$ goes down --> $u^*=\frac{g_0}{(Sr-g_1) (\pi/\alpha_1)-g_2}$ will be affected. 
-- Det er et krav for at der er ligevægt at $(g_1- S_r) (\pi/\alpha_1)+g_2 < 0$ Hvilket på grafen kan ses ved at hældningen på investeringer i forhold til renten $g= g_0 + (g_1 + g_2 \alpha_1 /\pi)r$ er større end hældningen på opsparing i forhold til renten. 
-
+- Det er et krav for at der er ligevægt at $(g_1- S_r) (\pi/\alpha_1)+g_2 < 0$ 
 
 3.  investments $g$ i relation til renten kan skrives som $g= g_0+(g_1++\frac{g_2}{\pi}*\alpha_1)r$ hvor det skal bemærkes at et fald i $\pi$ vil gøre at hældningen stiger. og eftersom vi har $r$ op ad y aktien vil det være hældningen i forhold til denne. 
 - When g increases for every point of r this also means long run growth increases. 
@@ -76,9 +88,8 @@ and growth are also constant.
 
 4. $\pi$ indgår også i $w^*= (1-\pi)/\alpha_0$ --> dermed stiger $w^*$
 
-5. So we get that $u^*$, $g^*$, $\sigma ^*$ and $w^*$ goes up (Stadig lige høøre til det med g og g^* om det bare følges ad?) 
+5. So we get that $u^*$, $g^*$, $\sigma ^*$ and $w^*$ goes up. 
 
-6. Vi burde igså kunne se direkte i $g^*$ og $r^*$ ligningerne at niveaut vil stige. 
 
 
 ```{r}
@@ -86,28 +97,26 @@ knitr::include_graphics(rep("increase in l share.png", 1), dpi = 350)
 ```
 
 
-1. Vi ved at når pi falder vil dette resultere i en stigning i "u" da en større andel af indkomsten flyttesfra profit til løn --> hvor der ikke opspares af lønnen. 
+1. Vi ved at når $\pi$ falder vil dette resultere i en stigning i $u$ da en større andel af indkomsten flyttes fra profit til løn --> hvor der ikke opspares af lønnen. 
 
-2. Dette resultere i at vi ud fra real-løn funktionen kan se en stigning i real-lønnen. 
+2. Dette resultere i at vi ud fra real-løn funktionen kan se en stigning i real-lønnen. $w^* = \frac{1-\pi}{\alpha_0}$ 
 
-3. Den højere utilization rate hæver profit raten --> vi bruger en større andel af vores kapital og kan derfor lave større afkast på kapital. --> vi kan se at r funktionen stiger når u stiger. --> her stiger u mere end pi falder. 
+3. Den højere utilization rate hæver profit raten --> vi bruger en større andel af vores kapital og kan derfor lave større afkast på kapital. --> vi kan se at $r$ funktionen stiger når $u$ stiger $r=\pi*u/\alpha_1$ . --> her stiger $u$ mere end $\pi$ falder eftersom $r^*$ stiger.  
 
- 4. Stigningen i "r" og "u" påvirker investeringerne positivt --> hvor der er 2 effekter --> både at der for hvert niveau af r vil være en højere mængde investeringer (grundet stigning i "u" --> og at r^* stiger. 
+ 4. Stigningen i $r$ og $u$ påvirker investeringerne positivt --> hvor der er 2 effekter --> både at der for hvert niveau af $r$ vil være en højere mængde investeringer (grundet stigning i $u$ --> og at $r^*$ stiger. 
 
-5. Vi kan se når vi får en højere u/alpha_1 er det fordi vi bruger mere af vores kapital derfor er produktiviteten af kapital i alt steget. 
+5. Vi kan se når vi får en højere $u/\alpha_1$ er det fordi vi bruger mere af vores kapital derfor er produktiviteten af kapital i alt steget. 
 
 
 ```{r}
 knitr::include_graphics(rep("fordeling.png", 1), dpi = 330)
 ```
 
-noget med vi ved $K$ er fixed og når u stiger benytter de blot en større del af kapital apperatet og $r$ ændres men ved ik om $P$ ændres nu hvor $\tau$ ændres da $\pi$ ændres.
-
-
-Men hvis vi allerede er tæt på fuld udnyttelse $u^*=1$ vil øøkonomien ikke kunne udvides. 
-
-
-Vi ved i hvertfald at når $u^*$ stiger vil $l$ også stige. 
+- Vi ved at $K$ er fixed 
+- Vi ved at $r$ stiger i modellen 
+- Vi ved at $l$ stiger i modellen grundet $L= a_0*u*Y_k$ hvor $Y_k= K/\alpha_1$ er max output når alt kapital udnyttes. 
+- Da det er et fald i profit andelen vil dette sænke mark-up graden, og resultere i lavere priser --> dermed må $P$ falde i udtrykket.  
+- Men hvis vi allerede er tæt på fuld udnyttelse $u^*=1$ vil økonomien ikke kunne udvides. Og profit raten vil ik stige? 
 
 
 ## 5. The note stresses that: "There is another, happier, possibility. If productivity rises, then wage growth need not cause sustained inflation, nor push up the labour share. Instead the economic pie would grow, with more for everyone."
@@ -120,11 +129,25 @@ So looking at the exxpression $P=(1+\tau)W\alpha_0$ we can see that an increase 
 
 The question is till concerning a raise in $W$ i guess. So if $a_0$ falls this could counter the rise in $W$ and does so prices wount have to increase. 
 
+Så hvis den nominelle løn stiger vil virksomheden hæve prisen vedmindre arbejderne også bliver mere produktive. 
+
+Hvis arbejderne ikke bliver mere produktive vil lønandelen stige (da mark-up graden i det tilfælde skal falde) hvilket vil betyde $u$ stiger --> $L$ stiger 
+Modsat vil en en stigning i produktivitet --> fald i $a_0$ medføre et fald i $L$ 
+
+Da begge efekter er lige store vil der ikke ske noget med $L$
+
 ### b Illustrate this scenario using the Kalecki-Steindl graphical model. Does the model predict a higher size of the income (a.k.a. “the economic pie”)? What would be needed for the "economic pie" to grow in the model?
 
 If the $a_0$ goes down this will also affect the real wage, (giver mening eftersom W stiger Men vi lige har sagt P ik stiger grundet fald i $a_0$). Real wage is given by $w^*\frac{1- \pi}{a_0}$
 
 We can see that the shock to $\alpha_0$ is a supply site shock --> and in PK theory er at variable er demand determined. --> increase in productivity leads to higher wages and a lower level of employment, leaving total workers’ disposable income unchanged. Consumption and output are, therefore, constant.
+
+- Så fordeling mellem profit og lønandel er stadig den samme: 
+* Vi kan se fra $L= a_0*u*Y_k$ at der sker et fald i $a_0$ og ingen ændring i $u$ derfor må employment falde --> Så arbejderne bliver blot mere produktive --> men øger ikke efterspørgslen derfor efterspørger virksohederne bare mindre folk. 
+
+```{r}
+knitr::include_graphics(rep("fall in a_0.png", 1), dpi = 150)
+```
 
 
 
@@ -164,7 +187,7 @@ FRa intro side 8
 - Her tages udganspunkt i en monetær produktions økonomi --> hvilket vil sige at virksomheder starter deres produktion op gennem lån i banken som derfor gældsætter virksomhederne 
 - Samtiig kan Husholdningernen benytte de finansielle markeder til at placere deres formue eller optage lån --> hvor placeringen af deres formue både kan være i finansielle akrtiver eller reale aktiver og bestemmes oftest af Tobins portefølje teori --> som forklare husholdningernes valg ud fra forventede afkast og risikovillighed ved husholdningerne 
 - Hvis husholdningerne efterspørger lån skabes disse endogent i modellen (side 8)
-- IDSE modeller kan man ikke analysere gæld isoleret --> som Mikael gør i hans artikel 
+- I DSGE modeller kan man ikke analysere gæld isoleret --> som Mikael gør i hans artikel 
 
 * et andet post-keynesiansk bidrag omhandler markeds clearing gennem pris tilpasning der finder sted på det finansielle marked 
 
@@ -187,10 +210,26 @@ Side 10-11 Forskelle mellem SFC og DSGE modeller:
 
 * PK-SFC er efterspørgsles dreven adfærden styres af normer og målsætninger og agenterne ændrer adfærd ved afvigelser fra disse normer og målsætninger. 
 
+* DSGE modeller følger et mikrofundament. 
+
 ## 2.  Explain some of the key transmission channels between financial markets and the real economy – how does a drop in the price of a financial asset affect the real economy?
 
 slide 21
-section 4.5 SFC debt 
+section 4.5 SFC debt.
+
+
+
+Fra egen viden: 
+
+Et fald i prisen på et finansielt aktiv: Fald i aktie priser i vores BA
+
+1. Fald i aktie prisen sænker først husholdningernes formue, da prisen er ganget på aktie beholdningen. og dermed husholdningernes wealth. 
+
+2. Dette fald i wealth vil gøre at husholdningernes forbrug også falder gennem sidste led. --> det lavere forbrug vil sænke output som derfor vil sænke den disponible indkosmt osv. 
+
+3. I dette tilfælde vil faldet i aktie priser også påvirke det forventede afkast på aktier --> dermed vil folk investere i andre midler som obligationer og penge (med mindre afkast.) 
+
+4. Virksomhederne vil også opleve en effekt --> Her sænker de deres udestående til husholdningerne --> dermed højere forgældet og skal muligvis betale højere renter af ny gæld. 
 
 ## 3. Discuss the macroeconomic effects of a drop in house prices within the empirical SFC-model.
 
@@ -203,23 +242,34 @@ knitr::include_graphics(rep("Fald i hus.png", 1), dpi = 250)
 
 Fra den anden artikel: 
 
-Faldet i huspriserne vil sænke aggregate demand gennem investeringer og forbrug 
+investering i fixxed assets are given by: 
+
+```{r}
+knitr::include_graphics(rep("lignign sfc.png", 1), dpi = 250)
+```
+
+Faldet i huspriserne vil sænke aggregate demand gennem investeringer og forbrug:
+
+
 - Den negative effekt på forbrug kommer af et fald i den samlede formue (Hvor husholdningerne forbruger en del af deres formue)
-- Den negative effekt på invetseringer kommer igennem Tobins q, hvor et flad i huspriserne vil resultere i at mindre vil investere i nye huse. 
+
+
+- Den negative effekt på invetseringer kommer igennem Tobins q, hvor et fald i huspriserne vil resultere i at mindre vil investere i nye huse. (2. led hvor $P^H$ er huspriser og $P^i$ er construction cost)  
+
+* Faldet i den overall økonomiske aktivitet sænke yderligere investeringer og forbrug hvilket gør faldet endnu større (Her kan vi se at huspriserne falder med 30% og ikke kun de 5% stødet var på) (dette sker gennem ledet med $yd^H$ og $K^H$ som er stock of housing (som dog også falder))
+
 
 * Det overall lavere demand sænker også efterspørgslen efter at importere 
 
-* Faldet i den overall økonomiske aktivitet sænke yderligere investeringer og forbrug hvilket gør faldet endnu større (Her kan vi se at huspriserne falder med 30% og ikke kun de 5% stødet var på)
 
-*Samtidig kan vi se at det lavere demand for huse leder til et lavere demand efter lån 
+* Faldet i den økonomiske aktivitet vil hæve arbejdsløsheden 
 
+* Real consumption also falls as a result of lower housing wealth consumption function is seen below: 
+- We can see $nw^H$ falder da huspriserne falder vil husholdnignernes stock $K^H$ falde da denne er afhængig af capital gain på huse som er prisændringer (dermed falder). 
 
-Fra den rigtige artikel: 
-
-* Faldet i huspriserne contracts the real economy og hæver arbejdsløsheden 
-* Faldet i GDP kommer af et stort fald i investeringer -- Faldet her kommer af at mindre vil investere i nye huse nu. 
-
-* Real consumption also falls as a result of lower housing wealth 
+```{r}
+knitr::include_graphics(rep("consumption.png", 1), dpi = 250)
+```
 
 * Der sker ikke det store med eksport, da der ikke sker de store prisændringer på vare markedet 
 * Større fald i imports hvilket er forklaret af et fald i den hjemmelige efterspørgsel og lavere hjemmelige priser 
@@ -231,17 +281,40 @@ Fra den rigtige artikel:
 
 **Financial balances for each sector**
 
-* Vi kan se der sker et fald i den udenlandske sektor balance hvilket skyldes det relativt større fald i import end i eksport. 
+* Vi kan se der sker et fald i den udenlandske sektor balance hvilket skyldes det relativt større fald i import end i eksport.
 
-* Vi kan også se et fald i statens sektor balance hvilket kommer af lavere skatte betalinger og en eksogent bestemt. 
+
+```{r}
+knitr::include_graphics(rep("row.png", 1), dpi = 250)
+```
+
+* Vi kan også se et fald i statens sektor balance hvilket kommer af lavere skatte betalinger $T^G$. $B^G$ er eksogen i modellen. Derudover har de større omkostninger gennem $STR^G$ som er sociale ydelse --> denne stiger når arbejdslæøshed stiger $UN$ som vi kan se stiger i grafen. 
+
+```{r}
+knitr::include_graphics(rep("NL.png", 1), dpi = 250)
+```
+
 
 * For households a fall in house prices results in capital losses --> leading to a fall in total netwealth --> which in turn negatively affects investments and consumption --> the fall in prices also reduces the insetement to invest in new houses --> dermed mindre efterspørgsel efter lån --> lsowdown in demand for loans combined with a fall in consumptions leads to an improvement in the financial balance of the household sector --> det er fordi der er forskel på housing wealth og deres financial balance wealth --> for deres housing wealth falder 
 
 Hamid sagde:
 
 	-  det er fordi det er financial balance hvor husenes værdi ikke er med --> den dårligere økonomi gør at YD vil falde og deres gæld vil falde dermed kan de låne mindre og deres financial balance er derfor forbedret. 
+	
+```{r}
+knitr::include_graphics(rep("FNL.png", 1), dpi = 250)
+```
+Denne består af Total transaction og financial assets som er "intererst baring assets", "equties" og "pension".
+
+```{r}
+knitr::include_graphics(rep("FATR.png", 1), dpi = 250)
+```
+Hertil er fratrukket de financial liabilities som må antages at falde (selv om det ikke fremgår a papiret) givet den lavere efterspørgsel efter lån. 
 
 
+**Effect on financial stocks**
+
+* Vi kan se finansial net wealth falder --> dette sker da house stock ikke er med i denne. --> Da efterspørgslen efter de andre finansielle aktiver (aktier, pension osv.) ikke falder lige så meget som lån falder. 
 
 ## 4. Does the high level of household debt pose a risk to macroeconomic stability in case of a negative shock to the Danish Economy?
 
@@ -255,9 +328,12 @@ vigtige antagelser:
 alt dette sænker effekten af et fald i huspriser og renten på current account balance --> making output relative stable. 
 
 
-* Først laver de et shock på 3% point til renten samtidig med et 10% fald i hus priser --> her falder gdp kun med 0.3% point fra baseline (det er procent point right?)
+Først laver de et shock på 3% point til renten samtidig med et 10% fald i hus priser så shocksligsom under finanskrisen --> her falder gdp kun med 0.3% point fra baseline (det er procent point right?)
 
-* Dermed ser det ikke ud til at den nuværrende gæld ser ud til at være et problem selv om et stort negativt shock skulle ramme økonomien. 
+* Der sker et relativt stort fald i investeringer og forbrug --> men samtidig et stort fald i import som forbedre betalings balancen. 
+
+* Dermed ser det ikke ud til at den nuværrende gæld ser ud til at være et problem selv om et stort negativt shock skulle ramme økonomien.
+
 
 * Hvorfor havde samme størrelse stød en større effekt under finanskrisen?
 1. There is no effect interrest decision on the stock prices 
@@ -265,9 +341,13 @@ alt dette sænker effekten af et fald i huspriser og renten på current account 
 - under finanskrisen resulterede et fald i aktiepriser med et fald i huspriser og stigning af renten. 
 3. we do not assumen a globale shock (Dermed opnår Danmark bedre konkurrence evne) import falder men eksport forbliver nærmest uænderet. 
 
-* Hvis der samtidig i modellen laves ovenstående effekter ved et fald i global output og samme stigning i renten og fald i huspriser bliver det en alvorlig krise 
+* Hvis der samtidig i modellen laves ovenstående effekter ved et fald i global output og samme stigning i renten og fald i huspriser bliver det en alvorlig krise --> giver mening som lille åben økonomi
 
 
+
+```{r}
+knitr::include_graphics(rep("fald i eksport.png", 1), dpi = 250)
+```
 
 
 FRa anden artikel: 
@@ -289,9 +369,9 @@ Fra slides:
 
 # Part 3 Modern Money
 
-Base money --> 
+Base money --> Monetary liabilities of an issuer --> kun dem der er lavet af centralbanken 
 
-Broad money --> 
+Broad money --> Dem der står på min bankkonto som banken laver. 
 
 ## 1. Why would a Central Bank normally refrain from setting the policy rate significantly below 0%?
 
