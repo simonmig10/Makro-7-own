@@ -164,7 +164,7 @@ Hvad karakterisere SFC-modeller?
 * Link mellem den reale og finansielle side 
 * Fokus på makro relationer 
 * Keynesianske adfærdsrelationer 
-- Hvis politiken ændrer sig vil de styre efter disse normer og deres adfærd vil ændrer sig --> dermed modsvar til lukas kritik --> men til debat. 
+- Hvis politiken ændrer sig vil de styre efter disse normer og deres adfærd vil ændrer sig --> dermed modsvar til lukas kritik --> men til debat.  --> så man laver en politik ud fra data på deres adfærd og så videre --> men når man indføre politikken vil denne ændre husholdningers adfærd. --> dette løsses i DSGE ved at optimere nytte. 
 * Stock-flow normer 
 
 

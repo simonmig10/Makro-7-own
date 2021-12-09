@@ -536,7 +536,7 @@ With beta= 1 er centralbanken vægter den output og inflations gap lige vigtigt.
 
 
 ```{r}
-#knitr::include_graphics(rep("lossfunction.png", 1), dpi = 150)
+knitr::include_graphics(rep("lossfunction.png", 1), dpi = 150)
 ```
 
 **Balanced: $\beta = 1$**
@@ -562,7 +562,7 @@ The phillips curve shows all the combinations of inflation and output the centra
 if we assume the phillips curve has $\alpha = 1$ the plot will look like this: 
 
 ```{r}
-#knitr::include_graphics(rep("phiillips curve.png", 1), dpi = 150)
+knitr::include_graphics(rep("phiillips curve.png", 1), dpi = 150)
 ```
 
 We can see that for a given level of inflation in last period the central bank will choose the point with the lowest losses. 
@@ -583,7 +583,7 @@ If the central bank has a very high weight on inflation and want to hit the targ
 
 
 ```{r}
-#knitr::include_graphics(rep("MR curve.png", 1), dpi = 150)
+knitr::include_graphics(rep("MR curve.png", 1), dpi = 150)
 ```
 
 This shows the output and inflation the central bank would choose to minimize its loss function for any given phillipscurve it is faced with 
